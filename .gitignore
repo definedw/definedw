@@ -4,5 +4,7 @@ db.json
 www.chayifen.com.zip
 *.log
 node_modules/
-source/
+public/
+scaffolds/
+themes/
 .deploy*/
