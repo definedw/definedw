@@ -2,14 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2017/05/02/updata03/</loc>
+    <loc>http://yoursite.com/2017/05/03/update05/</loc>
     
-    <lastmod>2017-05-02T02:49:17.000Z</lastmod>
+    <lastmod>2017-05-03T07:06:35.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2017/05/02/updata02/</loc>
+    <loc>http://yoursite.com/2017/05/03/update04/</loc>
+    
+    <lastmod>2017-05-03T07:06:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/05/02/update03/</loc>
+    
+    <lastmod>2017-05-02T07:01:48.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2017-05-02T06:10:44.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/05/02/update02/</loc>
     
     <lastmod>2017-05-02T01:16:56.000Z</lastmod>
     
@@ -110,13 +131,6 @@
     <loc>http://yoursite.com/2016/12/06/straimans/</loc>
     
     <lastmod>2016-12-27T08:03:03.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2016-12-26T06:58:00.000Z</lastmod>
     
   </url>
   
