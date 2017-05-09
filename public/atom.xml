@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-07T10:52:21.000Z</updated>
+  <updated>2017-05-09T06:53:06.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,431 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux基本命令大全</title>
+    <link href="http://yoursite.com/2017/05/09/update10/"/>
+    <id>http://yoursite.com/2017/05/09/update10/</id>
+    <published>2017-05-09T06:44:07.000Z</published>
+    <updated>2017-05-09T06:53:06.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>来源：大牛笔记<br>链接：<a href="http://www.daniubiji.cn/archives/25" target="_blank" rel="external">http://www.daniubiji.cn/archives/25</a></p>
+</blockquote>
+<h3 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h3><hr>
+<pre><code>ls     显示文件或目录
+   -l  列出文件详细信息l(list)
+   -a  列出当前目录下所有文件及目录，包括隐藏的a(all)
+mkdir  创建目录
+   -p  创建目录，若无父目录，则创建p(parent)   
+cd     切换目录
+touch  创建空文件
+echo   创建带有内容的文件。
+cat    查看文件内容
+cp     拷贝
+mv     移动或重命名
+rm     删除文件
+   -r  递归删除，可删除子目录及文件
+   -f  强制删除
+find   在文件系统中搜索某文件
+wc     统计文本中行数、字数、字符数
+grep   在文本文件中查找某个字符串
+rmdir  删除空目录
+tree   树形结构显示目录，需要安装tree包
+pwd    显示当前目录
+ln     创建链接文件
+more、less   分页显示文本文件内容
+head、tail   显示文件头、尾内容
+ctrl+alt+F1  命令行全屏模式
+</code></pre><h3 id="系统管理命令"><a href="#系统管理命令" class="headerlink" title="系统管理命令"></a>系统管理命令</h3><hr>
+<pre><code>stat     显示指定文件的详细信息，比ls更详细
+who      显示在线登陆用户
+whoami   显示当前操作用户
+hostname 显示主机名
+uname    显示系统信息
+top      动态显示当前耗费资源最多进程信息
+ps       显示瞬间进程状态 ps -aux
+du       查看目录大小 du -h /home带有单位显示目录信息
+df       查看磁盘大小 df -h 带有单位显示磁盘信息
+ifconfig 查看网络情况
+ping     测试网络连通
+netstat  显示网络状态信息
+man      命令不会用了，找男人? 如：man ls
+clear    清屏
+alias    对命令重命名 如：alias showmeit=”ps -aux” ，另外解除使用unaliax showmeit
+kill     杀死进程，可以先用ps 或 top命令查看进程的id，然后再用kill命令杀死进程。
+</code></pre><h3 id="打包压缩相关命令"><a href="#打包压缩相关命令" class="headerlink" title="打包压缩相关命令"></a>打包压缩相关命令</h3><hr>
+<pre><code>gzip：
+bzip2：
+tar:     打包压缩
+   -c    归档文件
+   -x    压缩文件
+   -z    gzip压缩文件
+   -j    bzip2压缩文件
+   -v    显示压缩或解压缩过程 v(view)
+   -f    使用档名
+例：
+tar -cvf /home/abc.tar /home/abc        只打包，不压缩
+tar -zcvf /home/abc.tar.gz /home/abc    打包，并用gzip压缩
+tar -jcvf /home/abc.tar.bz2 /home/abc   打包，并用bzip2压缩
+当然，如果想解压缩，就直接替换上面的命令tar  -cvf  /   tar  -zcvf  /  tar  -jcvf 中的“c” 换成“x” 就可以了。
+</code></pre><h3 id="关机-重启机器"><a href="#关机-重启机器" class="headerlink" title="关机/重启机器"></a>关机/重启机器</h3><hr>
+<pre><code>shutdown
+    -r      关机重启
+    -h      关机不重启
+    now     立刻关机
+halt        关机
+reboot      重启
+</code></pre><h3 id="Linux管道"><a href="#Linux管道" class="headerlink" title="Linux管道"></a>Linux管道</h3><hr>
+<pre><code>将一个命令的标准输出作为另一个命令的标准输入。也就是把几个命令组合起来使用，后一个命令除以前一个命令的结果。
+例：grep -r “close” /home/* | more 在home目录下所有文件中查找，包括close的文件，并分页输出。
+</code></pre><h3 id="Linux软件包管理"><a href="#Linux软件包管理" class="headerlink" title="Linux软件包管理"></a>Linux软件包管理</h3><hr>
+<pre><code>dpkg (Debian Package)管理工具，软件包名以.deb后缀。这种方法适合系统不能联网的情况下。
+比如安装tree命令的安装包，先将tree.deb传到Linux系统中。再使用如下命令安装。
+sudo dpkg -i tree_1.5.3-1_i386.deb  安装软件
+sudo dpkg -r tree             卸载软件
+注：将tree.deb传到Linux系统中，有多种方式。VMwareTool，使用挂载方式；使用winSCP工具等；
+APT（Advanced Packaging Tool）高级软件工具。这种方法适合系统能够连接互联网的情况。
+依然以tree为例
+sudo apt-get install tree     安装tree
+sudo apt-get remove tree      卸载tree
+sudo apt-get update           更新软件
+sudo apt-get upgrade 
+
+将.rpm文件转为.deb文件
+.rpm为RedHat使用的软件格式。在Ubuntu下不能直接使用，所以需要转换一下。
+sudo alien abc.rpm
+</code></pre><h3 id="vim使用"><a href="#vim使用" class="headerlink" title="vim使用"></a>vim使用</h3><hr>
+<pre><code>vim三种模式：命令模式、插入模式、编辑模式。使用ESC或i或：来切换模式。
+命令模式下：
+:q            退出
+:q!           强制退出
+:wq           保存并退出
+:set number   显示行号
+:set nonumber 隐藏行号
+/apache       在文档中查找apache 按n跳到下一个，shift+n上一个
+yyp           复制光标所在行，并粘贴
+h(左移一个字符←)、j(下一行↓)、k(上一行↑)、l(右移一个字符→)
+</code></pre><h3 id="用户及用户组管理"><a href="#用户及用户组管理" class="headerlink" title="用户及用户组管理"></a>用户及用户组管理</h3><hr>
+<pre><code>/etc/passwd    存储用户账号
+/etc/group     存储组账号
+/etc/shadow    存储用户账号的密码
+/etc/gshadow   存储用户组账号的密码
+useradd        添加用户名
+userdel        删除用户名
+adduser        添加用户名
+groupadd       添加组名
+groupdel       删除组名
+passwd root    给root设置密码
+su root
+su – root
+/etc/profile   系统环境变量
+bash_profile   用户环境变量
+.bashrc        用户环境变量
+su user        切换用户，加载配置文件.bashrc
+su – user      切换用户，加载配置文件/etc/profile ，加载bash_profile
+</code></pre><h3 id="更改文件的用户及用户组"><a href="#更改文件的用户及用户组" class="headerlink" title="更改文件的用户及用户组"></a>更改文件的用户及用户组</h3><hr>
+<pre><code>sudo chown [-R] owner[:group] {File|Directory}
+例如：还以jdk-7u21-linux-i586.tar.gz为例。属于用户hadoop，组hadoop
+要想切换此文件所属的用户及组。可以使用命令。
+sudo chown root:root jdk-7u21-linux-i586.tar.gz
+</code></pre><h3 id="文件权限管理"><a href="#文件权限管理" class="headerlink" title="文件权限管理"></a>文件权限管理</h3><hr>
+<pre><code>三种基本权限
+R   读  数值表示为4
+W   写  数值表示为2
+X   可执行 数值表示为1
+
+
+-rw-rw-r–一共十个字符，分成四段。
+第一个字符“-”表示普通文件；这个位置还可能会出现“l”链接；“d”表示目录
+第二三四个字符“rw-”表示当前所属用户的权限。     所以用数值表示为4+2=6
+第五六七个字符“rw-”表示当前所属组的权限。        所以用数值表示为4+2=6
+第八九十个字符“r–”表示其他用户权限。                 所以用数值表示为2
+所以操作此文件的权限用数值表示为662?
+
+更改权限
+sudo chmod [u所属用户  g所属组  o其他用户   a所有用户]    [+增加权限   -减少权限]   [r   w   x]   目录名 
+例如：有一个文件filename，权限为“-rw-r—-x” ,将权限值改为”-rwxrw-r-x”，用数值表示为765
+sudo chmod u+x g+w o+r filename
+
+sudo chmod 765 filename
+
+工作中用到的一些有意思的命令：
+linux nc
+tree
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;来源：大牛笔记&lt;br&gt;链接：&lt;a href=&quot;http://www.daniubiji.cn/archives/25&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.daniubiji.cn/archives/
+    
+    </summary>
+    
+      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>移动开发遇到问题总结</title>
+    <link href="http://yoursite.com/2017/05/08/update09/"/>
+    <id>http://yoursite.com/2017/05/08/update09/</id>
+    <published>2017-05-08T01:19:40.000Z</published>
+    <updated>2017-05-09T06:38:34.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>作者：熊汉彪<br>链接：<a href="https://zhuanlan.zhihu.com/p/26141351" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/26141351</a><br>来源：知乎</p>
+</blockquote>
+<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>众所周知的移动端，一般来说可以分为上中下三个部分，分别为 header、main、footer，其中header、footer 是固定高度，分别固定在页面顶部和页面底部，而 main 是占据页面其余位置，并且可以滚动。基本是以下形式：<br><img src="http://upload-images.jianshu.io/upload_images/2741993-6761d169556abcc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/360" alt="layout"></p>
+<pre><code>&lt;body&gt;
+
+  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;main&quot;&gt;&lt;/div&gt;
+
+  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+
+&lt;/body&gt;
+</code></pre><p>根据页面滚动的位置分为两种布局，一种是滚动 body，另一种是固定 body 的高度为100%，在 main 中滚动。第一种布局有个优点，就是页面的地址栏会随着 body 的滚动隐藏起来，并且 Android 设备中，滚动 body 会更加的流畅，如果项目中有类似需求可以考虑。实现布局的方式如下:</p>
+<pre><code>body {
+  overflow: auto;
+}
+
+.header,
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 44px;
+}
+
+.header {
+  top: 0;
+}
+
+.footer {
+  bottom: 0;
+}
+
+.main {
+  height: 100%;
+  padding: 44px 0;
+}
+</code></pre><p>第一种情况比较适合长列表页面，整个页面除了 header 和 footer 之外都需要滚动，但很多时候，我们只希望页面的某个元素滚动，这个时候，就采取第二种布局方式。<br>这种页面布局有三种相对简单的实现方式：</p>
+<ol>
+<li>fixed 定位</li>
+<li>absolute 定位</li>
+<li>flex 定位</li>
+</ol>
+<p>最容易想到的实现方式是 fixed 定位，实现方式如下：</p>
+<pre><code>html, body {
+  height: 100%;
+  overflow: hidden;
+}
+.header,
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 44px;
+}
+
+
+.header {
+  top: 0;
+}
+
+
+.footer {
+  bottom: 0;
+}
+
+
+.main {
+  height: 100%;
+  padding: 44px 0;
+  box-sizing: border-box;
+}
+</code></pre><p>fixed 定位实现起来简单，在大多数浏览器中也能正常显示，但是 fixed 定位在移动端会有兼容性问题，后面会提到，所以不建议这种实现方式。absolute 定位和 fixed 定位类似，只要把 header 的 footer 的 position 改为 absolute 就可以了。细心的小伙伴可能发现了，这里的 main 没有设置 overflow ，因为这里有一个坑，不管是absolute 定位还是 fixed 定位都一样，为了方便描述，以下只说 fixed 定位(在 absolute 定位也一样成立)。在PC端没有问题，但是在移动端，如果 main 设置了 overflow 为 true，header 会被 main 遮住，对，没有错，虽然是 fixed 定位，但是在移动端，如果 fixed 定位节点后面紧接跟着的兄弟节点是可滚动的(也就是设置了 overflow 为 true )，那么 fixed 节点会被其后的兄弟节点遮住。这个问题解决方式有很多，既然是 fixed 定位后面紧接着可滚动的兄弟节点才会有这个坑，只要让他的条件有一个不成立就好了，有以下解决方案：</p>
+<ol>
+<li>让 fixed 定位节点后面不紧接着可滚动的节点</li>
+<li>不让 scroll 节点遮住 fixed 节点</li>
+</ol>
+<p><strong>第一种方方案有以下可选方法:</strong></p>
+<ol>
+<li>把所有 fixed 节点放在 scroll 元素后面，即把 header 节点放在 main 节点后面</li>
+</ol>
+<pre><code>&lt;body&gt;
+  &lt;div class=&quot;main&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+</code></pre><p>但这样显然不太符合一般人的思维习惯，代码可读性降低。</p>
+<ol>
+<li>使 main 不可滚动，给 main 嵌套一层可滚动的子节点</li>
+</ol>
+<pre><code>&lt;body&gt;
+  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;main&quot;&gt;
+    &lt;div class=&quot;scroll-container&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+
+
+&lt;style&gt;
+  .main {
+    overflow: hidden;
+  }
+  .scroll-container {
+    height: 100%;
+    overflow: auto;
+  }
+&lt;/style&gt;
+</code></pre><p><strong>第二种方案有以下可选方法:</strong></p>
+<ol>
+<li>让 scroll 节点不与 fixed 节点有重合</li>
+</ol>
+<pre><code>body {
+  padding: 44px 0;
+}
+
+
+.main {
+  padding: 0;
+}
+</code></pre><ol>
+<li>给 fixed 节点设置 z-index</li>
+</ol>
+<pre><code>.header,
+.footer {
+    z-index: 8888;
+}
+</code></pre><p>看到这里可能会有小伙伴觉得，一个简单的布局，还要绕过这么多坑，难道没有简单的方式吗，答案当然是肯定的，那就是第三种实现方式，flex 布局。flex 定位在移动端兼容到了 iOS 7.1+，Android 4.4+,如果使用 autoprefixer 等工具还可以降级为旧版本的 flexbox ，可以兼容到 iOS 3.2 和 Android 2.1。而且用 flex 实现起来相对简单，在各个浏览器里表现也相对一致。实现如下:</p>
+<pre><code>body {
+  display: flex;
+  flex-direction: column;
+}
+.main {
+  flex: 1;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.header {
+  height: 44px;
+}
+.footer {
+  height: 44px;
+}
+</code></pre><h3 id="fixed-与-input"><a href="#fixed-与-input" class="headerlink" title="fixed 与 input"></a>fixed 与 input</h3><p>刚接触移动端 Web 开发的小伙伴应该都会听前辈们说过，不要在有 input 标签的页面使用 fixed 定位，因为这两者在一起的时候，总是会有奇奇怪怪的问题。在 iOS 上，当点击 input 标签获取焦点唤起软键盘的时候，fixed 定位会暂时失效，或者可以理解为变成了 absolute 定位，在含有滚动的页面，fixed 定位的节点和其他节点一起滚动。其实这个问题也很好解决，只要保证 fixed 定位的节点的父节点不可滚动，那么即使 fixed 定位失效，也不会和其他滚动节点一起滚动，影响界面。但是除此之外，还有很多坑比较难以解决，例如 Android 软键盘唤起后遮挡住 input 标签，用户没法看到自己输入的字符串，iOS 则需要在输入至少一个字符之后，才能将对应的 input 标签滚动到合适的位置，所以为了避开这些难以解决的坑，在有表单输入的页面，尽量用absolute 或者 flex 替换 fixed。</p>
+<h3 id="样式实现"><a href="#样式实现" class="headerlink" title="样式实现"></a>样式实现</h3><ol>
+<li>iOS 1px实现(Owner）</li>
+</ol>
+<p>参考伪元素做法如下：</p>
+<pre><code>/*scss style*/
+.tran{
+    position: relative;
+    &amp;::before{
+        content: &#39;&#39;;
+        position: absolute;
+        box-sizing: border-box;
+        height: 1px;
+        left: 0;
+        top: 0;
+        border-bottom: 1px solid #cfcfcf;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5); 
+    }
+
+/* mixin */
+@mixin bottomLine($c:rgba(207, 207, 207, .95), $t:0, $r:0, $b:0, $l:0) {
+    content: &quot; &quot;;
+    position: absolute;
+    left: $l;
+    bottom: $t;
+    right: $r;
+    height: 1px;
+    border-bottom: 1px solid $c;
+    color: $c;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.501);
+    transform: scaleY(0.501);
+}
+</code></pre><ol>
+<li>背景渐变</li>
+</ol>
+<p>CSS3 有了渐变背景，可以通过渐变背景实现 1px 的 border，实现原理是设置 1px 的渐变背景，50% 有颜色，50% 是透明的。</p>
+<pre><code>@mixin commonStyle() {
+  background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
+  background-repeat: no-repeat;
+  background-position: top, right top,  bottom, left top;
+}
+
+
+@mixin border($border-color) {
+  @include commonStyle();
+  background-image:linear-gradient(180deg, $border-color, $border-color 50%, transparent 50%),
+  linear-gradient(270deg, $border-color, $border-color 50%, transparent 50%),
+  linear-gradient(0deg, $border-color, $border-color 50%, transparent 50%),
+  linear-gradient(90deg, $border-color, $border-color 50%, transparent 50%);
+}
+</code></pre><p><strong>伪类+transform：</strong></p>
+<p>这类方法的实现原理是用伪元素的 box-shadow 或 border 实现 border，然后用 transform缩小到原来的一半。即使有圆角的需求也能很好的实现。</p>
+<pre><code>
+@mixin hairline-common($border-radius) {
+  position: relative;
+  z-index: 0;
+  &amp;:before {
+    position: absolute;
+    content: &#39;&#39;;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    transform-origin: 0 0;
+  }
+}
+@mixin hairline($direct: &#39;all&#39;, $border-color: #ccc, $border-radius: 0) {
+  @include hairline-common($border-radius);
+  &amp;:before {
+    transform: scale(.5);
+    @if $direct == &#39;all&#39; {
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      box-shadow: 0 0 0 1px $border-color;
+      z-index: -1;
+    } @else if $direct == &#39;left&#39; or $direct == &#39;right&#39; {
+      #{$direct}: 0;
+      top: 0;
+      width: 0;
+      height: 200%;
+      border-#{$direct}: 1px solid $border-color;
+    } @else {
+      #{$direct}: 0;
+      left: 0;
+      width: 200%;
+      height: 0;
+      border-#{$direct}: 1px solid $border-color;
+    }
+  }
+}
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;作者：熊汉彪&lt;br&gt;链接：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/26141351&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://zhuanlan.zhihu.com/p/261
+    
+    </summary>
+    
+      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>走了，远了</title>
@@ -951,150 +1376,6 @@ pip install shadowsocks //安装shadowsock
     </summary>
     
       <category term="Coding" scheme="http://yoursite.com/categories/Coding/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu服务器下（TXY）建立Nginx以及配置Nodejs</title>
-    <link href="http://yoursite.com/2016/12/07/ubuntu/"/>
-    <id>http://yoursite.com/2016/12/07/ubuntu/</id>
-    <published>2016-12-07T02:47:13.000Z</published>
-    <updated>2017-01-05T08:47:27.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近对服务器折腾比较多，中间确实是踩了很多的坑。<br>记录下来，方便以后自己查阅：</p>
-<h4 id="搭建Nginx"><a href="#搭建Nginx" class="headerlink" title="搭建Nginx"></a>搭建Nginx</h4><p>Nginx是什么，这里我就不做多的解释了，购买服务器之后，基本都要配置服务器环境，Nginx就是服务器的一个配置环境，用来跑你存在服务器里的Index,php,htm等文件。</p>
-<ol>
-<li>如何搭建Nginx：</li>
-</ol>
-<p><strong>我这里只讨论TXY Ubuntu系统下的部署</strong><br>在官方的文档里，&gt;最佳实践下描述了Centos,Ubuntu的命令其实差不多：</p>
-<pre><code>sudo -s //获取root权限
-apt-get install nginx
-service nginx start //启动nginx
-</code></pre><ol>
-<li>配置Nginx：配置Nginx多个端点<br>很多小伙伴估计都是对多个端点配置感兴趣，所以这里就不对单一的Nginx配置讲解了。单一的配置主要就是对系统里存在的Nginx目录下的一些文件路径的替换。<br>开始之前，简单的讲解下linux下的<strong>vi</strong><pre><code>vi /root/etc  //文件路径名字
-i  INSERT 输入 
-按下ESC退出编辑状态
-Shift+: = :   &gt;q退出 q!强制退出 wq 保存退出  
-非编辑状态下 ?****向上查找 /****向下查找
-</code></pre><a id="more"></a>
-</li>
-</ol>
-<!--toc-->
-<p>我采用的是配置Nginx虚拟服务：<br>a 进入你的Nginx安装目录下，TXY在<br><code>cd /etc/nginx</code><br>b 创建新的文件，配置虚拟接口<br><code>mkdir vhosts //名字可以自己设定</code><br>c 进入到vhosts文件夹下：创建你的端口文件,这里网上教程很多，我的方式只是和网上一样，只具有参考性。<br><code>vi site1.com.conf //创建第一个端口配置</code></p>
-<pre><code>
-
-server {
-        listen  80;
-        server_name  ****.com www.****.com;
-        access_log  /var/log/nginx/access.log;
-        location / {
-            root  /home/ubuntu/*****;//自己文件的路径
-            index  index.php index.html index.htm;
-        }
-        error_page   500 502 503 504  /50x.html;
-        location = /50x.html {
-            root  ~/;
-        }
-       # pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
-        location ~ .php$ {
-            fastcgi_pass   127.0.0.1:9000;
-            fastcgi_index  index.php;
-            fastcgi_param  SCRIPT_FILENAME  /home/site1.com/$fastcgi_script_name;
-            include        fastcgi_params;
-        }
-        location ~ /.ht {
-            deny  all;
-        }
-}
-</code></pre><p>然后再重复C步骤，即可创建多余的端口了，大家在这里配置的时候，需要多用心，我在这里错了很多次，因为access_log这个路径也会因为错误而报错，这里我具体没有什么太好的解决方案。<br>d 配置完成后，我们需要配置nginx的主配置文件<br><code>/nginx/nginx.conf</code><br>需要将我们刚才配置好的 <code>site*.com.conf</code>的多个文件添加在http{}里面：<br>这里大家请注意，网上有些教程，说的是叫直接添加在 <code>nginx.conf</code>文件里，但我第一次这么配置的时候，Nginx -t 失败了，但后来我没去验证这个问题，我只是将我的<code>include /etc/nginx/vhosts/*.conf</code>加载在http块下就成功了。</p>
-<p><strong>注意：</strong></p>
-<p>配置完成后请一定要检查配置文件：<code>nginx -t</code><br><code>nginx -t -c /root/etc/nginx/vhost.*/ //这里是你自己配置好的conf路径</code><br><code>nginx -t -c /root/etc/nginx/nginx.conf/</code></p>
-<p>如果检查没有提示Error灯字样，那么恭喜你，成功了一半了。<br>还有比较坑的一步：Ubuntu下重启Nginx命令与Linux是不一样的，大家一定要注意<br> <b>service nginx reload/restart/<em>**</em></b></p>
-<p>至此大家就可以开心的往你的服务器里传index.html,向别人展示你的网页啦~</p>
-<h4 id="配置Nodejs"><a href="#配置Nodejs" class="headerlink" title="配置Nodejs"></a>配置Nodejs</h4><p>Node似乎对linux 不是很友好，刚开始的时候我是用的</p>
-<p><code>apt-get install npm    //</code><br><code>apt-get install node //</code></p>
-<p>但是这两个命令虽然成功了，但当你在命令行里输入：<code>node -v</code><br>那Ubuntu就会报错，No Command 或者别的，网上有关于Ubuntu下应该安装nodejs &gt;&gt;<code>apt-get install nodejs</code></p>
-<p>确实这样安装之后你可以使用<code>nodejs -v</code>注意中间没有  ·，查询到node的版本，但对全局里的node命令依然无效，我对node的了解不是很多，所以这给出的只是我自己的方式：</p>
-<p>参考文章：</p>
-<ul>
-<li><a href="https://my.oschina.net/blogshi/blog/260953" target="_blank" rel="external">Linux下Nodejs安装</a></li>
-</ul>
-<p>建议大家不要选用第二种，我自己试了一下，比较麻烦。</p>
-<ol>
-<li>配置node，我在Node官网下载了两个版本，第一个Node-v4.4.4还有一个node-v6.2.1，都是稳定版的，然后用一个sftp上传到了服务器，<br><code>tar zxvf node-v**********.gz //Linux解压</code><br>进入到解压目录内，我的目录结构如下：</li>
-</ol>
-<p><img src="http://upload-images.jianshu.io/upload_images/2741993-05457aa0c638d77c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Node目录"></p>
-<p>按照上文的方法我试了<code>ln -s  /home/ubuntu/node-v4.4.4/bin/node /usr/local/bin/node</code><br>以及<code>ln -s /home/ubuntu/node-v4.4.4/bin/npm /usr/loacal/bin/npm</code></p>
-<p><strong>注意：</strong> </p>
-<p>/home/ubuntu/node-v4.4.4/bin/node<br>是你的Node的目录结构<br>/usr/loacal/bin/node 是全局<br>此种方法后，然后全局<code>node -v</code>成功，但是<code>npm -v</code>报错merge,找了许久没有找到方法解决，我不知道这是不是TXY独有的情况，我后来只好重装了系统。</p>
-<ol>
-<li>反复试了很多次，最后我成功的方案如下：<br>a <code>apt-get install npm</code>先在系统下内置安装npm<br>b <code>apt-get install nodejs</code> 再安装nodejs<br>c 然后再按第1步骤来&gt;&gt;<code>tar zxvf node-v****</code><br><code>ln -s /home******</code><br><code>ln -s /h ome*****</code></li>
-</ol>
-<p>然后全局<code>node -v</code>成功<br><code>npm -v</code>成功，以上过程如遇Premission denied 记得添加<code>sudo</code></p>
-<p>至此，服务器node配置完毕！</p>
-<blockquote>
-<p>To Be Continue!</p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近对服务器折腾比较多，中间确实是踩了很多的坑。&lt;br&gt;记录下来，方便以后自己查阅：&lt;/p&gt;
-&lt;h4 id=&quot;搭建Nginx&quot;&gt;&lt;a href=&quot;#搭建Nginx&quot; class=&quot;headerlink&quot; title=&quot;搭建Nginx&quot;&gt;&lt;/a&gt;搭建Nginx&lt;/h4&gt;&lt;p&gt;Nginx是什么，这里我就不做多的解释了，购买服务器之后，基本都要配置服务器环境，Nginx就是服务器的一个配置环境，用来跑你存在服务器里的Index,php,htm等文件。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;如何搭建Nginx：&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;我这里只讨论TXY Ubuntu系统下的部署&lt;/strong&gt;&lt;br&gt;在官方的文档里，&amp;gt;最佳实践下描述了Centos,Ubuntu的命令其实差不多：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo -s //获取root权限
-apt-get install nginx
-service nginx start //启动nginx
-&lt;/code&gt;&lt;/pre&gt;&lt;ol&gt;
-&lt;li&gt;配置Nginx：配置Nginx多个端点&lt;br&gt;很多小伙伴估计都是对多个端点配置感兴趣，所以这里就不对单一的Nginx配置讲解了。单一的配置主要就是对系统里存在的Nginx目录下的一些文件路径的替换。&lt;br&gt;开始之前，简单的讲解下linux下的&lt;strong&gt;vi&lt;/strong&gt;&lt;pre&gt;&lt;code&gt;vi /root/etc  //文件路径名字
-i  INSERT 输入 
-按下ESC退出编辑状态
-Shift+: = :   &amp;gt;q退出 q!强制退出 wq 保存退出  
-非编辑状态下 ?****向上查找 /****向下查找
-&lt;/code&gt;&lt;/pre&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://yoursite.com/categories/Coding/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>怎么变成一个直男</title>
-    <link href="http://yoursite.com/2016/12/06/straimans/"/>
-    <id>http://yoursite.com/2016/12/06/straimans/</id>
-    <published>2016-12-06T09:18:38.000Z</published>
-    <updated>2016-12-27T08:03:03.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>生活百无聊赖的时候，就会莫名其妙的想很多东西。。。</p>
-<p>比如说，如何变成一个直男。高中的时候，大家都说我是一个暖男，那时候自己也还有个心爱的姑娘，所以为人处世上，总归是温声细语多过冷嘲热讽的。只是因爱生恨这种事，向来都是不按套路出牌的，谁想到像我这样温柔的男子最后却被她越发疏远。失落的日子里，到最后总归还是总结了一下，这个爱情路线上的错误，理清了另外一条革命友谊路线。那时候的自己虽然日日夜夜痛心疾首，只是还好没有生出那种报复的心理。所以时间淡去之后，再见伊人，也只是一切花开，缘来是故人罢了的感慨而已了。</p>
-<a id="more"></a>
-<p>就这样到了大学。大学是个好地方，刚到的时候，到处都是眼花缭乱的情景。从一次意外，内心里的爱情之火又悄悄燃烧起来。待自己察觉的时候，才发现燎原之势已成，只得任其肆虐了。只可惜年岁虽然长了些，个头却没长多少，情商更是半桶水晃晃摇摇不增反减啦。都说爱情让人盲目，我自然是知道的。只是多少人的劝告也无济于事，想想爱情这种事不就应该热情奔放然后陪伴成长情？结局就不多说了，只怪现实太骨感。</p>
-<p>#####接下来就和大家说说直男这回事了：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2741993-a4d261aff01c0833.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="直男癌百度百科"></p>
-<p>其实传统教育下，男人都或多或少会大男子主义，只是平常生活中都表现得不是很明显。在感情失败的日子里我便开始对周边的一切都反感，这就好像你感冒了，看见油腻的事物就反胃一般。对于那些秀恩爱的，我总会阴测测的想到“这么点小事也是没头没尾的生怕别人不知道一般”，只是那时候还只是在心里腹诽，时间久了，也就不满足这种内心的“满足”，总觉得世界的正义全都落在了自己肩上，面对其余的沉默者，我有必要站出来反对这种可耻的行为。</p>
-<p>朋友之间一两次也就算了，多了谁多要烦的，偏偏我那个脑子啊，还一直绕在那个里面，只知道一股脑往里头钻。没办法，身边说得上话的异性就越发少了，这个结局似乎不是我这么努力的结果啊，于是不知不觉里，对立面又大了不少。刚开始是一拳打沙袋，现在就变成了双拳。只是在苦心孤诣的呵护下爱情的破灭，怎可能朝夕之间就痛定思痛，放下屠刀呢。到了这种状态下，也就是再温柔的话语，也是无形的挑衅，不断刺激自己往双拳难敌四手的处境。终于一头撞到南墙，头破血流，哭天喊地都没人搭理的时候，才明白。God bless me,My mistakes!</p>
-<p>段子手常说：人生有三大错觉：门没关，手机响了，Ta喜欢我。只是人都得经历爱情这东西并不是付出就有收获这个过程（天赋异凛者当我放屁），才能慢慢让自己成熟。无论是做备胎也好，还是苦心孤诣经营也罢，时常想想你的脑子够不够用，爱情并不一定得是酒足饭饱，对象也不一定需要十全九美。喜欢最好还是交心较好，一个人闷声付出，不求结果倒也罢了，若还有几分念想，那就只有祝君早日撞得南墙归来，再与兄台我，一起惺惺相惜！</p>
-<p>说到这，其实我也说不出个所以然来了。只是想着，直男总归在整对象这事不太好，望诸君能多多思量。</p>
-<p>权衡利弊——说不定“直男与直男更配呢？”</p>
-<blockquote>
-<p><code>纯粹无聊——END</code></p>
-</blockquote>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;生活百无聊赖的时候，就会莫名其妙的想很多东西。。。&lt;/p&gt;
-&lt;p&gt;比如说，如何变成一个直男。高中的时候，大家都说我是一个暖男，那时候自己也还有个心爱的姑娘，所以为人处世上，总归是温声细语多过冷嘲热讽的。只是因爱生恨这种事，向来都是不按套路出牌的，谁想到像我这样温柔的男子最后却被她越发疏远。失落的日子里，到最后总归还是总结了一下，这个爱情路线上的错误，理清了另外一条革命友谊路线。那时候的自己虽然日日夜夜痛心疾首，只是还好没有生出那种报复的心理。所以时间淡去之后，再见伊人，也只是一切花开，缘来是故人罢了的感慨而已了。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
