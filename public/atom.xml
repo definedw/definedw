@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-09T06:53:06.000Z</updated>
+  <updated>2017-05-10T05:39:31.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,100 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ubuntu服务器搭建SVN记录</title>
+    <link href="http://yoursite.com/2017/05/09/update11/"/>
+    <id>http://yoursite.com/2017/05/09/update11/</id>
+    <published>2017-05-09T07:07:35.000Z</published>
+    <updated>2017-05-10T05:39:31.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>本文为作者原创，转载请注明出处！</p>
+</blockquote>
+<p>svn，是一个开放源代码的版本控制系统，与git差不多的功能。</p>
+<h3 id="构建服务器"><a href="#构建服务器" class="headerlink" title="构建服务器"></a>构建服务器</h3><p>说实话，这东西还是需要自己去折腾。<br>虽然网上的教程很多，但还是推荐看文档里的，很多人写到的不是少了这里就是那里，这种碎片化的知识，真的解决起来特别麻烦。</p>
+<p><strong>推荐官方文档：</strong></p>
+<blockquote>
+<p>subversion: <a href="http://wiki.ubuntu.org.cn/SubVersion" target="_blank" rel="external">http://wiki.ubuntu.org.cn/SubVersion</a><br>trac: <a href="http://wiki.ubuntu.org.cn/Trac%E7%9A%84%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE" target="_blank" rel="external">http://wiki.ubuntu.org.cn/Trac%E7%9A%84%E5%AE%89%E8%A3%85%E8%AE%BE%E7%BD%AE</a></p>
+</blockquote>
+<p><strong>主要注意点：</strong></p>
+<ol>
+<li><p>创建文件仓库的时候注意权限，由以上文档中提到的，在创建仓库时候，先需要添加组。在Linux下查看默认的用户组：groupmod+tab键则可以显示所有的组；也可以vim /etc/group查看组。</p>
+</li>
+<li><p>如果你想创建一个新的用户来专门管理你的SVN仓库：假如你创建用户svn，请注意将你的svn添加到subversion组。<code>sudo adduser svn subversion</code>。</p>
+</li>
+<li><p>另外一个就是权限问题，于仓库目录（假设仓库为repos)创建时如果在root用户下，<code>chown -R svn:subversion /home/svn/repos</code>。我把自己的目录改到了svn 用户下，然后再将权限改为可以读写的g+rws。具体参照wiki。</p>
+</li>
+</ol>
+<h3 id="Apache2-Subversion"><a href="#Apache2-Subversion" class="headerlink" title="Apache2 Subversion"></a>Apache2 Subversion</h3><p>利用Apache服务器来访问远程仓库，需要开启Apache SVNmod：</p>
+<ul>
+<li><code>sudo apt-get install libapache2-svn</code>，其余需要请查阅wiki。</li>
+<li><code>sudo a2enmod dav_svn</code></li>
+</ul>
+<p>开启模块之后，则对以下文件做修改。贴一份配置：</p>
+<pre><code>&lt;Location /svn&gt;  #/svn表示http://hostname/svn/myproject
+  DAV svn
+  SVNParentPath /home/svn #配置仓库父目录
+  AuthType Basic
+  AuthName &quot;SC Project Svn&quot;
+  AuthUserFile &quot;/etc/subversion/passwd&quot;  #svn用户文件
+  AuthzSVNAccessFile &quot;/etc/subversion/authz&quot; #授权访问文件
+  Require valid-user
+&lt;/Location&gt;
+</code></pre><p>如需要配置虚拟主机：</p>
+<ul>
+<li><code>cp 000-default.conf svn.test.com.conf</code></li>
+<li><code>vi svn.test.com.conf</code></li>
+</ul>
+<pre><code>&lt;VirtualHost *:80&gt;
+        ServerName svn.test.com
+        &lt;Location /svn&gt;  
+            DAV svn
+            SVNParentPath /home/svn 
+            AuthType Basic
+            AuthName &quot;SC Project Svn&quot;
+            AuthUserFile &quot;/etc/subversion/passwd&quot;  
+            AuthzSVNAccessFile &quot;/etc/subversion/authz&quot; 
+            Require valid-user
+        &lt;/Location&gt;
+
+ErrorLog &quot;/var/log/apache2/error-svntest.log&quot;
+CustomLog &quot;/var/log/apache2/access-svntest.log&quot; combined
+&lt;/VirtualHost&gt;
+</code></pre><ul>
+<li><code>a2ensite svn.test.com.conf</code></li>
+<li><code>apachectl restart</code></li>
+</ul>
+<h3 id="添加用户和权限"><a href="#添加用户和权限" class="headerlink" title="添加用户和权限"></a>添加用户和权限</h3><p>用http访问方式请注意用命令行生成：</p>
+<p><code>htpasswd -cm /etc/subversion/passwd  adduser</code>然后跟密码。<br><strong>注意：</strong>以上命令第一次时带-cm参数，第二个生成时不用带-c，否则会覆盖。<br><code>htpasswd -m /etc/subversion/passwd test</code></p>
+<p>创建完后<code>vi /etc/subversion/authz</code>权限文件</p>
+<pre><code>[groups]
+admin = test /*自己创建*/
+
+[/]
+* = r
+
+[repos:/]
+@admin = rw
+
+* = r
+</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文为作者原创，转载请注明出处！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;svn，是一个开放源代码的版本控制系统，与git差不多的功能。&lt;/p&gt;
+&lt;h3 id=&quot;构建服务器&quot;&gt;&lt;a href=&quot;#构建服务器&quot; class=&quot;headerlink&quot;
+    
+    </summary>
+    
+      <category term="Coding" scheme="http://yoursite.com/categories/Coding/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux基本命令大全</title>
@@ -1301,77 +1395,6 @@ pip install shadowsocks //安装shadowsock
 &lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/5f9e62bdc0bd&quot;&gt;MAC下登录服务器踩坑日记&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;此文重点讲Windows下SSH登录。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://yoursite.com/categories/Coding/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>服务器搭建：（一）</title>
-    <link href="http://yoursite.com/2016/12/07/ftp1/"/>
-    <id>http://yoursite.com/2016/12/07/ftp1/</id>
-    <published>2016-12-07T07:30:09.000Z</published>
-    <updated>2017-01-05T08:41:55.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文以我自己所经历的搭建服务器过程为基础，另外以及自己查找服务器搭建的的文献一起总结所写，所以全部内容只具有参考性。</p>
-<h1 id="云服务器"><a href="#云服务器" class="headerlink" title="云服务器"></a>云服务器</h1><h4 id="云服务器概念"><a href="#云服务器概念" class="headerlink" title="云服务器概念"></a>云服务器概念</h4><p>云服务器（Elastic Compute Service, 简称ECS）是一种处理能力可弹性伸缩的计算服务，其管理方式比物理服务器更简单高效。云服务器帮助您快速构建更稳定、安全的应用，降低开发运维的难度和整体IT成本，使您能够更专注于核心业务的创新。简单来说就是云服务器用了云这种技术来让电脑做服务支持，它比普通服务器那种技术超前先进，所以更快更好更安全，当然也会比普通的贵。</p>
-<p>总的来看 ，云服务器相当于就是搭建在远程的一台独立电脑。</p>
-<p>一直以来我都是用的腾讯云的服务器（CVM），暂时对别的服务器没怎么了解，另外用过AWS的EC-2搭建了VPS。所以知识有限，只能把自己的一些经验写出来，供大家交流讨论。</p>
-<h4 id="为什么购买云服务器"><a href="#为什么购买云服务器" class="headerlink" title="为什么购买云服务器"></a>为什么购买云服务器</h4><ul>
-<li>对于普通人来讲，服务器没有什么太多的用处，哪怕对于普通程序员来讲，在服务器上所能做的一般就是：</li>
-</ul>
-<ol>
-<li>搭建私人远程云空间，类似百度网盘等；</li>
-<li>架设网站服务器，建网站或者是私人博客；</li>
-<li>架设VPN去Wall外面的世界看一看，感觉这个对Programmer比较重要，因为现阶段许多的Document以及Frame都是由Foreigner所写的。</li>
-</ol>
-<ul>
-<li>对于企业级的服务器，暂时还没有了解那么多，有空再写</li>
-</ul>
-<ul>
-<li>其实现阶段服务器的价格话，相对来讲还算比较便宜，当然货比三家，有好也有坏，刚开始对阿里云服务器比较感兴趣，但阿里的价格还是高过腾讯，最后，本着测试的心理选了腾讯云。</li>
-</ul>
-<a id="more"></a>
-<!--toc-->
-<h4 id="云服务器的管理"><a href="#云服务器的管理" class="headerlink" title="云服务器的管理"></a>云服务器的管理</h4><p>前面讲到云服务器相当于远程PC的话，那云服务器也可以运行现阶段的Linux（主）Windows等系统，另外还有Centos，云服务因为其有限的配置及资源，所以要求要提高服务器的性能的话，就会舍弃掉图形界面的功能，所以对不是很了解Linux与Unix的人来讲，就不是很友好。</p>
-<p>就现阶段我所了解的登录服务器方式：</p>
-<ul>
-<li>密码登录，</li>
-<li>ssh秘钥登录（主）</li>
-</ul>
-<p>我想以ssh秘钥为主密码辅助的登录是现在的主要方式。在你选购云服务器的时候，你可以挑选自己的云服务器系统，以及其他的一些配置，有一些免费的，也有一些收费的，具体以个人需求为准。我个人选择的是Ubuntu，纯粹因为个人对其稍微熟悉一点。而且系统是可以不断重装的，所以万一你觉得你选的系统不好，一样可以将其换掉。</p>
-<p>云服务器的文件图形管理界面的方式：</p>
-<ul>
-<li>Sftp</li>
-<li>ftp </li>
-</ul>
-<p>在MAC下运用transmit比较友好，在WINDOWS下，目前我所用的Winscp比较好用。在图形界面管理下很多情况都会因为权限不足而影响操作，建议大家多多熟悉Linux操作。</p>
-<p>【To Be Continue!】</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文以我自己所经历的搭建服务器过程为基础，另外以及自己查找服务器搭建的的文献一起总结所写，所以全部内容只具有参考性。&lt;/p&gt;
-&lt;h1 id=&quot;云服务器&quot;&gt;&lt;a href=&quot;#云服务器&quot; class=&quot;headerlink&quot; title=&quot;云服务器&quot;&gt;&lt;/a&gt;云服务器&lt;/h1&gt;&lt;h4 id=&quot;云服务器概念&quot;&gt;&lt;a href=&quot;#云服务器概念&quot; class=&quot;headerlink&quot; title=&quot;云服务器概念&quot;&gt;&lt;/a&gt;云服务器概念&lt;/h4&gt;&lt;p&gt;云服务器（Elastic Compute Service, 简称ECS）是一种处理能力可弹性伸缩的计算服务，其管理方式比物理服务器更简单高效。云服务器帮助您快速构建更稳定、安全的应用，降低开发运维的难度和整体IT成本，使您能够更专注于核心业务的创新。简单来说就是云服务器用了云这种技术来让电脑做服务支持，它比普通服务器那种技术超前先进，所以更快更好更安全，当然也会比普通的贵。&lt;/p&gt;
-&lt;p&gt;总的来看 ，云服务器相当于就是搭建在远程的一台独立电脑。&lt;/p&gt;
-&lt;p&gt;一直以来我都是用的腾讯云的服务器（CVM），暂时对别的服务器没怎么了解，另外用过AWS的EC-2搭建了VPS。所以知识有限，只能把自己的一些经验写出来，供大家交流讨论。&lt;/p&gt;
-&lt;h4 id=&quot;为什么购买云服务器&quot;&gt;&lt;a href=&quot;#为什么购买云服务器&quot; class=&quot;headerlink&quot; title=&quot;为什么购买云服务器&quot;&gt;&lt;/a&gt;为什么购买云服务器&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;对于普通人来讲，服务器没有什么太多的用处，哪怕对于普通程序员来讲，在服务器上所能做的一般就是：&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;搭建私人远程云空间，类似百度网盘等；&lt;/li&gt;
-&lt;li&gt;架设网站服务器，建网站或者是私人博客；&lt;/li&gt;
-&lt;li&gt;架设VPN去Wall外面的世界看一看，感觉这个对Programmer比较重要，因为现阶段许多的Document以及Frame都是由Foreigner所写的。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;ul&gt;
-&lt;li&gt;对于企业级的服务器，暂时还没有了解那么多，有空再写&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;其实现阶段服务器的价格话，相对来讲还算比较便宜，当然货比三家，有好也有坏，刚开始对阿里云服务器比较感兴趣，但阿里的价格还是高过腾讯，最后，本着测试的心理选了腾讯云。&lt;/li&gt;
-&lt;/ul&gt;
     
     </summary>
     
