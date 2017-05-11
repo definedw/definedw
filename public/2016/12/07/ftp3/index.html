@@ -380,35 +380,14 @@
 <p>a. AWS激活的时候，采用的是电话激活（speaking English）,当时懵圈了我三遍才激活，账号注册请自行百度。<br>b. AWS并不是真正的For Free,这里需要先提醒一下大家，而且AWS扣费的时候，甚至不用通过短信验证，如介意，请出门左转。</p>
 <h2 id="创建实例："><a href="#创建实例：" class="headerlink" title="创建实例："></a>创建实例：</h2><p>参考文章：<br><a href="https://segmentfault.com/a/1190000003101075" target="_blank" rel="external">科学上网之搭建shadowsock</a></p>
 <p>以下命令摘自以上文章：</p>
-<pre><code>sudo -s //获取root权限
-apt-get install update //更新apt
-apt-get install python-pip //安装py管理包pip
-pip install shadowsocks //安装shadowsock
-</code></pre><p><strong>注意：</strong><br>很多人都会在这一步产生错误，如遇错误请先更新你的python</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo -s //获取root权限</div><div class="line">apt-get install update //更新apt</div><div class="line">apt-get install python-pip //安装py管理包pip</div><div class="line">pip install shadowsocks //安装shadowsock</div></pre></td></tr></table></figure>
+<p><strong>注意：</strong><br>很多人都会在这一步产生错误，如遇错误请先更新你的python</p>
 <p><code>python update</code></p>
 <p>按照原文教程，直接叫你启动 <code>ssserver -c /etc/shadowsock.json -d start</code>这里也会报错，因为安装完shadowsocks后服务器并不会自动生成shadowsocks.json的文件。</p>
 <p>正确的做法是你应该先建立：<br><code>vi /etc/shadowsocks.json</code></p>
-<h4 id="单一端口配置："><a href="#单一端口配置：" class="headerlink" title="单一端口配置："></a>单一端口配置：</h4><pre><code>{
-&quot;server&quot;:&quot;0.0.0.0&quot;, //这里不需要修改为你的服务器IP
-    &quot;server_port&quot;:   //端口自定义，例如8338
-    &quot;local_address&quot;:&quot;127.0.0.1&quot;,  //默认不用修改
-    &quot;local_port&quot;:1080, &quot;password&quot;:   //密码自己设定
-    &quot;timeout&quot;:300,  //可以默认
-    &quot;method&quot;:&quot;aes-256-cfb&quot;,  //默认
-    &quot;fast_open&quot;:false // 默认
-}
-</code></pre><h4 id="多端口配置"><a href="#多端口配置" class="headerlink" title="多端口配置"></a>多端口配置</h4><pre><code>{
-&quot;server&quot;:&quot;0.0.0.0&quot;,
-&quot;port_password&quot;:
-         {
-        &quot;端口1&quot;: &quot;连接密码1&quot;,
-        &quot;端口2&quot; : &quot;连接密码2&quot;
-         },
-&quot;timeout&quot;:300,
-&quot;method&quot;:&quot;aes-256-cfb&quot;,
-&quot;fast_open&quot;: false
-}
-</code></pre><p>配置完成后，别着急，很多时候，你的VPN并不一定可以运行，在文章开始之前，因为我建VPN已经有一段时间了，所以有些东西一下没有总结到位，在你配置完你的AWS后，（我的服务器选择放在了日本Tokyo），在你获得你的公网IP后，应该先到你的控制台ping一下你的IP是否可以 ping通。</p>
+<h4 id="单一端口配置："><a href="#单一端口配置：" class="headerlink" title="单一端口配置："></a>单一端口配置：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;server&quot;:&quot;0.0.0.0&quot;, //这里不需要修改为你的服务器IP</div><div class="line">    &quot;server_port&quot;:   //端口自定义，例如8338</div><div class="line">    &quot;local_address&quot;:&quot;127.0.0.1&quot;,  //默认不用修改</div><div class="line">    &quot;local_port&quot;:1080, &quot;password&quot;:   //密码自己设定</div><div class="line">    &quot;timeout&quot;:300,  //可以默认</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,  //默认</div><div class="line">    &quot;fast_open&quot;:false // 默认</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="多端口配置"><a href="#多端口配置" class="headerlink" title="多端口配置"></a>多端口配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;server&quot;:&quot;0.0.0.0&quot;,</div><div class="line">&quot;port_password&quot;:</div><div class="line">         &#123;</div><div class="line">        &quot;端口1&quot;: &quot;连接密码1&quot;,</div><div class="line">        &quot;端口2&quot; : &quot;连接密码2&quot;</div><div class="line">         &#125;,</div><div class="line">&quot;timeout&quot;:300,</div><div class="line">&quot;method&quot;:&quot;aes-256-cfb&quot;,</div><div class="line">&quot;fast_open&quot;: false</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>配置完成后，别着急，很多时候，你的VPN并不一定可以运行，在文章开始之前，因为我建VPN已经有一段时间了，所以有些东西一下没有总结到位，在你配置完你的AWS后，（我的服务器选择放在了日本Tokyo），在你获得你的公网IP后，应该先到你的控制台ping一下你的IP是否可以 ping通。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2741993-156044dd14627044.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ping失败"></p>
 <p>无法ping通的Ip是无法用来架设的，你必须更换你的IP，所以你只打算拿AWS做VPN的话，没有必要申请弹性IP，国内过段时间久可能把你可以ping通的Ip封掉，所以你又得换。AWS更换IP的方法就是关闭你的VPS，再重新开机就会给你重新分配IP</p>
 <p>完成后，检测一下配置是否成功</p>
@@ -530,7 +509,7 @@ pip install shadowsocks //安装shadowsock
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

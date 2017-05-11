@@ -387,47 +387,17 @@ Apache2基本mac都会自带Apache、Php等，具体查看命令 apachectl -v
 <li>去掉LoadModule rewrite_module libexec/apache2/mod_rewrite.so的<strong> # </strong></li>
 <li>找到 </li>
 </ul>
-<pre><code>
-
-&lt;Directory /&gt;
-    Options Indexes FollowSymLinks
-    AllowOverride All
-    Require all granted
-&lt;/Directory&gt;
-</code></pre><p>将配置修改如上。保存退出<strong> apachectl restart </strong>重启Apache，在浏览器里访问127.0.0.1,出现<strong> is work </strong>，则基本差不多了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">&lt;Directory /&gt;</div><div class="line">    Options Indexes FollowSymLinks</div><div class="line">    AllowOverride All</div><div class="line">    Require all granted</div><div class="line">&lt;/Directory&gt;</div></pre></td></tr></table></figure>
+<p>将配置修改如上。保存退出<strong> apachectl restart </strong>重启Apache，在浏览器里访问127.0.0.1,出现<strong> is work </strong>，则基本差不多了。</p>
 <h4 id="配置虚拟主机（VirtualHost）"><a href="#配置虚拟主机（VirtualHost）" class="headerlink" title="配置虚拟主机（VirtualHost）"></a>配置虚拟主机（VirtualHost）</h4><ol>
 <li>配置虚拟主机更符合我们的开发习惯，首先在httpd.conf配置中放开Include /private/etc/apache2/extra/httpd-vhosts.conf注释。</li>
 <li>进入目录<strong> ~/apache2/extra/ </strong>,编辑配置httpd-vhosts.conf,系统默认有两个虚拟主机，只不过基本没什么作用：</li>
 </ol>
-<pre><code>&lt;VirtualHost *:80&gt;
-    ServerAdmin webmaster@dummy-host.example.com
-    DocumentRoot &quot;/usr/docs/dummy-host.example.com&quot;
-    ServerName dummy-host.example.com
-    ServerAlias www.dummy-host.example.com
-    ErrorLog &quot;/private/var/log/apache2/dummy-host.example.com-error_log&quot;
-    CustomLog &quot;/private/var/log/apache2/dummy-host.example.com-access_log&quot; common
-&lt;/VirtualHost&gt;
-</code></pre><p><strong>ServerAdmin:</strong>网站管理者，一般填写邮件地址，个人开发无所谓。<br><strong>DocumentRoot:</strong>你设置的个人网站根目录，在设置这个目录的时候，很多时候都会受到权限的影响而报错而产生permission denied,请大家注意。<br><strong>ServerName:</strong>这就是你想要设置的访问名字了，由你自己定</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">    ServerAdmin webmaster@dummy-host.example.com</div><div class="line">    DocumentRoot &quot;/usr/docs/dummy-host.example.com&quot;</div><div class="line">    ServerName dummy-host.example.com</div><div class="line">    ServerAlias www.dummy-host.example.com</div><div class="line">    ErrorLog &quot;/private/var/log/apache2/dummy-host.example.com-error_log&quot;</div><div class="line">    CustomLog &quot;/private/var/log/apache2/dummy-host.example.com-access_log&quot; common</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+<p><strong>ServerAdmin:</strong>网站管理者，一般填写邮件地址，个人开发无所谓。<br><strong>DocumentRoot:</strong>你设置的个人网站根目录，在设置这个目录的时候，很多时候都会受到权限的影响而报错而产生permission denied,请大家注意。<br><strong>ServerName:</strong>这就是你想要设置的访问名字了，由你自己定</p>
 <p>放一份我个人的配置</p>
-<pre><code>&lt;VirtualHost *:80&gt;
-    ServerAdmin sanchuan@linofu.dev
-    DocumentRoot &quot;/Users/sanchuan/Documents/workspace/html5&quot;
-    ServerName linofu.dev
-    #ServerAlias www.dummy-host.example.com
-    ErrorLog &quot;/private/var/log/apache2/linofu.dev-error_log&quot;
-    //另外对新手说一下，请最好记住你的错误日志，因为配置的时候，可以
-    //tail /private/var/log/apache2/linofu.dev-error_log就可以在控制台中找到问题，再去找别人的时候更好解决。
-    CustomLog &quot;/private/var/log/apache2/linofu.dev-access_log&quot; common
-    &lt;Directory &quot;/&quot;&gt;
-        Options Indexes  FollowSymLinks
-        //这句在这里将可以配置你的服务器在没有Index的时候，产生目录结构。见下图
-        #AllowOverride All
-        #Order deny,allow
-        #Allow from all
-        Require all granted
-    &lt;/Directory&gt;
-&lt;/VirtualHost&gt;
-</code></pre><p><img src="http://upload-images.jianshu.io/upload_images/2741993-c71e0e55bf47e64d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Index"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">    ServerAdmin sanchuan@linofu.dev</div><div class="line">    DocumentRoot &quot;/Users/sanchuan/Documents/workspace/html5&quot;</div><div class="line">    ServerName linofu.dev</div><div class="line">    #ServerAlias www.dummy-host.example.com</div><div class="line">    ErrorLog &quot;/private/var/log/apache2/linofu.dev-error_log&quot;</div><div class="line">    //另外对新手说一下，请最好记住你的错误日志，因为配置的时候，可以</div><div class="line">    //tail /private/var/log/apache2/linofu.dev-error_log就可以在控制台中找到问题，再去找别人的时候更好解决。</div><div class="line">    CustomLog &quot;/private/var/log/apache2/linofu.dev-access_log&quot; common</div><div class="line">    &lt;Directory &quot;/&quot;&gt;</div><div class="line">        Options Indexes  FollowSymLinks</div><div class="line">        //这句在这里将可以配置你的服务器在没有Index的时候，产生目录结构。见下图</div><div class="line">        #AllowOverride All</div><div class="line">        #Order deny,allow</div><div class="line">        #Allow from all</div><div class="line">        Require all granted</div><div class="line">    &lt;/Directory&gt;</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/2741993-c71e0e55bf47e64d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Index"></p>
 <ol>
 <li>保存配置退出，回到 <strong>/etc/</strong>下，编辑你的<strong>hosts</strong>文件；将你的<strong>ServerName</strong>绑定在127.0.0.1后。重启apache</li>
 </ol>
@@ -547,7 +517,7 @@ Apache2基本mac都会自带Apache、Php等，具体查看命令 apachectl -v
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

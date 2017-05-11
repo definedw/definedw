@@ -391,38 +391,22 @@
 <p>然后报错 530 incorrect login</p>
 <p>无论是在ftp里登录还是别的地方都报这个错误，没办好，只好先找度娘，最后不知道在哪位大哥的博客下找到了解决方案，只不过写的时候已经找不到那个链接了。报这个错误的主要原因是因为服务器端的vsftpd文件报错了：</p>
 <p><strong>解决方法</strong></p>
-<pre><code>$ sudo -s
-$ vi /etc/vsftpd.conf
-$ //找到 #write_enable=YES 将前面的#去掉
-</code></pre><h1 id="error2"><a href="#error2" class="headerlink" title="error2"></a>error2</h1><p>登录的问题解决了，其实心里还在打鼓，果不其然：</p>
-<pre><code>$ hexo clean
-$ hexo g -d
-</code></pre><p>还是报错，当时的错误代码没有截图，以致于现在不能给大家上原图了。但大致源码我还是可以写下来，大家自己对照吧。</p>
-<pre><code>Colletting:
-Errors events.js:160
-        throw: ***
-
-        TCP: ***
-        onread: ***
-</code></pre><p> 出现这个问题，建议大家还是找一下node的问题吧，我找了许久的答案最后也没能够说个所以然来,我当时的Node6.9.1。后来我是将自己的node重装了一遍，而且装的是Node4.7.0版本。这个问题就自动解决好了，如果有人知道，希望能不吝赐教。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ sudo -s</div><div class="line">$ vi /etc/vsftpd.conf</div><div class="line">$ //找到 #write_enable=YES 将前面的#去掉</div></pre></td></tr></table></figure>
+<h1 id="error2"><a href="#error2" class="headerlink" title="error2"></a>error2</h1><p>登录的问题解决了，其实心里还在打鼓，果不其然：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g -d</div></pre></td></tr></table></figure>
+<p>还是报错，当时的错误代码没有截图，以致于现在不能给大家上原图了。但大致源码我还是可以写下来，大家自己对照吧。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Colletting:</div><div class="line">Errors events.js:160</div><div class="line">        throw: ***</div><div class="line">        </div><div class="line">        TCP: ***</div><div class="line">        onread: ***</div></pre></td></tr></table></figure>
+<p> 出现这个问题，建议大家还是找一下node的问题吧，我找了许久的答案最后也没能够说个所以然来,我当时的Node6.9.1。后来我是将自己的node重装了一遍，而且装的是Node4.7.0版本。这个问题就自动解决好了，如果有人知道，希望能不吝赐教。</p>
 <h1 id="error3"><a href="#error3" class="headerlink" title="error3"></a>error3</h1><p>经历了前两个错误，我知道第三个错误也是避免不了的。再次部署<code>hexo g -d</code>遇到:<br><strong>premission denied 550</strong></p>
 <p>一般操作过Linux系统的人都会知道这是因为缺少了权限，所以我先将服务器上的接收目录的权限放到了最大<br><code>$ chmod -R 777 ***//目录名</code><br>可依然还是报错550 </p>
-<pre><code>MKDIR fail
-      ***
-550 : Cannot create a file when that file already exists
-</code></pre><p>找来找去最后找到了这个大哥的Blog下：从他的Git下拉了一个src/parse.js文件修复了这问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">MKDIR fail</div><div class="line">      ***</div><div class="line">550 : Cannot create a file when that file already exists</div></pre></td></tr></table></figure>
+<p>找来找去最后找到了这个大哥的Blog下：从他的Git下拉了一个src/parse.js文件修复了这问题。</p>
 <p><a href="http://k99k.com/2015/hexo-ftpsync-bug/" target="_blank" rel="external">踩坑道人Blog</a> </p>
 <p>然后一路开心的<code>hexo g -d</code><br>没报错，然后打开自己的的博客，哈哈显示正常，然后再点文章：</p>
 <p>然后</p>
 <h1 id="error4"><a href="#error4" class="headerlink" title="error4"></a>error4</h1><p>nginx 403 Forbidden<br>心里当真是问候了很多句苍天。没办法，继续折腾呗。我没有上面这位大哥厉害，console了三个小时，耐心地找了会百度就找到了一个解决方案：</p>
-<pre><code>$ vi /etc/nginx.conf
-//在第一行的位置有个user 将其修改为你的ftp账号如下：
-//修改 ftp账号
-$ user ftpuser
-$ worker_processes
-//重启Nginx:
-$ service nginx restart
-</code></pre><p>问题大概就这么多，欢迎交流指正。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ vi /etc/nginx.conf</div><div class="line">//在第一行的位置有个user 将其修改为你的ftp账号如下：</div><div class="line">//修改 ftp账号</div><div class="line">$ user ftpuser</div><div class="line">$ worker_processes</div><div class="line">//重启Nginx:</div><div class="line">$ service nginx restart</div></pre></td></tr></table></figure>
+<p>问题大概就这么多，欢迎交流指正。</p>
 <h4 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h4><p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">hexo文档</a></p>
 
       
@@ -537,7 +521,7 @@ $ service nginx restart
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

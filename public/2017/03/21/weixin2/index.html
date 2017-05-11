@@ -374,44 +374,8 @@ SSL说真的，HTTPS对我来说也是陌生的很，只知道这是一种更加
 <p>这两条命令是开始SSL模块，网上有些教程说要改动这两个配置文件，其实这和Apache的版本有关系。</p>
 <p>关联好模块之后，在你的sites-available下会出现一个default-ssl.conf文件，里面就是默认的SSL配置文件。回到你刚才的生成证书的目录下，将证书文件放到你喜欢的目录下，我放在/etc/apache2/ssl目录下，这样方便以后自己查找等，但请仁者见仁。</p>
 <p>编辑你的default-ssl.conf配置，为了方便我还是贴一份我的文件吧：</p>
-<pre><code>&lt;IfModule mod_ssl.c&gt;
-        &lt;VirtualHost _default_:443&gt;
-        ServerName www.test.com
-        //这里请填写你的证书中的CommonName
-        DocumentRoot &quot;/home/test/public/&quot;
-                &lt;Directory &quot;/&quot;&gt;
-                        Options Indexes FollowSymLinks
-                        AllowOverride All
-                        Require all granted
-                &lt;/Directory&gt;
-
-        ErrorLog &quot;/var/log/apache2/errorssl-test.log&quot;
-        CustomLog &quot;/var/log/apache2/accessssl-test.log&quot; combined
-                SSLEngine on
-                SSLCertificateFile     /etc/apache2/ssl/1_www.test.com.crt
-                //假设我们将生成的证书和Key文件放在/etc/apache2/ssl下，名字分别是
-                //1_www.test.com.crt以及2_www.test.com.key
-                #SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
-                SSLCertificateKeyFile /etc/apache2/ssl/2_www.test.com.key
-                #SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire
-                &lt;FilesMatch &quot;\.(cgi|shtml|phtml|php)$&quot;&gt;
-                                SSLOptions +StdEnvVars
-                &lt;/FilesMatch&gt;
-                &lt;Directory /usr/lib/cgi-bin&gt;
-                                SSLOptions +StdEnvVars
-                &lt;/Directory&gt;
-                #   &quot;force-response-1.0&quot; for this.
-                BrowserMatch &quot;MSIE [2-6]&quot; \
-                                nokeepalive ssl-unclean-shutdown \
-                                downgrade-1.0 force-response-1.0
-                # MSIE 7 and newer should be able to use keepalive
-                BrowserMatch &quot;MSIE [17-9]&quot; ssl-unclean-shutdown
-
-        &lt;/VirtualHost&gt;
-&lt;/IfModule&gt;
-
-# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
-</code></pre><p>配置多个虚拟主机和80端口是一样的，但注意80端口和443端口不能配置在同一个配置文件里。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">&lt;IfModule mod_ssl.c&gt;</div><div class="line">        &lt;VirtualHost _default_:443&gt;</div><div class="line">        ServerName www.test.com</div><div class="line">        //这里请填写你的证书中的CommonName</div><div class="line">        DocumentRoot &quot;/home/test/public/&quot;</div><div class="line">                &lt;Directory &quot;/&quot;&gt;</div><div class="line">                        Options Indexes FollowSymLinks</div><div class="line">                        AllowOverride All</div><div class="line">                        Require all granted</div><div class="line">                &lt;/Directory&gt;</div><div class="line"></div><div class="line">        ErrorLog &quot;/var/log/apache2/errorssl-test.log&quot;</div><div class="line">        CustomLog &quot;/var/log/apache2/accessssl-test.log&quot; combined</div><div class="line">                SSLEngine on</div><div class="line">                SSLCertificateFile     /etc/apache2/ssl/1_www.test.com.crt</div><div class="line">                //假设我们将生成的证书和Key文件放在/etc/apache2/ssl下，名字分别是</div><div class="line">                //1_www.test.com.crt以及2_www.test.com.key</div><div class="line">                #SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key</div><div class="line">                SSLCertificateKeyFile /etc/apache2/ssl/2_www.test.com.key</div><div class="line">                #SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire</div><div class="line">                &lt;FilesMatch &quot;\.(cgi|shtml|phtml|php)$&quot;&gt;</div><div class="line">                                SSLOptions +StdEnvVars</div><div class="line">                &lt;/FilesMatch&gt;</div><div class="line">                &lt;Directory /usr/lib/cgi-bin&gt;</div><div class="line">                                SSLOptions +StdEnvVars</div><div class="line">                &lt;/Directory&gt;</div><div class="line">                #   &quot;force-response-1.0&quot; for this.</div><div class="line">                BrowserMatch &quot;MSIE [2-6]&quot; \</div><div class="line">                                nokeepalive ssl-unclean-shutdown \</div><div class="line">                                downgrade-1.0 force-response-1.0</div><div class="line">                # MSIE 7 and newer should be able to use keepalive</div><div class="line">                BrowserMatch &quot;MSIE [17-9]&quot; ssl-unclean-shutdown</div><div class="line"></div><div class="line">        &lt;/VirtualHost&gt;</div><div class="line">&lt;/IfModule&gt;</div><div class="line"></div><div class="line"># vim: syntax=apache ts=4 sw=4 sts=4 sr noet</div></pre></td></tr></table></figure>
+<p>配置多个虚拟主机和80端口是一样的，但注意80端口和443端口不能配置在同一个配置文件里。</p>
 <p>配置完成后，由于Ubuntu下Apache的原因，记得关联文件：<br><code>ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf</code></p>
 <p>然后重启Apache:<code>apachectl restart</code>如遇失败，请检查日志。</p>
 <p><strong>注：</strong>如果在重启遇到需要解密私钥，请进入到私钥目录下，输入如下命令：</p>
@@ -532,7 +496,7 @@ SSL说真的，HTTPS对我来说也是陌生的很，只知道这是一种更加
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>

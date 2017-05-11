@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-10T05:39:31.000Z</updated>
+  <updated>2017-05-11T02:10:47.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,97 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开发者装逼手册</title>
+    <link href="http://yoursite.com/2017/05/10/update12/"/>
+    <id>http://yoursite.com/2017/05/10/update12/</id>
+    <published>2017-05-10T06:35:10.000Z</published>
+    <updated>2017-05-11T02:10:47.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>来源：GitHub<br>链接：<a href="https://github.com/kenberkeley/bigger-jser" target="_blank" rel="external">https://github.com/kenberkeley/bigger-jser</a><br>作者：天涯孤雁</p>
+</blockquote>
+<h3 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h3><p>Macbook Pro 是标配，美其名曰“提高开发体验”<br>什么？你还在用 Spotlight？赶紧给我换 Alfred！</p>
+<p>编辑器，Sublime / Atom / VS Code 三选一<br>虽然很想用IDE，但一定要忍住，并且与人解释道：<br>“启动速度慢，消耗资源多，不适合我这种完美主义者<br>如果不是为了美观，我宁愿使用 Vim / Emacs”</p>
+<p>命令行 iTerm2 + Oh-my-zsh<br>二逼青年用 bash，普通青年用 zsh<br>我们也只是想做一名普通人罢了</p>
+<p>查资料虽然都是百度<br>但一定要称都是用 Google<br>且要说英文而不是中文的“谷歌”<br>使用美式发音，当自己是湾区老司机</p>
+<p>尽管四级飘过，六级没过<br>在 Stack Overflow 上点数也低<br>但也要说每天都与各国程序员谈笑风生</p>
+<h3 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h3><p>这年头如果还不用 Babel + ES6<br>都不好意思说自己是 JSer<br>当然还有 TypeScript / CoffeeScript / Dart …<br>没学过没关系<br>对外人说自己“略懂”即可<br>反正最后都是编译为 ES5，你懂的</p>
+<p>为了避免对方深入问<br>此时你应该继续发表高见：<br>“JS 是基于原型的函数式弱类语言<br>引入类与强类真的是不伦不类”<br>说到此，顿一下，表现出百感交集<br>随后继续徐徐道：<br>“可大势所趋，吾等小辈惟随波逐流”<br>说罢，即可挥挥衣袖转身离去</p>
+<blockquote>
+<p>在这里不得不提一下，虽然使用 Babel 转码可以尽情装逼<br>但其对某些新特性的转换相当二逼(<a href="https://github.com/lcxfs1991/blog/issues/9" target="_blank" rel="external">详情请看这篇文章</a>)<br>一句话：Babel 虽好，但别贪杯哦（<a href="http://babeljs.io/repl" target="_blank" rel="external">Babel实时编译</a>）</p>
+</blockquote>
+<h3 id="代码风格"><a href="#代码风格" class="headerlink" title="代码风格"></a>代码风格</h3><p>摒弃JSLint/JSHint/JSCS拥抱ESLint<br>尽管平时只是个搬砖的<br>但时刻以世界顶级企业的规范约束自己<br>于是<code>eslint-config-airbnb</code>成了我们的标配</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* Low */</span></div><div class="line"><span class="keyword">if</span> (a) &#123;</div><div class="line">  <span class="keyword">return</span> b;</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">  <span class="keyword">return</span> c;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>逼格稍微高一点的这样写：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* Bigger */</span></div><div class="line"><span class="keyword">if</span> (a) <span class="keyword">return</span> b; <span class="comment">// 提前结束，免用大括号与else</span></div><div class="line"><span class="keyword">return</span> c;</div></pre></td></tr></table></figure>
+<p>实际上还能更进一步：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* Bigger than bigger */</span></div><div class="line">① <span class="keyword">return</span> a ? b : c <span class="comment">// 不要写分号，留白予人想象的空间</span></div><div class="line">② <span class="keyword">return</span> a &amp;&amp; b || c</div></pre></td></tr></table></figure>
+<p>总而言之，代码越短，可读性越差，逼格越高<br>不能让人随便看懂，就像人不能轻易让人看透</p>
+<h3 id="奇淫技巧"><a href="#奇淫技巧" class="headerlink" title="奇淫技巧"></a>奇淫技巧</h3><blockquote>
+<p>罄竹难书</p>
+</blockquote>
+<h3 id="常用库"><a href="#常用库" class="headerlink" title="常用库"></a>常用库</h3><h4 id="DOM库"><a href="#DOM库" class="headerlink" title="DOM库"></a>DOM库</h4><p>标配是 jQuery，手机端有 Zepto 作为替代品<br>想要装逼且不怕坑，那就上 Mootools<br>Prototype？嗯，复古的逼格都是很高的</p>
+<p>一定要说自己纯粹为了优雅简洁，不得不用 jQuery<br>（如何做到 jQuery-free，请看<a href="http://www.ruanyifeng.com/blog/2013/05/jquery-free.html" target="_blank" rel="external">请看这篇</a>）</p>
+<p>当然,就算是写jQuery<br>也能体现出逼格<br>我们来看看新手一般是怎么写的：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* Low */</span></div><div class="line"><span class="keyword">var</span> value = $(<span class="string">".container .myInput1"</span>).val();</div><div class="line">$(<span class="string">".container .myInput2"</span>).val(value);</div><div class="line">$(<span class="string">".container .myInput3"</span>).attr(<span class="string">"disabled"</span>, <span class="string">"disabled"</span>);</div></pre></td></tr></table></figure>
+<p>用双引号，以及对选择器性能认知不足，是新手的特征<br>一般直接使用类选择器的，都是对用户体验很有自信的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">* Bigger */</div><div class="line">// 把div.container命名为myDiv</div><div class="line">var $myDiv = $(&apos;#myDiv&apos;), // 缓存DOM</div><div class="line">  v = $myDiv.find(&apos;.myInput1&apos;).val();</div><div class="line"> </div><div class="line">$myDiv</div><div class="line">  .find(&apos;.myInput2&apos;).val(v)</div><div class="line">  .end() // 坚持链式调用</div><div class="line">  .find(&apos;.myInput3&apos;).attr(&apos;disabled&apos;, &apos;disabled&apos;);</div></pre></td></tr></table></figure>
+<p>（有关JQuery选择器的性能及最佳实践请看<a href="http://www.ruanyifeng.com/blog/2011/08/jquery_best_practices.html" target="_blank" rel="external">这篇</a>）</p>
+<h3 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h3><p>BootStrap烂大街<br>不是我们的菜<br>我们选择的标准是门槛要高<br>于是<br>Foundation6/Ant Design<br>映入眼帘</p>
+<p>请谨慎使用<br>Semantic UI/UIkit/AmazeUI…<br>避免不能自拔</p>
+<h3 id="工具库"><a href="#工具库" class="headerlink" title="工具库"></a>工具库</h3><p>后浪lodash把前浪underscore拍死在沙滩上<br>于是它成了唯一的选择<br>不过为了保持逼格<br>我们要尽量使用原汁原味的 ES6<br>就算要用也一定要注意素质：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* Low */</span></div><div class="line"><span class="keyword">import</span> _ <span class="keyword">from</span> <span class="string">'lodash'</span> <span class="comment">// 把整个lodash打包进去了</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* Bigger */</span></div><div class="line"><span class="keyword">import</span> isEmpty <span class="keyword">from</span> <span class="string">'lodash/isEmpty'</span> <span class="comment">// 仅把个别函数打包</span></div></pre></td></tr></table></figure>
+<h3 id="模板引擎"><a href="#模板引擎" class="headerlink" title="模板引擎"></a>模板引擎</h3><p>逼格最高显然是Jade<br>但改名为Pug哈巴狗后<br>就像是小龙女被尹志平不可描述后<br>再也无爱了<br>从此以后<br>留了胡子Mustache）<br>扶着把手(Handlebars）<br>默默耕耘</p>
+<h3 id="异步编程"><a href="#异步编程" class="headerlink" title="异步编程"></a>异步编程</h3><p>这里不谈Q/Bluebird/Async/co/then等库<br>皆因Babel已经支持所有的异步编程解决方案<br>当前最常用的还是Promise</p>
+<p>有些新手会写出这种代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">/* Low */</div><div class="line">// 找出与用户1同市的所有用户</div><div class="line">User.findById(1).then((user) =&gt; &#123;</div><div class="line">  User.find(&#123; city: user.city &#125;).then((users) =&gt; &#123;</div><div class="line">    res.json(users.toJSON())</div><div class="line">  &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>这属于 Promise<a href="http://bluebirdjs.com/docs/anti-patterns.html" target="_blank" rel="external">反模式</a>，与回调函数无异</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">/* Bigger */</div><div class="line">User.findById(1).then((user) =&gt; &#123;</div><div class="line">  return User.find(&#123; city: user.city &#125;) // 返回Promise</div><div class="line">&#125;).then((users) =&gt; &#123;</div><div class="line">  res.json(users.toJSON())</div><div class="line">&#125;).catch(next)</div></pre></td></tr></table></figure>
+<h3 id="包管理工具"><a href="#包管理工具" class="headerlink" title="包管理工具"></a>包管理工具</h3><p>如果你被<br>Bower/spm/Component/Duo…<br>坑过<br>请回到npm的怀抱<br>什么jspm有完没完…</p>
+<h3 id="构建工具"><a href="#构建工具" class="headerlink" title="构建工具"></a>构建工具</h3><p>想当年我不懂什么是自动构建工具<br>他们说：生命苦短,我们用Grunt</p>
+<p>好不容易用上Grunt的时候<br>他们又说：Gulp基于流,符合Unix哲学</p>
+<p>之后我虔诚地换上了Gulp<br>他们双说：Webpack最好用</p>
+<p>最后终于用上了Webpack<br>他们叒说：FIS3约不约？。。。</p>
+<h3 id="模块化方案"><a href="#模块化方案" class="headerlink" title="模块化方案"></a>模块化方案</h3><p>无论是</p>
+<ul>
+<li>RequireJS (AMD)</li>
+<li>SeaJS (CMD)</li>
+<li>KMD.js (KMD)</li>
+<li>Browserify (CommonJS)</li>
+<li>…<br>最后都庆幸回归到 npm + Webpack<br>什么？SystemJS？有完没完…</li>
+</ul>
+<h3 id="MV-框架-技术栈-大型框架"><a href="#MV-框架-技术栈-大型框架" class="headerlink" title="MV*框架 / 技术栈 / 大型框架"></a>MV*框架 / 技术栈 / 大型框架</h3><h4 id="Backbone"><a href="#Backbone" class="headerlink" title="Backbone"></a>Backbone</h4><p>每个人都有一段不堪回首的经历<br>就像当年在QQ空间发“你若安好便是晴天”的说说<br>Backbone就是这样子的存在</p>
+<h4 id="Angular"><a href="#Angular" class="headerlink" title="Angular"></a>Angular</h4><p>一定要边吐槽边用，不然就一点都不ng 了<br>“学习曲线陡峭”不应从你口中说出<br>“学习过程趣味盎然”才是你的菜</p>
+<h4 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h4><p>一定要用“优雅”来形容<br>就像用ES6一定要“大胆”</p>
+<h4 id="React技术栈"><a href="#React技术栈" class="headerlink" title="React技术栈"></a>React技术栈</h4><p>React已经是前端高逼格的代名词<br>所以无论懂不懂都要喊：<br>“React大法好”<br>因为这是一种信仰<br>称赞JSX的标新立异<br>谈谈Flux/Redux<br>扯扯Elm/RxJS<br>每到深入则戛然而止：<br>“太深入的太抽象，你们未必能理解”<br>由此，听者只会更加崇拜你</p>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><p>还有国内相对小众的Ember/Knockout/Avalon<br>（请别再把YUI/Dojo/Ext/KISSY扯进来了好伐）</p>
+<h3 id="混合-原生开发"><a href="#混合-原生开发" class="headerlink" title="混合/原生开发"></a>混合/原生开发</h3><p>自从PhoneGap出来后<br>貌似我们也能抢安卓/iOS的饭碗了<br>Ionic更是将Hybrid APP推向高潮</p>
+<p>不过混合始终比不上原生<br>于是React Native应运而生<br>最近多了一个新的选择：Weex</p>
+<p>别忘了还有桌面的nw.js以及Electron</p>
+<blockquote>
+<p>JSer从一入门开始，就掌握了改变世界的能力<br>也比其他程序员更容易走向人生的巅峰</p>
+</blockquote>
+<h3 id="后端框架"><a href="#后端框架" class="headerlink" title="后端框架"></a>后端框架</h3><p>我们一直标榜自己是全栈<br>不玩几下后端框架怎么行</p>
+<p>快递员用Express<br>风湿患者用Koa<br>哲学家用ThinkJS<br>水手用Sails</p>
+<p>还有全栈的Meteor<br>上述都用一遍<br>相信也快转行了</p>
+<h3 id="服务器进程管理"><a href="#服务器进程管理" class="headerlink" title="服务器进程管理"></a>服务器进程管理</h3><p>既然都玩上了后端框架<br>不懂部署服务器怎么行</p>
+<p>二逼青年用 supervisor/nodemon<br>文艺青年用 forever<br>普通青年用 pm2<br>装逼青年用 Tmux+node</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;来源：GitHub&lt;br&gt;链接：&lt;a href=&quot;https://github.com/kenberkeley/bigger-jser&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/kenbe
+    
+    </summary>
+    
+      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>ubuntu服务器搭建SVN记录</title>
@@ -46,53 +137,22 @@
 <li><code>sudo a2enmod dav_svn</code></li>
 </ul>
 <p>开启模块之后，则对以下文件做修改。贴一份配置：</p>
-<pre><code>&lt;Location /svn&gt;  #/svn表示http://hostname/svn/myproject
-  DAV svn
-  SVNParentPath /home/svn #配置仓库父目录
-  AuthType Basic
-  AuthName &quot;SC Project Svn&quot;
-  AuthUserFile &quot;/etc/subversion/passwd&quot;  #svn用户文件
-  AuthzSVNAccessFile &quot;/etc/subversion/authz&quot; #授权访问文件
-  Require valid-user
-&lt;/Location&gt;
-</code></pre><p>如需要配置虚拟主机：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;Location /svn&gt;  #/svn表示http://hostname/svn/myproject</div><div class="line">  DAV svn</div><div class="line">  SVNParentPath /home/svn #配置仓库父目录</div><div class="line">  AuthType Basic</div><div class="line">  AuthName &quot;SC Project Svn&quot;</div><div class="line">  AuthUserFile &quot;/etc/subversion/passwd&quot;  #svn用户文件</div><div class="line">  AuthzSVNAccessFile &quot;/etc/subversion/authz&quot; #授权访问文件</div><div class="line">  Require valid-user</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+<p>如需要配置虚拟主机：</p>
 <ul>
 <li><code>cp 000-default.conf svn.test.com.conf</code></li>
 <li><code>vi svn.test.com.conf</code></li>
 </ul>
-<pre><code>&lt;VirtualHost *:80&gt;
-        ServerName svn.test.com
-        &lt;Location /svn&gt;  
-            DAV svn
-            SVNParentPath /home/svn 
-            AuthType Basic
-            AuthName &quot;SC Project Svn&quot;
-            AuthUserFile &quot;/etc/subversion/passwd&quot;  
-            AuthzSVNAccessFile &quot;/etc/subversion/authz&quot; 
-            Require valid-user
-        &lt;/Location&gt;
-
-ErrorLog &quot;/var/log/apache2/error-svntest.log&quot;
-CustomLog &quot;/var/log/apache2/access-svntest.log&quot; combined
-&lt;/VirtualHost&gt;
-</code></pre><ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">        ServerName svn.test.com</div><div class="line">        &lt;Location /svn&gt;  </div><div class="line">            DAV svn</div><div class="line">            SVNParentPath /home/svn </div><div class="line">            AuthType Basic</div><div class="line">            AuthName &quot;SC Project Svn&quot;</div><div class="line">            AuthUserFile &quot;/etc/subversion/passwd&quot;  </div><div class="line">            AuthzSVNAccessFile &quot;/etc/subversion/authz&quot; </div><div class="line">            Require valid-user</div><div class="line">        &lt;/Location&gt;</div><div class="line"></div><div class="line">ErrorLog &quot;/var/log/apache2/error-svntest.log&quot;</div><div class="line">CustomLog &quot;/var/log/apache2/access-svntest.log&quot; combined</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+<ul>
 <li><code>a2ensite svn.test.com.conf</code></li>
 <li><code>apachectl restart</code></li>
 </ul>
 <h3 id="添加用户和权限"><a href="#添加用户和权限" class="headerlink" title="添加用户和权限"></a>添加用户和权限</h3><p>用http访问方式请注意用命令行生成：</p>
 <p><code>htpasswd -cm /etc/subversion/passwd  adduser</code>然后跟密码。<br><strong>注意：</strong>以上命令第一次时带-cm参数，第二个生成时不用带-c，否则会覆盖。<br><code>htpasswd -m /etc/subversion/passwd test</code></p>
 <p>创建完后<code>vi /etc/subversion/authz</code>权限文件</p>
-<pre><code>[groups]
-admin = test /*自己创建*/
-
-[/]
-* = r
-
-[repos:/]
-@admin = rw
-
-* = r
-</code></pre>]]></content>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">[groups]</div><div class="line">admin = test /*自己创建*/</div><div class="line"></div><div class="line">[/]</div><div class="line">* = r</div><div class="line"></div><div class="line">[repos:/]</div><div class="line">@admin = rw</div><div class="line"></div><div class="line">* = r</div></pre></td></tr></table></figure>
+]]></content>
     
     <summary type="html">
     
@@ -120,147 +180,26 @@ admin = test /*自己创建*/
 <p>来源：大牛笔记<br>链接：<a href="http://www.daniubiji.cn/archives/25" target="_blank" rel="external">http://www.daniubiji.cn/archives/25</a></p>
 </blockquote>
 <h3 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h3><hr>
-<pre><code>ls     显示文件或目录
-   -l  列出文件详细信息l(list)
-   -a  列出当前目录下所有文件及目录，包括隐藏的a(all)
-mkdir  创建目录
-   -p  创建目录，若无父目录，则创建p(parent)   
-cd     切换目录
-touch  创建空文件
-echo   创建带有内容的文件。
-cat    查看文件内容
-cp     拷贝
-mv     移动或重命名
-rm     删除文件
-   -r  递归删除，可删除子目录及文件
-   -f  强制删除
-find   在文件系统中搜索某文件
-wc     统计文本中行数、字数、字符数
-grep   在文本文件中查找某个字符串
-rmdir  删除空目录
-tree   树形结构显示目录，需要安装tree包
-pwd    显示当前目录
-ln     创建链接文件
-more、less   分页显示文本文件内容
-head、tail   显示文件头、尾内容
-ctrl+alt+F1  命令行全屏模式
-</code></pre><h3 id="系统管理命令"><a href="#系统管理命令" class="headerlink" title="系统管理命令"></a>系统管理命令</h3><hr>
-<pre><code>stat     显示指定文件的详细信息，比ls更详细
-who      显示在线登陆用户
-whoami   显示当前操作用户
-hostname 显示主机名
-uname    显示系统信息
-top      动态显示当前耗费资源最多进程信息
-ps       显示瞬间进程状态 ps -aux
-du       查看目录大小 du -h /home带有单位显示目录信息
-df       查看磁盘大小 df -h 带有单位显示磁盘信息
-ifconfig 查看网络情况
-ping     测试网络连通
-netstat  显示网络状态信息
-man      命令不会用了，找男人? 如：man ls
-clear    清屏
-alias    对命令重命名 如：alias showmeit=”ps -aux” ，另外解除使用unaliax showmeit
-kill     杀死进程，可以先用ps 或 top命令查看进程的id，然后再用kill命令杀死进程。
-</code></pre><h3 id="打包压缩相关命令"><a href="#打包压缩相关命令" class="headerlink" title="打包压缩相关命令"></a>打包压缩相关命令</h3><hr>
-<pre><code>gzip：
-bzip2：
-tar:     打包压缩
-   -c    归档文件
-   -x    压缩文件
-   -z    gzip压缩文件
-   -j    bzip2压缩文件
-   -v    显示压缩或解压缩过程 v(view)
-   -f    使用档名
-例：
-tar -cvf /home/abc.tar /home/abc        只打包，不压缩
-tar -zcvf /home/abc.tar.gz /home/abc    打包，并用gzip压缩
-tar -jcvf /home/abc.tar.bz2 /home/abc   打包，并用bzip2压缩
-当然，如果想解压缩，就直接替换上面的命令tar  -cvf  /   tar  -zcvf  /  tar  -jcvf 中的“c” 换成“x” 就可以了。
-</code></pre><h3 id="关机-重启机器"><a href="#关机-重启机器" class="headerlink" title="关机/重启机器"></a>关机/重启机器</h3><hr>
-<pre><code>shutdown
-    -r      关机重启
-    -h      关机不重启
-    now     立刻关机
-halt        关机
-reboot      重启
-</code></pre><h3 id="Linux管道"><a href="#Linux管道" class="headerlink" title="Linux管道"></a>Linux管道</h3><hr>
-<pre><code>将一个命令的标准输出作为另一个命令的标准输入。也就是把几个命令组合起来使用，后一个命令除以前一个命令的结果。
-例：grep -r “close” /home/* | more 在home目录下所有文件中查找，包括close的文件，并分页输出。
-</code></pre><h3 id="Linux软件包管理"><a href="#Linux软件包管理" class="headerlink" title="Linux软件包管理"></a>Linux软件包管理</h3><hr>
-<pre><code>dpkg (Debian Package)管理工具，软件包名以.deb后缀。这种方法适合系统不能联网的情况下。
-比如安装tree命令的安装包，先将tree.deb传到Linux系统中。再使用如下命令安装。
-sudo dpkg -i tree_1.5.3-1_i386.deb  安装软件
-sudo dpkg -r tree             卸载软件
-注：将tree.deb传到Linux系统中，有多种方式。VMwareTool，使用挂载方式；使用winSCP工具等；
-APT（Advanced Packaging Tool）高级软件工具。这种方法适合系统能够连接互联网的情况。
-依然以tree为例
-sudo apt-get install tree     安装tree
-sudo apt-get remove tree      卸载tree
-sudo apt-get update           更新软件
-sudo apt-get upgrade 
-
-将.rpm文件转为.deb文件
-.rpm为RedHat使用的软件格式。在Ubuntu下不能直接使用，所以需要转换一下。
-sudo alien abc.rpm
-</code></pre><h3 id="vim使用"><a href="#vim使用" class="headerlink" title="vim使用"></a>vim使用</h3><hr>
-<pre><code>vim三种模式：命令模式、插入模式、编辑模式。使用ESC或i或：来切换模式。
-命令模式下：
-:q            退出
-:q!           强制退出
-:wq           保存并退出
-:set number   显示行号
-:set nonumber 隐藏行号
-/apache       在文档中查找apache 按n跳到下一个，shift+n上一个
-yyp           复制光标所在行，并粘贴
-h(左移一个字符←)、j(下一行↓)、k(上一行↑)、l(右移一个字符→)
-</code></pre><h3 id="用户及用户组管理"><a href="#用户及用户组管理" class="headerlink" title="用户及用户组管理"></a>用户及用户组管理</h3><hr>
-<pre><code>/etc/passwd    存储用户账号
-/etc/group     存储组账号
-/etc/shadow    存储用户账号的密码
-/etc/gshadow   存储用户组账号的密码
-useradd        添加用户名
-userdel        删除用户名
-adduser        添加用户名
-groupadd       添加组名
-groupdel       删除组名
-passwd root    给root设置密码
-su root
-su – root
-/etc/profile   系统环境变量
-bash_profile   用户环境变量
-.bashrc        用户环境变量
-su user        切换用户，加载配置文件.bashrc
-su – user      切换用户，加载配置文件/etc/profile ，加载bash_profile
-</code></pre><h3 id="更改文件的用户及用户组"><a href="#更改文件的用户及用户组" class="headerlink" title="更改文件的用户及用户组"></a>更改文件的用户及用户组</h3><hr>
-<pre><code>sudo chown [-R] owner[:group] {File|Directory}
-例如：还以jdk-7u21-linux-i586.tar.gz为例。属于用户hadoop，组hadoop
-要想切换此文件所属的用户及组。可以使用命令。
-sudo chown root:root jdk-7u21-linux-i586.tar.gz
-</code></pre><h3 id="文件权限管理"><a href="#文件权限管理" class="headerlink" title="文件权限管理"></a>文件权限管理</h3><hr>
-<pre><code>三种基本权限
-R   读  数值表示为4
-W   写  数值表示为2
-X   可执行 数值表示为1
-
-
--rw-rw-r–一共十个字符，分成四段。
-第一个字符“-”表示普通文件；这个位置还可能会出现“l”链接；“d”表示目录
-第二三四个字符“rw-”表示当前所属用户的权限。     所以用数值表示为4+2=6
-第五六七个字符“rw-”表示当前所属组的权限。        所以用数值表示为4+2=6
-第八九十个字符“r–”表示其他用户权限。                 所以用数值表示为2
-所以操作此文件的权限用数值表示为662?
-
-更改权限
-sudo chmod [u所属用户  g所属组  o其他用户   a所有用户]    [+增加权限   -减少权限]   [r   w   x]   目录名 
-例如：有一个文件filename，权限为“-rw-r—-x” ,将权限值改为”-rwxrw-r-x”，用数值表示为765
-sudo chmod u+x g+w o+r filename
-
-sudo chmod 765 filename
-
-工作中用到的一些有意思的命令：
-linux nc
-tree
-</code></pre>]]></content>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">ls     显示文件或目录</div><div class="line">   -l  列出文件详细信息l(list)</div><div class="line">   -a  列出当前目录下所有文件及目录，包括隐藏的a(all)</div><div class="line">mkdir  创建目录</div><div class="line">   -p  创建目录，若无父目录，则创建p(parent)   </div><div class="line">cd     切换目录</div><div class="line">touch  创建空文件</div><div class="line">echo   创建带有内容的文件。</div><div class="line">cat    查看文件内容</div><div class="line">cp     拷贝</div><div class="line">mv     移动或重命名</div><div class="line">rm     删除文件</div><div class="line">   -r  递归删除，可删除子目录及文件</div><div class="line">   -f  强制删除</div><div class="line">find   在文件系统中搜索某文件</div><div class="line">wc     统计文本中行数、字数、字符数</div><div class="line">grep   在文本文件中查找某个字符串</div><div class="line">rmdir  删除空目录</div><div class="line">tree   树形结构显示目录，需要安装tree包</div><div class="line">pwd    显示当前目录</div><div class="line">ln     创建链接文件</div><div class="line">more、less   分页显示文本文件内容</div><div class="line">head、tail   显示文件头、尾内容</div><div class="line">ctrl+alt+F1  命令行全屏模式</div></pre></td></tr></table></figure>
+<h3 id="系统管理命令"><a href="#系统管理命令" class="headerlink" title="系统管理命令"></a>系统管理命令</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">stat     显示指定文件的详细信息，比ls更详细</div><div class="line">who      显示在线登陆用户</div><div class="line">whoami   显示当前操作用户</div><div class="line">hostname 显示主机名</div><div class="line">uname    显示系统信息</div><div class="line">top      动态显示当前耗费资源最多进程信息</div><div class="line">ps       显示瞬间进程状态 ps -aux</div><div class="line">du       查看目录大小 du -h /home带有单位显示目录信息</div><div class="line">df       查看磁盘大小 df -h 带有单位显示磁盘信息</div><div class="line">ifconfig 查看网络情况</div><div class="line">ping     测试网络连通</div><div class="line">netstat  显示网络状态信息</div><div class="line">man      命令不会用了，找男人? 如：man ls</div><div class="line">clear    清屏</div><div class="line">alias    对命令重命名 如：alias showmeit=”ps -aux” ，另外解除使用unaliax showmeit</div><div class="line">kill     杀死进程，可以先用ps 或 top命令查看进程的id，然后再用kill命令杀死进程。</div></pre></td></tr></table></figure>
+<h3 id="打包压缩相关命令"><a href="#打包压缩相关命令" class="headerlink" title="打包压缩相关命令"></a>打包压缩相关命令</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">gzip：</div><div class="line">bzip2：</div><div class="line">tar:     打包压缩</div><div class="line">   -c    归档文件</div><div class="line">   -x    压缩文件</div><div class="line">   -z    gzip压缩文件</div><div class="line">   -j    bzip2压缩文件</div><div class="line">   -v    显示压缩或解压缩过程 v(view)</div><div class="line">   -f    使用档名</div><div class="line">例：</div><div class="line">tar -cvf /home/abc.tar /home/abc        只打包，不压缩</div><div class="line">tar -zcvf /home/abc.tar.gz /home/abc    打包，并用gzip压缩</div><div class="line">tar -jcvf /home/abc.tar.bz2 /home/abc   打包，并用bzip2压缩</div><div class="line">当然，如果想解压缩，就直接替换上面的命令tar  -cvf  /   tar  -zcvf  /  tar  -jcvf 中的“c” 换成“x” 就可以了。</div></pre></td></tr></table></figure>
+<h3 id="关机-重启机器"><a href="#关机-重启机器" class="headerlink" title="关机/重启机器"></a>关机/重启机器</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">shutdown</div><div class="line">    -r      关机重启</div><div class="line">    -h      关机不重启</div><div class="line">    now     立刻关机</div><div class="line">halt        关机</div><div class="line">reboot      重启</div></pre></td></tr></table></figure>
+<h3 id="Linux管道"><a href="#Linux管道" class="headerlink" title="Linux管道"></a>Linux管道</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">将一个命令的标准输出作为另一个命令的标准输入。也就是把几个命令组合起来使用，后一个命令除以前一个命令的结果。</div><div class="line">例：grep -r “close” /home/* | more 在home目录下所有文件中查找，包括close的文件，并分页输出。</div></pre></td></tr></table></figure>
+<h3 id="Linux软件包管理"><a href="#Linux软件包管理" class="headerlink" title="Linux软件包管理"></a>Linux软件包管理</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">dpkg (Debian Package)管理工具，软件包名以.deb后缀。这种方法适合系统不能联网的情况下。</div><div class="line">比如安装tree命令的安装包，先将tree.deb传到Linux系统中。再使用如下命令安装。</div><div class="line">sudo dpkg -i tree_1.5.3-1_i386.deb  安装软件</div><div class="line">sudo dpkg -r tree             卸载软件</div><div class="line">注：将tree.deb传到Linux系统中，有多种方式。VMwareTool，使用挂载方式；使用winSCP工具等；</div><div class="line">APT（Advanced Packaging Tool）高级软件工具。这种方法适合系统能够连接互联网的情况。</div><div class="line">依然以tree为例</div><div class="line">sudo apt-get install tree     安装tree</div><div class="line">sudo apt-get remove tree      卸载tree</div><div class="line">sudo apt-get update           更新软件</div><div class="line">sudo apt-get upgrade </div><div class="line"></div><div class="line">将.rpm文件转为.deb文件</div><div class="line">.rpm为RedHat使用的软件格式。在Ubuntu下不能直接使用，所以需要转换一下。</div><div class="line">sudo alien abc.rpm</div></pre></td></tr></table></figure>
+<h3 id="vim使用"><a href="#vim使用" class="headerlink" title="vim使用"></a>vim使用</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">vim三种模式：命令模式、插入模式、编辑模式。使用ESC或i或：来切换模式。</div><div class="line">命令模式下：</div><div class="line">:q            退出</div><div class="line">:q!           强制退出</div><div class="line">:wq           保存并退出</div><div class="line">:set number   显示行号</div><div class="line">:set nonumber 隐藏行号</div><div class="line">/apache       在文档中查找apache 按n跳到下一个，shift+n上一个</div><div class="line">yyp           复制光标所在行，并粘贴</div><div class="line">h(左移一个字符←)、j(下一行↓)、k(上一行↑)、l(右移一个字符→)</div></pre></td></tr></table></figure>
+<h3 id="用户及用户组管理"><a href="#用户及用户组管理" class="headerlink" title="用户及用户组管理"></a>用户及用户组管理</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">/etc/passwd    存储用户账号</div><div class="line">/etc/group     存储组账号</div><div class="line">/etc/shadow    存储用户账号的密码</div><div class="line">/etc/gshadow   存储用户组账号的密码</div><div class="line">useradd        添加用户名</div><div class="line">userdel        删除用户名</div><div class="line">adduser        添加用户名</div><div class="line">groupadd       添加组名</div><div class="line">groupdel       删除组名</div><div class="line">passwd root    给root设置密码</div><div class="line">su root</div><div class="line">su – root</div><div class="line">/etc/profile   系统环境变量</div><div class="line">bash_profile   用户环境变量</div><div class="line">.bashrc        用户环境变量</div><div class="line">su user        切换用户，加载配置文件.bashrc</div><div class="line">su – user      切换用户，加载配置文件/etc/profile ，加载bash_profile</div></pre></td></tr></table></figure>
+<h3 id="更改文件的用户及用户组"><a href="#更改文件的用户及用户组" class="headerlink" title="更改文件的用户及用户组"></a>更改文件的用户及用户组</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo chown [-R] owner[:group] &#123;File|Directory&#125;</div><div class="line">例如：还以jdk-7u21-linux-i586.tar.gz为例。属于用户hadoop，组hadoop</div><div class="line">要想切换此文件所属的用户及组。可以使用命令。</div><div class="line">sudo chown root:root jdk-7u21-linux-i586.tar.gz</div></pre></td></tr></table></figure>
+<h3 id="文件权限管理"><a href="#文件权限管理" class="headerlink" title="文件权限管理"></a>文件权限管理</h3><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">三种基本权限</div><div class="line">R   读  数值表示为4</div><div class="line">W   写  数值表示为2</div><div class="line">X   可执行 数值表示为1</div><div class="line"></div><div class="line"></div><div class="line">-rw-rw-r–一共十个字符，分成四段。</div><div class="line">第一个字符“-”表示普通文件；这个位置还可能会出现“l”链接；“d”表示目录</div><div class="line">第二三四个字符“rw-”表示当前所属用户的权限。     所以用数值表示为4+2=6</div><div class="line">第五六七个字符“rw-”表示当前所属组的权限。        所以用数值表示为4+2=6</div><div class="line">第八九十个字符“r–”表示其他用户权限。                 所以用数值表示为2</div><div class="line">所以操作此文件的权限用数值表示为662?</div><div class="line"></div><div class="line">更改权限</div><div class="line">sudo chmod [u所属用户  g所属组  o其他用户   a所有用户]    [+增加权限   -减少权限]   [r   w   x]   目录名 </div><div class="line">例如：有一个文件filename，权限为“-rw-r—-x” ,将权限值改为”-rwxrw-r-x”，用数值表示为765</div><div class="line">sudo chmod u+x g+w o+r filename</div><div class="line"></div><div class="line">sudo chmod 765 filename</div><div class="line"></div><div class="line">工作中用到的一些有意思的命令：</div><div class="line">linux nc</div><div class="line">tree</div></pre></td></tr></table></figure>
+]]></content>
     
     <summary type="html">
     
@@ -285,76 +224,18 @@ tree
 <p>作者：熊汉彪<br>链接：<a href="https://zhuanlan.zhihu.com/p/26141351" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/26141351</a><br>来源：知乎</p>
 </blockquote>
 <h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>众所周知的移动端，一般来说可以分为上中下三个部分，分别为 header、main、footer，其中header、footer 是固定高度，分别固定在页面顶部和页面底部，而 main 是占据页面其余位置，并且可以滚动。基本是以下形式：<br><img src="http://upload-images.jianshu.io/upload_images/2741993-6761d169556abcc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/360" alt="layout"></p>
-<pre><code>&lt;body&gt;
-
-  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;main&quot;&gt;&lt;/div&gt;
-
-  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
-
-&lt;/body&gt;
-</code></pre><p>根据页面滚动的位置分为两种布局，一种是滚动 body，另一种是固定 body 的高度为100%，在 main 中滚动。第一种布局有个优点，就是页面的地址栏会随着 body 的滚动隐藏起来，并且 Android 设备中，滚动 body 会更加的流畅，如果项目中有类似需求可以考虑。实现布局的方式如下:</p>
-<pre><code>body {
-  overflow: auto;
-}
-
-.header,
-.footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 44px;
-}
-
-.header {
-  top: 0;
-}
-
-.footer {
-  bottom: 0;
-}
-
-.main {
-  height: 100%;
-  padding: 44px 0;
-}
-</code></pre><p>第一种情况比较适合长列表页面，整个页面除了 header 和 footer 之外都需要滚动，但很多时候，我们只希望页面的某个元素滚动，这个时候，就采取第二种布局方式。<br>这种页面布局有三种相对简单的实现方式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">  &lt;div class=&quot;main&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<p>根据页面滚动的位置分为两种布局，一种是滚动 body，另一种是固定 body 的高度为100%，在 main 中滚动。第一种布局有个优点，就是页面的地址栏会随着 body 的滚动隐藏起来，并且 Android 设备中，滚动 body 会更加的流畅，如果项目中有类似需求可以考虑。实现布局的方式如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  overflow: auto;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.header,</div><div class="line">.footer &#123;</div><div class="line">  position: fixed;</div><div class="line">  left: 0;</div><div class="line">  right: 0;</div><div class="line">  height: 44px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.header &#123;</div><div class="line">  top: 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.footer &#123;</div><div class="line">  bottom: 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.main &#123;</div><div class="line">  height: 100%;</div><div class="line">  padding: 44px 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>第一种情况比较适合长列表页面，整个页面除了 header 和 footer 之外都需要滚动，但很多时候，我们只希望页面的某个元素滚动，这个时候，就采取第二种布局方式。<br>这种页面布局有三种相对简单的实现方式：</p>
 <ol>
 <li>fixed 定位</li>
 <li>absolute 定位</li>
 <li>flex 定位</li>
 </ol>
 <p>最容易想到的实现方式是 fixed 定位，实现方式如下：</p>
-<pre><code>html, body {
-  height: 100%;
-  overflow: hidden;
-}
-.header,
-.footer {
-  position: fixed;
-  left: 0;
-  right: 0;
-  height: 44px;
-}
-
-
-.header {
-  top: 0;
-}
-
-
-.footer {
-  bottom: 0;
-}
-
-
-.main {
-  height: 100%;
-  padding: 44px 0;
-  box-sizing: border-box;
-}
-</code></pre><p>fixed 定位实现起来简单，在大多数浏览器中也能正常显示，但是 fixed 定位在移动端会有兼容性问题，后面会提到，所以不建议这种实现方式。absolute 定位和 fixed 定位类似，只要把 header 的 footer 的 position 改为 absolute 就可以了。细心的小伙伴可能发现了，这里的 main 没有设置 overflow ，因为这里有一个坑，不管是absolute 定位还是 fixed 定位都一样，为了方便描述，以下只说 fixed 定位(在 absolute 定位也一样成立)。在PC端没有问题，但是在移动端，如果 main 设置了 overflow 为 true，header 会被 main 遮住，对，没有错，虽然是 fixed 定位，但是在移动端，如果 fixed 定位节点后面紧接跟着的兄弟节点是可滚动的(也就是设置了 overflow 为 true )，那么 fixed 节点会被其后的兄弟节点遮住。这个问题解决方式有很多，既然是 fixed 定位后面紧接着可滚动的兄弟节点才会有这个坑，只要让他的条件有一个不成立就好了，有以下解决方案：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">html, body &#123;</div><div class="line">  height: 100%;</div><div class="line">  overflow: hidden;</div><div class="line">&#125;</div><div class="line">.header,</div><div class="line">.footer &#123;</div><div class="line">  position: fixed;</div><div class="line">  left: 0;</div><div class="line">  right: 0;</div><div class="line">  height: 44px;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">.header &#123;</div><div class="line">  top: 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">.footer &#123;</div><div class="line">  bottom: 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">.main &#123;</div><div class="line">  height: 100%;</div><div class="line">  padding: 44px 0;</div><div class="line">  box-sizing: border-box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>fixed 定位实现起来简单，在大多数浏览器中也能正常显示，但是 fixed 定位在移动端会有兼容性问题，后面会提到，所以不建议这种实现方式。absolute 定位和 fixed 定位类似，只要把 header 的 footer 的 position 改为 absolute 就可以了。细心的小伙伴可能发现了，这里的 main 没有设置 overflow ，因为这里有一个坑，不管是absolute 定位还是 fixed 定位都一样，为了方便描述，以下只说 fixed 定位(在 absolute 定位也一样成立)。在PC端没有问题，但是在移动端，如果 main 设置了 overflow 为 true，header 会被 main 遮住，对，没有错，虽然是 fixed 定位，但是在移动端，如果 fixed 定位节点后面紧接跟着的兄弟节点是可滚动的(也就是设置了 overflow 为 true )，那么 fixed 节点会被其后的兄弟节点遮住。这个问题解决方式有很多，既然是 fixed 定位后面紧接着可滚动的兄弟节点才会有这个坑，只要让他的条件有一个不成立就好了，有以下解决方案：</p>
 <ol>
 <li>让 fixed 定位节点后面不紧接着可滚动的节点</li>
 <li>不让 scroll 节点遮住 fixed 节点</li>
@@ -363,164 +244,38 @@ tree
 <ol>
 <li>把所有 fixed 节点放在 scroll 元素后面，即把 header 节点放在 main 节点后面</li>
 </ol>
-<pre><code>&lt;body&gt;
-  &lt;div class=&quot;main&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-</code></pre><p>但这样显然不太符合一般人的思维习惯，代码可读性降低。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">  &lt;div class=&quot;main&quot;&gt;&lt;/div&gt;</div><div class="line">  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;</div><div class="line">  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<p>但这样显然不太符合一般人的思维习惯，代码可读性降低。</p>
 <ol>
 <li>使 main 不可滚动，给 main 嵌套一层可滚动的子节点</li>
 </ol>
-<pre><code>&lt;body&gt;
-  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;main&quot;&gt;
-    &lt;div class=&quot;scroll-container&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;
-&lt;/body&gt;
-
-
-&lt;style&gt;
-  .main {
-    overflow: hidden;
-  }
-  .scroll-container {
-    height: 100%;
-    overflow: auto;
-  }
-&lt;/style&gt;
-</code></pre><p><strong>第二种方案有以下可选方法:</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;</div><div class="line">  &lt;div class=&quot;main&quot;&gt;</div><div class="line">    &lt;div class=&quot;scroll-container&quot;&gt;&lt;/div&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line">  .main &#123;</div><div class="line">    overflow: hidden;</div><div class="line">  &#125;</div><div class="line">  .scroll-container &#123;</div><div class="line">    height: 100%;</div><div class="line">    overflow: auto;</div><div class="line">  &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<p><strong>第二种方案有以下可选方法:</strong></p>
 <ol>
 <li>让 scroll 节点不与 fixed 节点有重合</li>
 </ol>
-<pre><code>body {
-  padding: 44px 0;
-}
-
-
-.main {
-  padding: 0;
-}
-</code></pre><ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  padding: 44px 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">.main &#123;</div><div class="line">  padding: 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
 <li>给 fixed 节点设置 z-index</li>
 </ol>
-<pre><code>.header,
-.footer {
-    z-index: 8888;
-}
-</code></pre><p>看到这里可能会有小伙伴觉得，一个简单的布局，还要绕过这么多坑，难道没有简单的方式吗，答案当然是肯定的，那就是第三种实现方式，flex 布局。flex 定位在移动端兼容到了 iOS 7.1+，Android 4.4+,如果使用 autoprefixer 等工具还可以降级为旧版本的 flexbox ，可以兼容到 iOS 3.2 和 Android 2.1。而且用 flex 实现起来相对简单，在各个浏览器里表现也相对一致。实现如下:</p>
-<pre><code>body {
-  display: flex;
-  flex-direction: column;
-}
-.main {
-  flex: 1;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.header {
-  height: 44px;
-}
-.footer {
-  height: 44px;
-}
-</code></pre><h3 id="fixed-与-input"><a href="#fixed-与-input" class="headerlink" title="fixed 与 input"></a>fixed 与 input</h3><p>刚接触移动端 Web 开发的小伙伴应该都会听前辈们说过，不要在有 input 标签的页面使用 fixed 定位，因为这两者在一起的时候，总是会有奇奇怪怪的问题。在 iOS 上，当点击 input 标签获取焦点唤起软键盘的时候，fixed 定位会暂时失效，或者可以理解为变成了 absolute 定位，在含有滚动的页面，fixed 定位的节点和其他节点一起滚动。其实这个问题也很好解决，只要保证 fixed 定位的节点的父节点不可滚动，那么即使 fixed 定位失效，也不会和其他滚动节点一起滚动，影响界面。但是除此之外，还有很多坑比较难以解决，例如 Android 软键盘唤起后遮挡住 input 标签，用户没法看到自己输入的字符串，iOS 则需要在输入至少一个字符之后，才能将对应的 input 标签滚动到合适的位置，所以为了避开这些难以解决的坑，在有表单输入的页面，尽量用absolute 或者 flex 替换 fixed。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.header,</div><div class="line">.footer &#123;</div><div class="line">    z-index: 8888;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>看到这里可能会有小伙伴觉得，一个简单的布局，还要绕过这么多坑，难道没有简单的方式吗，答案当然是肯定的，那就是第三种实现方式，flex 布局。flex 定位在移动端兼容到了 iOS 7.1+，Android 4.4+,如果使用 autoprefixer 等工具还可以降级为旧版本的 flexbox ，可以兼容到 iOS 3.2 和 Android 2.1。而且用 flex 实现起来相对简单，在各个浏览器里表现也相对一致。实现如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  display: flex;</div><div class="line">  flex-direction: column;</div><div class="line">&#125;</div><div class="line">.main &#123;</div><div class="line">  flex: 1;</div><div class="line">  overflow: auto;</div><div class="line">  -webkit-overflow-scrolling: touch;</div><div class="line">&#125;</div><div class="line">.header &#123;</div><div class="line">  height: 44px;</div><div class="line">&#125;</div><div class="line">.footer &#123;</div><div class="line">  height: 44px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="fixed-与-input"><a href="#fixed-与-input" class="headerlink" title="fixed 与 input"></a>fixed 与 input</h3><p>刚接触移动端 Web 开发的小伙伴应该都会听前辈们说过，不要在有 input 标签的页面使用 fixed 定位，因为这两者在一起的时候，总是会有奇奇怪怪的问题。在 iOS 上，当点击 input 标签获取焦点唤起软键盘的时候，fixed 定位会暂时失效，或者可以理解为变成了 absolute 定位，在含有滚动的页面，fixed 定位的节点和其他节点一起滚动。其实这个问题也很好解决，只要保证 fixed 定位的节点的父节点不可滚动，那么即使 fixed 定位失效，也不会和其他滚动节点一起滚动，影响界面。但是除此之外，还有很多坑比较难以解决，例如 Android 软键盘唤起后遮挡住 input 标签，用户没法看到自己输入的字符串，iOS 则需要在输入至少一个字符之后，才能将对应的 input 标签滚动到合适的位置，所以为了避开这些难以解决的坑，在有表单输入的页面，尽量用absolute 或者 flex 替换 fixed。</p>
 <h3 id="样式实现"><a href="#样式实现" class="headerlink" title="样式实现"></a>样式实现</h3><ol>
 <li>iOS 1px实现(Owner）</li>
 </ol>
 <p>参考伪元素做法如下：</p>
-<pre><code>/*scss style*/
-.tran{
-    position: relative;
-    &amp;::before{
-        content: &#39;&#39;;
-        position: absolute;
-        box-sizing: border-box;
-        height: 1px;
-        left: 0;
-        top: 0;
-        border-bottom: 1px solid #cfcfcf;
-        -webkit-transform-origin: 0 0;
-        transform-origin: 0 0;
-        -webkit-transform: scale(0.5);
-        transform: scale(0.5); 
-    }
-
-/* mixin */
-@mixin bottomLine($c:rgba(207, 207, 207, .95), $t:0, $r:0, $b:0, $l:0) {
-    content: &quot; &quot;;
-    position: absolute;
-    left: $l;
-    bottom: $t;
-    right: $r;
-    height: 1px;
-    border-bottom: 1px solid $c;
-    color: $c;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: scaleY(0.501);
-    transform: scaleY(0.501);
-}
-</code></pre><ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">/*scss style*/</div><div class="line">.tran&#123;</div><div class="line">    position: relative;</div><div class="line">    &amp;::before&#123;</div><div class="line">        content: &apos;&apos;;</div><div class="line">        position: absolute;</div><div class="line">        box-sizing: border-box;</div><div class="line">        height: 1px;</div><div class="line">        left: 0;</div><div class="line">        top: 0;</div><div class="line">        border-bottom: 1px solid #cfcfcf;</div><div class="line">        -webkit-transform-origin: 0 0;</div><div class="line">        transform-origin: 0 0;</div><div class="line">        -webkit-transform: scale(0.5);</div><div class="line">        transform: scale(0.5); </div><div class="line">    &#125;</div><div class="line">    </div><div class="line">/* mixin */</div><div class="line">@mixin bottomLine($c:rgba(207, 207, 207, .95), $t:0, $r:0, $b:0, $l:0) &#123;</div><div class="line">    content: &quot; &quot;;</div><div class="line">    position: absolute;</div><div class="line">    left: $l;</div><div class="line">    bottom: $t;</div><div class="line">    right: $r;</div><div class="line">    height: 1px;</div><div class="line">    border-bottom: 1px solid $c;</div><div class="line">    color: $c;</div><div class="line">    -webkit-transform-origin: 0 100%;</div><div class="line">    transform-origin: 0 100%;</div><div class="line">    -webkit-transform: scaleY(0.501);</div><div class="line">    transform: scaleY(0.501);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ol>
 <li>背景渐变</li>
 </ol>
 <p>CSS3 有了渐变背景，可以通过渐变背景实现 1px 的 border，实现原理是设置 1px 的渐变背景，50% 有颜色，50% 是透明的。</p>
-<pre><code>@mixin commonStyle() {
-  background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
-  background-repeat: no-repeat;
-  background-position: top, right top,  bottom, left top;
-}
-
-
-@mixin border($border-color) {
-  @include commonStyle();
-  background-image:linear-gradient(180deg, $border-color, $border-color 50%, transparent 50%),
-  linear-gradient(270deg, $border-color, $border-color 50%, transparent 50%),
-  linear-gradient(0deg, $border-color, $border-color 50%, transparent 50%),
-  linear-gradient(90deg, $border-color, $border-color 50%, transparent 50%);
-}
-</code></pre><p><strong>伪类+transform：</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">@mixin commonStyle() &#123;</div><div class="line">  background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;</div><div class="line">  background-repeat: no-repeat;</div><div class="line">  background-position: top, right top,  bottom, left top;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">@mixin border($border-color) &#123;</div><div class="line">  @include commonStyle();</div><div class="line">  background-image:linear-gradient(180deg, $border-color, $border-color 50%, transparent 50%),</div><div class="line">  linear-gradient(270deg, $border-color, $border-color 50%, transparent 50%),</div><div class="line">  linear-gradient(0deg, $border-color, $border-color 50%, transparent 50%),</div><div class="line">  linear-gradient(90deg, $border-color, $border-color 50%, transparent 50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong>伪类+transform：</strong></p>
 <p>这类方法的实现原理是用伪元素的 box-shadow 或 border 实现 border，然后用 transform缩小到原来的一半。即使有圆角的需求也能很好的实现。</p>
-<pre><code>
-@mixin hairline-common($border-radius) {
-  position: relative;
-  z-index: 0;
-  &amp;:before {
-    position: absolute;
-    content: &#39;&#39;;
-    border-radius: $border-radius;
-    box-sizing: border-box;
-    transform-origin: 0 0;
-  }
-}
-@mixin hairline($direct: &#39;all&#39;, $border-color: #ccc, $border-radius: 0) {
-  @include hairline-common($border-radius);
-  &amp;:before {
-    transform: scale(.5);
-    @if $direct == &#39;all&#39; {
-      top: 0;
-      left: 0;
-      width: 200%;
-      height: 200%;
-      box-shadow: 0 0 0 1px $border-color;
-      z-index: -1;
-    } @else if $direct == &#39;left&#39; or $direct == &#39;right&#39; {
-      #{$direct}: 0;
-      top: 0;
-      width: 0;
-      height: 200%;
-      border-#{$direct}: 1px solid $border-color;
-    } @else {
-      #{$direct}: 0;
-      left: 0;
-      width: 200%;
-      height: 0;
-      border-#{$direct}: 1px solid $border-color;
-    }
-  }
-}
-</code></pre>]]></content>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">@mixin hairline-common($border-radius) &#123;</div><div class="line">  position: relative;</div><div class="line">  z-index: 0;</div><div class="line">  &amp;:before &#123;</div><div class="line">    position: absolute;</div><div class="line">    content: &apos;&apos;;</div><div class="line">    border-radius: $border-radius;</div><div class="line">    box-sizing: border-box;</div><div class="line">    transform-origin: 0 0;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@mixin hairline($direct: &apos;all&apos;, $border-color: #ccc, $border-radius: 0) &#123;</div><div class="line">  @include hairline-common($border-radius);</div><div class="line">  &amp;:before &#123;</div><div class="line">    transform: scale(.5);</div><div class="line">    @if $direct == &apos;all&apos; &#123;</div><div class="line">      top: 0;</div><div class="line">      left: 0;</div><div class="line">      width: 200%;</div><div class="line">      height: 200%;</div><div class="line">      box-shadow: 0 0 0 1px $border-color;</div><div class="line">      z-index: -1;</div><div class="line">    &#125; @else if $direct == &apos;left&apos; or $direct == &apos;right&apos; &#123;</div><div class="line">      #&#123;$direct&#125;: 0;</div><div class="line">      top: 0;</div><div class="line">      width: 0;</div><div class="line">      height: 200%;</div><div class="line">      border-#&#123;$direct&#125;: 1px solid $border-color;</div><div class="line">    &#125; @else &#123;</div><div class="line">      #&#123;$direct&#125;: 0;</div><div class="line">      left: 0;</div><div class="line">      width: 200%;</div><div class="line">      height: 0;</div><div class="line">      border-#&#123;$direct&#125;: 1px solid $border-color;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
     
     <summary type="html">
     
@@ -836,44 +591,8 @@ tree
 <p>这两条命令是开始SSL模块，网上有些教程说要改动这两个配置文件，其实这和Apache的版本有关系。</p>
 <p>关联好模块之后，在你的sites-available下会出现一个default-ssl.conf文件，里面就是默认的SSL配置文件。回到你刚才的生成证书的目录下，将证书文件放到你喜欢的目录下，我放在/etc/apache2/ssl目录下，这样方便以后自己查找等，但请仁者见仁。</p>
 <p>编辑你的default-ssl.conf配置，为了方便我还是贴一份我的文件吧：</p>
-<pre><code>&lt;IfModule mod_ssl.c&gt;
-        &lt;VirtualHost _default_:443&gt;
-        ServerName www.test.com
-        //这里请填写你的证书中的CommonName
-        DocumentRoot &quot;/home/test/public/&quot;
-                &lt;Directory &quot;/&quot;&gt;
-                        Options Indexes FollowSymLinks
-                        AllowOverride All
-                        Require all granted
-                &lt;/Directory&gt;
-
-        ErrorLog &quot;/var/log/apache2/errorssl-test.log&quot;
-        CustomLog &quot;/var/log/apache2/accessssl-test.log&quot; combined
-                SSLEngine on
-                SSLCertificateFile     /etc/apache2/ssl/1_www.test.com.crt
-                //假设我们将生成的证书和Key文件放在/etc/apache2/ssl下，名字分别是
-                //1_www.test.com.crt以及2_www.test.com.key
-                #SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
-                SSLCertificateKeyFile /etc/apache2/ssl/2_www.test.com.key
-                #SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire
-                &lt;FilesMatch &quot;\.(cgi|shtml|phtml|php)$&quot;&gt;
-                                SSLOptions +StdEnvVars
-                &lt;/FilesMatch&gt;
-                &lt;Directory /usr/lib/cgi-bin&gt;
-                                SSLOptions +StdEnvVars
-                &lt;/Directory&gt;
-                #   &quot;force-response-1.0&quot; for this.
-                BrowserMatch &quot;MSIE [2-6]&quot; \
-                                nokeepalive ssl-unclean-shutdown \
-                                downgrade-1.0 force-response-1.0
-                # MSIE 7 and newer should be able to use keepalive
-                BrowserMatch &quot;MSIE [17-9]&quot; ssl-unclean-shutdown
-
-        &lt;/VirtualHost&gt;
-&lt;/IfModule&gt;
-
-# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
-</code></pre><p>配置多个虚拟主机和80端口是一样的，但注意80端口和443端口不能配置在同一个配置文件里。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">&lt;IfModule mod_ssl.c&gt;</div><div class="line">        &lt;VirtualHost _default_:443&gt;</div><div class="line">        ServerName www.test.com</div><div class="line">        //这里请填写你的证书中的CommonName</div><div class="line">        DocumentRoot &quot;/home/test/public/&quot;</div><div class="line">                &lt;Directory &quot;/&quot;&gt;</div><div class="line">                        Options Indexes FollowSymLinks</div><div class="line">                        AllowOverride All</div><div class="line">                        Require all granted</div><div class="line">                &lt;/Directory&gt;</div><div class="line"></div><div class="line">        ErrorLog &quot;/var/log/apache2/errorssl-test.log&quot;</div><div class="line">        CustomLog &quot;/var/log/apache2/accessssl-test.log&quot; combined</div><div class="line">                SSLEngine on</div><div class="line">                SSLCertificateFile     /etc/apache2/ssl/1_www.test.com.crt</div><div class="line">                //假设我们将生成的证书和Key文件放在/etc/apache2/ssl下，名字分别是</div><div class="line">                //1_www.test.com.crt以及2_www.test.com.key</div><div class="line">                #SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key</div><div class="line">                SSLCertificateKeyFile /etc/apache2/ssl/2_www.test.com.key</div><div class="line">                #SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire</div><div class="line">                &lt;FilesMatch &quot;\.(cgi|shtml|phtml|php)$&quot;&gt;</div><div class="line">                                SSLOptions +StdEnvVars</div><div class="line">                &lt;/FilesMatch&gt;</div><div class="line">                &lt;Directory /usr/lib/cgi-bin&gt;</div><div class="line">                                SSLOptions +StdEnvVars</div><div class="line">                &lt;/Directory&gt;</div><div class="line">                #   &quot;force-response-1.0&quot; for this.</div><div class="line">                BrowserMatch &quot;MSIE [2-6]&quot; \</div><div class="line">                                nokeepalive ssl-unclean-shutdown \</div><div class="line">                                downgrade-1.0 force-response-1.0</div><div class="line">                # MSIE 7 and newer should be able to use keepalive</div><div class="line">                BrowserMatch &quot;MSIE [17-9]&quot; ssl-unclean-shutdown</div><div class="line"></div><div class="line">        &lt;/VirtualHost&gt;</div><div class="line">&lt;/IfModule&gt;</div><div class="line"></div><div class="line"># vim: syntax=apache ts=4 sw=4 sts=4 sr noet</div></pre></td></tr></table></figure>
+<p>配置多个虚拟主机和80端口是一样的，但注意80端口和443端口不能配置在同一个配置文件里。</p>
 <p>配置完成后，由于Ubuntu下Apache的原因，记得关联文件：<br><code>ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf</code></p>
 <p>然后重启Apache:<code>apachectl restart</code>如遇失败，请检查日志。</p>
 <p><strong>注：</strong>如果在重启遇到需要解密私钥，请进入到私钥目录下，输入如下命令：</p>
@@ -926,23 +645,8 @@ tree
 <p><img src="http://upload-images.jianshu.io/upload_images/2741993-3dc0c0d9e5bc9775.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="apache"></p>
 <p>以上为目录结构。</p>
 <p>进到sites-avaiable编辑000-default.conf文件以配置虚拟主机，注意其实在sites-avaiable文件内配置的项目并没有直接生效，而需要在sites-enable里将配置文件关联起来，这样的深意在哪里，我就不得而知了。<br>假如我们在sites-avaible目录下新建<code>vi test.conf</code></p>
-<pre><code>&lt;VirtualHost *:80&gt;
-
-        ServerName  dev.test.com
-        //填写你自己的域名
-        DocumentRoot &quot;/home/test/weixin/public/&quot;
-        //自定义目录，请将目录权限开到755以上，避免premission denied
-                &lt;Directory &quot;/&quot;&gt;
-                        Options Indexes FollowSymLinks
-                        AllowOverride All
-                        Require all granted
-                &lt;/Directory&gt;
-
-        ErrorLog &quot;/var/log/apache2/errordev-test.log&quot;
-        CustomLog &quot;/var/log/apache2/accessdev-test.log&quot; combined
-
-&lt;/VirtualHost&gt;
-</code></pre><p>关联命令<code>sudo ln -s /etc/apache2/sites-available/test.conf /etc/apache2/sites-enabled/test.conf</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line"></div><div class="line">        ServerName  dev.test.com</div><div class="line">        //填写你自己的域名</div><div class="line">        DocumentRoot &quot;/home/test/weixin/public/&quot;</div><div class="line">        //自定义目录，请将目录权限开到755以上，避免premission denied</div><div class="line">                &lt;Directory &quot;/&quot;&gt;</div><div class="line">                        Options Indexes FollowSymLinks</div><div class="line">                        AllowOverride All</div><div class="line">                        Require all granted</div><div class="line">                &lt;/Directory&gt;</div><div class="line"></div><div class="line">        ErrorLog &quot;/var/log/apache2/errordev-test.log&quot;</div><div class="line">        CustomLog &quot;/var/log/apache2/accessdev-test.log&quot; combined</div><div class="line"></div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+<p>关联命令<code>sudo ln -s /etc/apache2/sites-available/test.conf /etc/apache2/sites-enabled/test.conf</code></p>
 <p>一般来说我们都是修改默认配置文件000-default.conf，具体如何配置，请根据自己的情况选择。</p>
 <p>啰嗦一句，这里首先最好先测试一下PHP，在很多情况下，PHP总会出一些莫名其妙的问题，可以在你的DocumentRoot目录下<code>vi index.php</code>，将以下内容放进去<code>&lt;?php phpinfo(); ?&gt;</code>，然后浏览器访问，出现如下界面则保证PHP正常运行：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2741993-0112f0f861cf1319.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="php"></p>
@@ -995,47 +699,17 @@ tree
 <li>去掉LoadModule rewrite_module libexec/apache2/mod_rewrite.so的<strong> # </strong></li>
 <li>找到 </li>
 </ul>
-<pre><code>
-
-&lt;Directory /&gt;
-    Options Indexes FollowSymLinks
-    AllowOverride All
-    Require all granted
-&lt;/Directory&gt;
-</code></pre><p>将配置修改如上。保存退出<strong> apachectl restart </strong>重启Apache，在浏览器里访问127.0.0.1,出现<strong> is work </strong>，则基本差不多了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">&lt;Directory /&gt;</div><div class="line">    Options Indexes FollowSymLinks</div><div class="line">    AllowOverride All</div><div class="line">    Require all granted</div><div class="line">&lt;/Directory&gt;</div></pre></td></tr></table></figure>
+<p>将配置修改如上。保存退出<strong> apachectl restart </strong>重启Apache，在浏览器里访问127.0.0.1,出现<strong> is work </strong>，则基本差不多了。</p>
 <h4 id="配置虚拟主机（VirtualHost）"><a href="#配置虚拟主机（VirtualHost）" class="headerlink" title="配置虚拟主机（VirtualHost）"></a>配置虚拟主机（VirtualHost）</h4><ol>
 <li>配置虚拟主机更符合我们的开发习惯，首先在httpd.conf配置中放开Include /private/etc/apache2/extra/httpd-vhosts.conf注释。</li>
 <li>进入目录<strong> ~/apache2/extra/ </strong>,编辑配置httpd-vhosts.conf,系统默认有两个虚拟主机，只不过基本没什么作用：</li>
 </ol>
-<pre><code>&lt;VirtualHost *:80&gt;
-    ServerAdmin webmaster@dummy-host.example.com
-    DocumentRoot &quot;/usr/docs/dummy-host.example.com&quot;
-    ServerName dummy-host.example.com
-    ServerAlias www.dummy-host.example.com
-    ErrorLog &quot;/private/var/log/apache2/dummy-host.example.com-error_log&quot;
-    CustomLog &quot;/private/var/log/apache2/dummy-host.example.com-access_log&quot; common
-&lt;/VirtualHost&gt;
-</code></pre><p><strong>ServerAdmin:</strong>网站管理者，一般填写邮件地址，个人开发无所谓。<br><strong>DocumentRoot:</strong>你设置的个人网站根目录，在设置这个目录的时候，很多时候都会受到权限的影响而报错而产生permission denied,请大家注意。<br><strong>ServerName:</strong>这就是你想要设置的访问名字了，由你自己定</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">    ServerAdmin webmaster@dummy-host.example.com</div><div class="line">    DocumentRoot &quot;/usr/docs/dummy-host.example.com&quot;</div><div class="line">    ServerName dummy-host.example.com</div><div class="line">    ServerAlias www.dummy-host.example.com</div><div class="line">    ErrorLog &quot;/private/var/log/apache2/dummy-host.example.com-error_log&quot;</div><div class="line">    CustomLog &quot;/private/var/log/apache2/dummy-host.example.com-access_log&quot; common</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+<p><strong>ServerAdmin:</strong>网站管理者，一般填写邮件地址，个人开发无所谓。<br><strong>DocumentRoot:</strong>你设置的个人网站根目录，在设置这个目录的时候，很多时候都会受到权限的影响而报错而产生permission denied,请大家注意。<br><strong>ServerName:</strong>这就是你想要设置的访问名字了，由你自己定</p>
 <p>放一份我个人的配置</p>
-<pre><code>&lt;VirtualHost *:80&gt;
-    ServerAdmin sanchuan@linofu.dev
-    DocumentRoot &quot;/Users/sanchuan/Documents/workspace/html5&quot;
-    ServerName linofu.dev
-    #ServerAlias www.dummy-host.example.com
-    ErrorLog &quot;/private/var/log/apache2/linofu.dev-error_log&quot;
-    //另外对新手说一下，请最好记住你的错误日志，因为配置的时候，可以
-    //tail /private/var/log/apache2/linofu.dev-error_log就可以在控制台中找到问题，再去找别人的时候更好解决。
-    CustomLog &quot;/private/var/log/apache2/linofu.dev-access_log&quot; common
-    &lt;Directory &quot;/&quot;&gt;
-        Options Indexes  FollowSymLinks
-        //这句在这里将可以配置你的服务器在没有Index的时候，产生目录结构。见下图
-        #AllowOverride All
-        #Order deny,allow
-        #Allow from all
-        Require all granted
-    &lt;/Directory&gt;
-&lt;/VirtualHost&gt;
-</code></pre><p><img src="http://upload-images.jianshu.io/upload_images/2741993-c71e0e55bf47e64d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Index"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">    ServerAdmin sanchuan@linofu.dev</div><div class="line">    DocumentRoot &quot;/Users/sanchuan/Documents/workspace/html5&quot;</div><div class="line">    ServerName linofu.dev</div><div class="line">    #ServerAlias www.dummy-host.example.com</div><div class="line">    ErrorLog &quot;/private/var/log/apache2/linofu.dev-error_log&quot;</div><div class="line">    //另外对新手说一下，请最好记住你的错误日志，因为配置的时候，可以</div><div class="line">    //tail /private/var/log/apache2/linofu.dev-error_log就可以在控制台中找到问题，再去找别人的时候更好解决。</div><div class="line">    CustomLog &quot;/private/var/log/apache2/linofu.dev-access_log&quot; common</div><div class="line">    &lt;Directory &quot;/&quot;&gt;</div><div class="line">        Options Indexes  FollowSymLinks</div><div class="line">        //这句在这里将可以配置你的服务器在没有Index的时候，产生目录结构。见下图</div><div class="line">        #AllowOverride All</div><div class="line">        #Order deny,allow</div><div class="line">        #Allow from all</div><div class="line">        Require all granted</div><div class="line">    &lt;/Directory&gt;</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/2741993-c71e0e55bf47e64d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Index"></p>
 <ol>
 <li>保存配置退出，回到 <strong>/etc/</strong>下，编辑你的<strong>hosts</strong>文件；将你的<strong>ServerName</strong>绑定在127.0.0.1后。重启apache</li>
 </ol>
@@ -1198,38 +872,22 @@ tree
 <p>然后报错 530 incorrect login</p>
 <p>无论是在ftp里登录还是别的地方都报这个错误，没办好，只好先找度娘，最后不知道在哪位大哥的博客下找到了解决方案，只不过写的时候已经找不到那个链接了。报这个错误的主要原因是因为服务器端的vsftpd文件报错了：</p>
 <p><strong>解决方法</strong></p>
-<pre><code>$ sudo -s
-$ vi /etc/vsftpd.conf
-$ //找到 #write_enable=YES 将前面的#去掉
-</code></pre><h1 id="error2"><a href="#error2" class="headerlink" title="error2"></a>error2</h1><p>登录的问题解决了，其实心里还在打鼓，果不其然：</p>
-<pre><code>$ hexo clean
-$ hexo g -d
-</code></pre><p>还是报错，当时的错误代码没有截图，以致于现在不能给大家上原图了。但大致源码我还是可以写下来，大家自己对照吧。</p>
-<pre><code>Colletting:
-Errors events.js:160
-        throw: ***
-
-        TCP: ***
-        onread: ***
-</code></pre><p> 出现这个问题，建议大家还是找一下node的问题吧，我找了许久的答案最后也没能够说个所以然来,我当时的Node6.9.1。后来我是将自己的node重装了一遍，而且装的是Node4.7.0版本。这个问题就自动解决好了，如果有人知道，希望能不吝赐教。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ sudo -s</div><div class="line">$ vi /etc/vsftpd.conf</div><div class="line">$ //找到 #write_enable=YES 将前面的#去掉</div></pre></td></tr></table></figure>
+<h1 id="error2"><a href="#error2" class="headerlink" title="error2"></a>error2</h1><p>登录的问题解决了，其实心里还在打鼓，果不其然：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g -d</div></pre></td></tr></table></figure>
+<p>还是报错，当时的错误代码没有截图，以致于现在不能给大家上原图了。但大致源码我还是可以写下来，大家自己对照吧。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Colletting:</div><div class="line">Errors events.js:160</div><div class="line">        throw: ***</div><div class="line">        </div><div class="line">        TCP: ***</div><div class="line">        onread: ***</div></pre></td></tr></table></figure>
+<p> 出现这个问题，建议大家还是找一下node的问题吧，我找了许久的答案最后也没能够说个所以然来,我当时的Node6.9.1。后来我是将自己的node重装了一遍，而且装的是Node4.7.0版本。这个问题就自动解决好了，如果有人知道，希望能不吝赐教。</p>
 <h1 id="error3"><a href="#error3" class="headerlink" title="error3"></a>error3</h1><p>经历了前两个错误，我知道第三个错误也是避免不了的。再次部署<code>hexo g -d</code>遇到:<br><strong>premission denied 550</strong></p>
 <p>一般操作过Linux系统的人都会知道这是因为缺少了权限，所以我先将服务器上的接收目录的权限放到了最大<br><code>$ chmod -R 777 ***//目录名</code><br>可依然还是报错550 </p>
-<pre><code>MKDIR fail
-      ***
-550 : Cannot create a file when that file already exists
-</code></pre><p>找来找去最后找到了这个大哥的Blog下：从他的Git下拉了一个src/parse.js文件修复了这问题。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">MKDIR fail</div><div class="line">      ***</div><div class="line">550 : Cannot create a file when that file already exists</div></pre></td></tr></table></figure>
+<p>找来找去最后找到了这个大哥的Blog下：从他的Git下拉了一个src/parse.js文件修复了这问题。</p>
 <p><a href="http://k99k.com/2015/hexo-ftpsync-bug/" target="_blank" rel="external">踩坑道人Blog</a> </p>
 <p>然后一路开心的<code>hexo g -d</code><br>没报错，然后打开自己的的博客，哈哈显示正常，然后再点文章：</p>
 <p>然后</p>
 <h1 id="error4"><a href="#error4" class="headerlink" title="error4"></a>error4</h1><p>nginx 403 Forbidden<br>心里当真是问候了很多句苍天。没办法，继续折腾呗。我没有上面这位大哥厉害，console了三个小时，耐心地找了会百度就找到了一个解决方案：</p>
-<pre><code>$ vi /etc/nginx.conf
-//在第一行的位置有个user 将其修改为你的ftp账号如下：
-//修改 ftp账号
-$ user ftpuser
-$ worker_processes
-//重启Nginx:
-$ service nginx restart
-</code></pre><p>问题大概就这么多，欢迎交流指正。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ vi /etc/nginx.conf</div><div class="line">//在第一行的位置有个user 将其修改为你的ftp账号如下：</div><div class="line">//修改 ftp账号</div><div class="line">$ user ftpuser</div><div class="line">$ worker_processes</div><div class="line">//重启Nginx:</div><div class="line">$ service nginx restart</div></pre></td></tr></table></figure>
+<p>问题大概就这么多，欢迎交流指正。</p>
 <h4 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h4><p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">hexo文档</a></p>
 ]]></content>
     
@@ -1270,35 +928,14 @@ $ service nginx restart
 <p>a. AWS激活的时候，采用的是电话激活（speaking English）,当时懵圈了我三遍才激活，账号注册请自行百度。<br>b. AWS并不是真正的For Free,这里需要先提醒一下大家，而且AWS扣费的时候，甚至不用通过短信验证，如介意，请出门左转。</p>
 <h2 id="创建实例："><a href="#创建实例：" class="headerlink" title="创建实例："></a>创建实例：</h2><p>参考文章：<br><a href="https://segmentfault.com/a/1190000003101075" target="_blank" rel="external">科学上网之搭建shadowsock</a></p>
 <p>以下命令摘自以上文章：</p>
-<pre><code>sudo -s //获取root权限
-apt-get install update //更新apt
-apt-get install python-pip //安装py管理包pip
-pip install shadowsocks //安装shadowsock
-</code></pre><p><strong>注意：</strong><br>很多人都会在这一步产生错误，如遇错误请先更新你的python</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo -s //获取root权限</div><div class="line">apt-get install update //更新apt</div><div class="line">apt-get install python-pip //安装py管理包pip</div><div class="line">pip install shadowsocks //安装shadowsock</div></pre></td></tr></table></figure>
+<p><strong>注意：</strong><br>很多人都会在这一步产生错误，如遇错误请先更新你的python</p>
 <p><code>python update</code></p>
 <p>按照原文教程，直接叫你启动 <code>ssserver -c /etc/shadowsock.json -d start</code>这里也会报错，因为安装完shadowsocks后服务器并不会自动生成shadowsocks.json的文件。</p>
 <p>正确的做法是你应该先建立：<br><code>vi /etc/shadowsocks.json</code></p>
-<h4 id="单一端口配置："><a href="#单一端口配置：" class="headerlink" title="单一端口配置："></a>单一端口配置：</h4><pre><code>{
-&quot;server&quot;:&quot;0.0.0.0&quot;, //这里不需要修改为你的服务器IP
-    &quot;server_port&quot;:   //端口自定义，例如8338
-    &quot;local_address&quot;:&quot;127.0.0.1&quot;,  //默认不用修改
-    &quot;local_port&quot;:1080, &quot;password&quot;:   //密码自己设定
-    &quot;timeout&quot;:300,  //可以默认
-    &quot;method&quot;:&quot;aes-256-cfb&quot;,  //默认
-    &quot;fast_open&quot;:false // 默认
-}
-</code></pre><h4 id="多端口配置"><a href="#多端口配置" class="headerlink" title="多端口配置"></a>多端口配置</h4><pre><code>{
-&quot;server&quot;:&quot;0.0.0.0&quot;,
-&quot;port_password&quot;:
-         {
-        &quot;端口1&quot;: &quot;连接密码1&quot;,
-        &quot;端口2&quot; : &quot;连接密码2&quot;
-         },
-&quot;timeout&quot;:300,
-&quot;method&quot;:&quot;aes-256-cfb&quot;,
-&quot;fast_open&quot;: false
-}
-</code></pre><p>配置完成后，别着急，很多时候，你的VPN并不一定可以运行，在文章开始之前，因为我建VPN已经有一段时间了，所以有些东西一下没有总结到位，在你配置完你的AWS后，（我的服务器选择放在了日本Tokyo），在你获得你的公网IP后，应该先到你的控制台ping一下你的IP是否可以 ping通。</p>
+<h4 id="单一端口配置："><a href="#单一端口配置：" class="headerlink" title="单一端口配置："></a>单一端口配置：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;server&quot;:&quot;0.0.0.0&quot;, //这里不需要修改为你的服务器IP</div><div class="line">    &quot;server_port&quot;:   //端口自定义，例如8338</div><div class="line">    &quot;local_address&quot;:&quot;127.0.0.1&quot;,  //默认不用修改</div><div class="line">    &quot;local_port&quot;:1080, &quot;password&quot;:   //密码自己设定</div><div class="line">    &quot;timeout&quot;:300,  //可以默认</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,  //默认</div><div class="line">    &quot;fast_open&quot;:false // 默认</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="多端口配置"><a href="#多端口配置" class="headerlink" title="多端口配置"></a>多端口配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;server&quot;:&quot;0.0.0.0&quot;,</div><div class="line">&quot;port_password&quot;:</div><div class="line">         &#123;</div><div class="line">        &quot;端口1&quot;: &quot;连接密码1&quot;,</div><div class="line">        &quot;端口2&quot; : &quot;连接密码2&quot;</div><div class="line">         &#125;,</div><div class="line">&quot;timeout&quot;:300,</div><div class="line">&quot;method&quot;:&quot;aes-256-cfb&quot;,</div><div class="line">&quot;fast_open&quot;: false</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>配置完成后，别着急，很多时候，你的VPN并不一定可以运行，在文章开始之前，因为我建VPN已经有一段时间了，所以有些东西一下没有总结到位，在你配置完你的AWS后，（我的服务器选择放在了日本Tokyo），在你获得你的公网IP后，应该先到你的控制台ping一下你的IP是否可以 ping通。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2741993-156044dd14627044.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ping失败"></p>
 <p>无法ping通的Ip是无法用来架设的，你必须更换你的IP，所以你只打算拿AWS做VPN的话，没有必要申请弹性IP，国内过段时间久可能把你可以ping通的Ip封掉，所以你又得换。AWS更换IP的方法就是关闭你的VPS，再重新开机就会给你重新分配IP</p>
 <p>完成后，检测一下配置是否成功</p>
@@ -1318,83 +955,6 @@ pip install shadowsocks //安装shadowsock
 &lt;li&gt;需要一张支持双币支付的信用卡&lt;/li&gt;
 &lt;li&gt;某宝购买的虚拟信用卡也可以激活，我没试过（道听途说）&lt;/li&gt;
 &lt;li&gt;一个AWS的账号
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://yoursite.com/categories/Coding/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>服务器搭建：（二）SSH登录详解</title>
-    <link href="http://yoursite.com/2016/12/07/ftp2/"/>
-    <id>http://yoursite.com/2016/12/07/ftp2/</id>
-    <published>2016-12-07T08:44:44.000Z</published>
-    <updated>2017-01-05T08:43:30.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文主要讲解SSH登录Ubuntu服务器以及SSH登录Sftp</p>
-<h2 id="SSH生成"><a href="#SSH生成" class="headerlink" title="SSH生成"></a>SSH生成</h2><p>使用过Git的人对这个部分很好理解，在Linux和Unix中都可以通过<br><code>ssh-keygen -t rsa -C //生成秘钥</code></p>
-<ul>
-<li>Mac下会保存在系统根目录下的.ssh目录下</li>
-<li>Windows下会保存在你的C盘，用户下.ssh目录下</li>
-</ul>
-<p>一般服务器都会叫你新生成秘钥，我所用的腾讯云与AWS是不一样的（后面再讲AWS）</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2741993-ae4814a011057aac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="腾讯云秘钥生成"></p>
-<p>在<strong>SSH秘钥</strong>选项下，新建秘钥便会提示你下载，将秘钥下载到本地即可。<br>为了便于管理，请注意将秘钥文件妥善保存，一般好像过了十分钟之后，便不再提供下载了。当然也有另外一种方式再生成秘钥，这个有空再说。</p>
-<p><strong>注：</strong>新建秘钥后需要与服务器进行关联，否则无法使用。</p>
-<p>下载到本地后，如果在Mac下比较方便，Mac登录请参考以下文章</p>
-<ul>
-<li><a href="http://www.jianshu.com/p/5f9e62bdc0bd" target="_blank" rel="external">MAC下登录服务器踩坑日记</a></li>
-</ul>
-<p>此文重点讲Windows下SSH登录。</p>
-<a id="more"></a>
-<!--toc-->
-<h2 id="SSH登录Ubuntu"><a href="#SSH登录Ubuntu" class="headerlink" title="SSH登录Ubuntu"></a>SSH登录Ubuntu</h2><p>因Windows是无法识别秘钥文件的，所以需要以下几个步骤来完成：<br>参考文献：</p>
-<ul>
-<li><a href="https://www.qcloud.com/document/product/213/5436" target="_blank" rel="external">登录LInux实例</a></li>
-</ul>
-<h5 id="安装Windows远程登录软件"><a href="#安装Windows远程登录软件" class="headerlink" title="安装Windows远程登录软件"></a>安装Windows远程登录软件</h5><p>从本地 Windows 机器登录到 Linux 云服务器时，需要使用客户端软件建立连接。这里以使用 PUTTY 为例，参考下载地址：<a href="http://www.putty.nl/download.html%E3%80%82" target="_blank" rel="external">http://www.putty.nl/download.html。</a>分别下载putty.exe及puttygen.exe两个文件。</p>
-<h5 id="密钥格式转换"><a href="#密钥格式转换" class="headerlink" title="密钥格式转换"></a>密钥格式转换</h5><p>打开 puttygen.exe，点击【Load】按钮，在弹窗中首先进入您存放先决条件中下载下来的私钥的路径，然后选择“All File（<em>.</em>）”，选择下载好的私钥（例子中为文件david，david是密钥的名称），点击【打开】。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2741993-3e650529a12a2c86.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="转换秘钥"></p>
-<p>在 key comment 栏中输入密钥名，输入加密私钥的密码（可选），点击【Save private key】，在弹窗中选择您存放密钥的目录，然后在文件名栏输入 密钥名 +”.ppk”，点击【保存】按钮。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2741993-acf8d49927019f52.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="秘钥命名"></p>
-<h5 id="登录远程Linux云服务器"><a href="#登录远程Linux云服务器" class="headerlink" title="登录远程Linux云服务器"></a>登录远程Linux云服务器</h5><p>打开putty.exe，进入【Auth】配置。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2741993-191f0e72ae49fb48.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="登录Linux"></p>
-<p>点击【Browse】按钮，打开弹窗后进入密钥存储的路径，并选择密钥，点击【打开】，返回配置界面，进入【Session】配置。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2741993-572a63b1b7f6e9b2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="登录Linux1"></p>
-<p>在Session配置页中，配置服务器的IP，端口，连接类型。</p>
-<p>请注意此部分操作，一定注意安全组port(端口)已经开放，否则无法登录。</p>
-<h5 id="其他问题"><a href="#其他问题" class="headerlink" title="其他问题"></a>其他问题</h5><ul>
-<li>登录遇到 denied key</li>
-</ul>
-<p>解决方案：<br>putty进入命令行模式<br><code>cd G:/git/ //秘钥保存目录</code><br><code>chmod 400/600 test.ppk  //秘钥文件</code><br>就是更改SSH文件的权限，对Linux文件权重不理解的童鞋自行百度。</p>
-<ul>
-<li>待补充</li>
-</ul>
-<h2 id="SSH登录Sftp"><a href="#SSH登录Sftp" class="headerlink" title="SSH登录Sftp"></a>SSH登录Sftp</h2><p>只要拿到了上文里的SSH文件，登录sftp就很简单啦。</p>
-<p>上传服务器比较需要注意的是：在腾讯云下，系统默认目录下的/home/ubuntu是不需要系统提供特殊的权限就可以读写的，以Mac下的Transmit为例说明：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2741993-9e4515db7989f94b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Transmit"></p>
-<p>【To Be Continue!】</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文主要讲解SSH登录Ubuntu服务器以及SSH登录Sftp&lt;/p&gt;
-&lt;h2 id=&quot;SSH生成&quot;&gt;&lt;a href=&quot;#SSH生成&quot; class=&quot;headerlink&quot; title=&quot;SSH生成&quot;&gt;&lt;/a&gt;SSH生成&lt;/h2&gt;&lt;p&gt;使用过Git的人对这个部分很好理解，在Linux和Unix中都可以通过&lt;br&gt;&lt;code&gt;ssh-keygen -t rsa -C //生成秘钥&lt;/code&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Mac下会保存在系统根目录下的.ssh目录下&lt;/li&gt;
-&lt;li&gt;Windows下会保存在你的C盘，用户下.ssh目录下&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;一般服务器都会叫你新生成秘钥，我所用的腾讯云与AWS是不一样的（后面再讲AWS）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2741993-ae4814a011057aac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;腾讯云秘钥生成&quot;&gt;&lt;/p&gt;
-&lt;p&gt;在&lt;strong&gt;SSH秘钥&lt;/strong&gt;选项下，新建秘钥便会提示你下载，将秘钥下载到本地即可。&lt;br&gt;为了便于管理，请注意将秘钥文件妥善保存，一般好像过了十分钟之后，便不再提供下载了。当然也有另外一种方式再生成秘钥，这个有空再说。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;注：&lt;/strong&gt;新建秘钥后需要与服务器进行关联，否则无法使用。&lt;/p&gt;
-&lt;p&gt;下载到本地后，如果在Mac下比较方便，Mac登录请参考以下文章&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.jianshu.com/p/5f9e62bdc0bd&quot;&gt;MAC下登录服务器踩坑日记&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;此文重点讲Windows下SSH登录。&lt;/p&gt;
     
     </summary>
     

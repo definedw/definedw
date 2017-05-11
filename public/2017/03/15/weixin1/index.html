@@ -403,23 +403,8 @@
 <p><img src="http://upload-images.jianshu.io/upload_images/2741993-3dc0c0d9e5bc9775.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="apache"></p>
 <p>以上为目录结构。</p>
 <p>进到sites-avaiable编辑000-default.conf文件以配置虚拟主机，注意其实在sites-avaiable文件内配置的项目并没有直接生效，而需要在sites-enable里将配置文件关联起来，这样的深意在哪里，我就不得而知了。<br>假如我们在sites-avaible目录下新建<code>vi test.conf</code></p>
-<pre><code>&lt;VirtualHost *:80&gt;
-
-        ServerName  dev.test.com
-        //填写你自己的域名
-        DocumentRoot &quot;/home/test/weixin/public/&quot;
-        //自定义目录，请将目录权限开到755以上，避免premission denied
-                &lt;Directory &quot;/&quot;&gt;
-                        Options Indexes FollowSymLinks
-                        AllowOverride All
-                        Require all granted
-                &lt;/Directory&gt;
-
-        ErrorLog &quot;/var/log/apache2/errordev-test.log&quot;
-        CustomLog &quot;/var/log/apache2/accessdev-test.log&quot; combined
-
-&lt;/VirtualHost&gt;
-</code></pre><p>关联命令<code>sudo ln -s /etc/apache2/sites-available/test.conf /etc/apache2/sites-enabled/test.conf</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line"></div><div class="line">        ServerName  dev.test.com</div><div class="line">        //填写你自己的域名</div><div class="line">        DocumentRoot &quot;/home/test/weixin/public/&quot;</div><div class="line">        //自定义目录，请将目录权限开到755以上，避免premission denied</div><div class="line">                &lt;Directory &quot;/&quot;&gt;</div><div class="line">                        Options Indexes FollowSymLinks</div><div class="line">                        AllowOverride All</div><div class="line">                        Require all granted</div><div class="line">                &lt;/Directory&gt;</div><div class="line"></div><div class="line">        ErrorLog &quot;/var/log/apache2/errordev-test.log&quot;</div><div class="line">        CustomLog &quot;/var/log/apache2/accessdev-test.log&quot; combined</div><div class="line"></div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+<p>关联命令<code>sudo ln -s /etc/apache2/sites-available/test.conf /etc/apache2/sites-enabled/test.conf</code></p>
 <p>一般来说我们都是修改默认配置文件000-default.conf，具体如何配置，请根据自己的情况选择。</p>
 <p>啰嗦一句，这里首先最好先测试一下PHP，在很多情况下，PHP总会出一些莫名其妙的问题，可以在你的DocumentRoot目录下<code>vi index.php</code>，将以下内容放进去<code>&lt;?php phpinfo(); ?&gt;</code>，然后浏览器访问，出现如下界面则保证PHP正常运行：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/2741993-0112f0f861cf1319.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="php"></p>
@@ -542,7 +527,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
