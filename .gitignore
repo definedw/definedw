@@ -2,6 +2,7 @@
 Thumbs.db
 db.json
 www.chayifen.com.zip
+_config.yml
 *.log
 node_modules/
 public/
