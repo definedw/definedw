@@ -13,7 +13,7 @@ categories: 转载
 众所周知的移动端，一般来说可以分为上中下三个部分，分别为 header、main、footer，其中header、footer 是固定高度，分别固定在页面顶部和页面底部，而 main 是占据页面其余位置，并且可以滚动。基本是以下形式：
 ![layout](http://upload-images.jianshu.io/upload_images/2741993-6761d169556abcc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/360)
 
-```
+```html
 <body>
 
   <div class="header"></div>
@@ -28,7 +28,7 @@ categories: 转载
 根据页面滚动的位置分为两种布局，一种是滚动 body，另一种是固定 body 的高度为100%，在 main 中滚动。第一种布局有个优点，就是页面的地址栏会随着 body 的滚动隐藏起来，并且 Android 设备中，滚动 body 会更加的流畅，如果项目中有类似需求可以考虑。实现布局的方式如下:
 
 
-```
+```css
 body {
   overflow: auto;
 }
@@ -64,7 +64,7 @@ body {
 
 最容易想到的实现方式是 fixed 定位，实现方式如下：
 
-```
+```css
 html, body {
   height: 100%;
   overflow: hidden;
@@ -104,7 +104,7 @@ fixed 定位实现起来简单，在大多数浏览器中也能正常显示，�
 
 1. 把所有 fixed 节点放在 scroll 元素后面，即把 header 节点放在 main 节点后面
 
-```
+```html
 <body>
   <div class="main"></div>
   <div class="header"></div>
@@ -116,7 +116,7 @@ fixed 定位实现起来简单，在大多数浏览器中也能正常显示，�
 2. 使 main 不可滚动，给 main 嵌套一层可滚动的子节点
 
 
-```
+```html
 <body>
   <div class="header"></div>
   <div class="main">
@@ -143,7 +143,7 @@ fixed 定位实现起来简单，在大多数浏览器中也能正常显示，�
 1. 让 scroll 节点不与 fixed 节点有重合
 
 
-```
+```css
 body {
   padding: 44px 0;
 }
@@ -157,7 +157,7 @@ body {
 2. 给 fixed 节点设置 z-index
 
 
-```
+```css
 .header,
 .footer {
     z-index: 8888;
@@ -167,7 +167,7 @@ body {
 看到这里可能会有小伙伴觉得，一个简单的布局，还要绕过这么多坑，难道没有简单的方式吗，答案当然是肯定的，那就是第三种实现方式，flex 布局。flex 定位在移动端兼容到了 iOS 7.1+，Android 4.4+,如果使用 autoprefixer 等工具还可以降级为旧版本的 flexbox ，可以兼容到 iOS 3.2 和 Android 2.1。而且用 flex 实现起来相对简单，在各个浏览器里表现也相对一致。实现如下:
 
 
-```
+```css
 body {
   display: flex;
   flex-direction: column;
@@ -198,8 +198,8 @@ body {
 参考伪元素做法如下：
 
 
-```
-/*scss style*/
+```scss
+/* scss style */
 .tran{
     position: relative;
     &::before{
@@ -238,7 +238,7 @@ body {
 CSS3 有了渐变背景，可以通过渐变背景实现 1px 的 border，实现原理是设置 1px 的渐变背景，50% 有颜色，50% 是透明的。
 
 
-```
+```scss
 @mixin commonStyle() {
   background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
   background-repeat: no-repeat;
@@ -260,8 +260,7 @@ CSS3 有了渐变背景，可以通过渐变背景实现 1px 的 border，实现
 这类方法的实现原理是用伪元素的 box-shadow 或 border 实现 border，然后用 transform缩小到原来的一半。即使有圆角的需求也能很好的实现。
 
 
-```
-
+```scss
 @mixin hairline-common($border-radius) {
   position: relative;
   z-index: 0;

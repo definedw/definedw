@@ -19,7 +19,7 @@ Nginx是什么，这里我就不做多的解释了，购买服务器之后，基
 
 **我这里只讨论TXY Ubuntu系统下的部署**
 在官方的文档里，>最佳实践下描述了Centos,Ubuntu的命令其实差不多：
-```
+```apache
 sudo -s //获取root权限
 apt-get install nginx
 service nginx start //启动nginx
@@ -49,7 +49,7 @@ b 创建新的文件，配置虚拟接口
 c 进入到vhosts文件夹下：创建你的端口文件,这里网上教程很多，我的方式只是和网上一样，只具有参考性。
 `vi site1.com.conf //创建第一个端口配置`
 
-```
+```nginx
 
 
 server {

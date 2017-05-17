@@ -38,7 +38,7 @@ svn，是一个开放源代码的版本控制系统，与git差不多的功能�
 开启模块之后，则对以下文件做修改。贴一份配置：
 
 
-```
+```apache
 <Location /svn>  #/svn表示http://hostname/svn/myproject
   DAV svn
   SVNParentPath /home/svn #配置仓库父目录
@@ -57,7 +57,7 @@ svn，是一个开放源代码的版本控制系统，与git差不多的功能�
 * `vi svn.test.com.conf`
 
 
-```
+```apache
 <VirtualHost *:80>
         ServerName svn.test.com
         <Location /svn>  
@@ -89,7 +89,7 @@ CustomLog "/var/log/apache2/access-svntest.log" combined
 创建完后`vi /etc/subversion/authz`权限文件
 
 
-```
+```config
 [groups]
 admin = test /*自己创建*/
 

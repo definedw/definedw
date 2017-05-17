@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-05-11T02:10:47.000Z</updated>
+  <updated>2017-05-16T15:08:08.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,281 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>我记得</title>
+    <link href="http://yoursite.com/2017/05/16/update17/"/>
+    <id>http://yoursite.com/2017/05/16/update17/</id>
+    <published>2017-05-16T03:05:01.000Z</published>
+    <updated>2017-05-16T15:08:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>本文为作者原创，转载请注明出处！</p>
+</blockquote>
+<p>很多时候，都会自己替自己做一些决定。</p>
+<p>当然这些决定不一定都执行得很好，我在每件事情上所花费的时间自然是不一样的，另外随着自己所处的环境改变也会影响我对自己决定的执行。</p>
+<p>我明白很多时候，人需要自我审视。虽然我在这世间所度过的时间还是比较少，在经验这方面有所缺失。但觉得这些年来自己最缺失的其实并不是所谓的勇气，而是一种判断力。在离开舒适的环境后，我一直不能冷静思考，每天都像一个很忙的人，但真实的情况是我对什么都有些无所适从。</p>
+<p>我考虑过这方面很多，但一直都得不到我想要的结果。当然，也有可能在某天其实我已经得到了正确的解答，只不过我自己没有意识罢了。这种不确定的未来，总会给我很多迷茫，但我想这只怕不是我退缩的理由。想来我这么多年来一直比较忽视的一部分就是细节，虽然我一直劝自己要注重细节。但从下意识里，我还是无法控制自己。</p>
+<p>每天都在得到知识的片段，每天也在失去一些片段。这些碎片化的知识总是很容易让自己在判断力上形成一种犹豫，给你一种错觉。好像一种事物是有很多的答案的样子，也许从统计学上来说，事物并没有绝对的概念。不知不觉自己又绕进去了，这样的意识判断，总会有很多麻烦，虽然说是一些小事，但总归会影响你在大体事物上的判断。</p>
+<p>出门在外我才发现，自己越来越佩服那些能够一如既往坚持的人。所以我一直努力劝自己，不要随波逐流。原来有段时间我认为随波逐流是件无可厚非的事情，因为就像太极里说的，只有圆润才能得以安静于世间。只是我的内心并不是安静的心情，所以这种意识，会给我的生活带来很大的不便。</p>
+<p>说到太极，我已经想学太极拳有一段时间了，但一直没有时间实践下去。为何一个年轻人需要喜欢太极，这其实并没有什么深层次的道理。因为从本质上来说，我开始发现周边世界对传统开始展现出一种尊重的态度，而我也希望自己能够在传统的意识里找到自己的一点立足之地。虽然我不知道太极的优点，或者说它的精神。但我想可以试着从模仿开始去了解，这也许是个不错的方式。 </p>
+<p>这一年来我，我也尽量希望自己在自己的路上慢一点前行。虽然慢同这个时代的主旋律格格不入，但我总觉得这才是我性格里的东西。我希望自己在这个急功近利的世界里，慢一点，都一点时间来思考自己要走的下一步，虽然很可惜至今我仍然没有找到那种让自己心平气和的方法，但我发现在小事上有条不紊，确实可以在生活其余的细节上有些帮助。</p>
+<p>生活并非一成不变的旅途，如果在心里不甘寂寞的时候无法忍受，以前的我或许会选择来做一些让人比较难以理解的事情来排解，只是现在我更趋近于忍受。可能这种忍受，已经开始被我自认为傅雷所讲的体会孤独。</p>
+<p>希望孤独让我得以成长！</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文为作者原创，转载请注明出处！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;很多时候，都会自己替自己做一些决定。&lt;/p&gt;
+&lt;p&gt;当然这些决定不一定都执行得很好，我在每件事情上所花费的时间自然是不一样的，另外随着自己所处的环境改变也会影响我对自己决定
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>移动输入框填坑系列</title>
+    <link href="http://yoursite.com/2017/05/16/update16/"/>
+    <id>http://yoursite.com/2017/05/16/update16/</id>
+    <published>2017-05-16T02:50:20.000Z</published>
+    <updated>2017-05-16T03:07:16.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>作者：yana@alloyteam<br>链接：<a href="https://www.qcloud.com/community/article/584124" target="_blank" rel="external">https://www.qcloud.com/community/article/584124</a><br>来源：腾讯云</p>
+</blockquote>
+<p>输入在移动端是一个很常用的功能，那么输入框必然是一个很重要的部分。然而，移动端输入框总会遇到各种各样的问题，无论是样式还是ios和android两端体验不一致都是很让我们头疼的问题，那么如何使移动web的输入框体验更贴近原生也成了一个需要我们多多思考和研究的问题。</p>
+<h3 id="一、文字输入限制"><a href="#一、文字输入限制" class="headerlink" title="一、文字输入限制"></a>一、文字输入限制</h3><p>我们拿最多可输入16个字为例。当输入字数（注意，不是字符长度）超过16字时，会触发tips提示，并且不能继续输入。<br>办法一：<br>textarea可以使用maxlength进行输入字数限制。<br>但是这个办法只能单纯的限制length，有时并不能真正的结局问题。<br>办法二：<br>在将第二个办法之前先来讲讲下面的几种情况：<br><strong>1、非直接的文字输入</strong><br>什么叫做非直接的文字输入呢？</p>
+<p><img src="http://www.alloyteam.com/wp-content/uploads/2017/03/%E9%9D%9E%E7%9B%B4%E6%8E%A5%E8%BE%93%E5%85%A5.gif" alt="1"></p>
+<p>当输入汉字时必然会是非直接输入，需要我们点选才能正式输入。<br>当我们字数限制为16个字，需要实时检查是否到16字。输入文字时，当有非直接的文字输入时，监听keydown事件和input事件都会直接触发判断字数逻辑，会截断我们正在输入的文字。<br>解决办法：<br>监听compositionend（当直接的文字输入时触发）这时，当没选中中文的时候不会进行字数判断。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'#input'</span>).on(<span class="string">'compositionend'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">        <span class="keyword">var</span> len = $(<span class="keyword">this</span>).val().length;</div><div class="line">        <span class="keyword">if</span> (len &gt; <span class="number">16</span>) &#123;</div><div class="line">            <span class="comment">// 提示超过16字</span></div><div class="line">        &#125;</div><div class="line">    &#125;);</div></pre></td></tr></table></figure>
+<p><strong>2、emoji表情的输入</strong></p>
+<p>当输入emoji的时候，但是，当输入emoji表情的时候，js中判断emoji表情的length为2，因此emoji正常应该最多只能输入8个，但是ios端却把emoji的length算为1，可以输入16个emoji。这样就导致了两端的体验不同。因此需要在js中来进行字数限制。<br>再加上汉字输入问题，那么就加入一个标记位，来判断是否是直接的文字输入。然后监听input，限制字数，当超过字数限制的时候，把前16个字截断显示出来就ok了。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> cpLock;</div><div class="line">$(<span class="string">'#input'</span>).on(<span class="string">'compositionstart'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    cpLock = <span class="literal">true</span>；</div><div class="line">&#125;);</div><div class="line">$(<span class="string">'#input'</span>).on(<span class="string">'compositionend'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    cpLock = <span class="literal">false</span>;</div><div class="line">&#125;);</div><div class="line">$(<span class="string">'#input'</span>).on(<span class="string">'input'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="keyword">if</span> (!cpLock) &#123;</div><div class="line">        <span class="keyword">if</span> (e.target.value.length - <span class="number">17</span> &gt;=<span class="number">0</span>) &#123;</div><div class="line">            <span class="keyword">var</span> txt = $(e.target).val().substring(<span class="number">0</span>, <span class="number">16</span>);</div><div class="line">            $(e.target).val(txt);</div><div class="line">            <span class="comment">// 超过16字提示</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h3 id="二、textarea置底显示问题"><a href="#二、textarea置底显示问题" class="headerlink" title="二、textarea置底显示问题"></a>二、textarea置底显示问题</h3><p>ios中的输入体验永远伴随着一个问题，就是当唤起键盘后，整个页面会被键盘压缩，也就是说页面的高度变小，并且所有的fixed全部变为了absolute。<br>android效果：</p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200205641_2166_1493200205692.png" alt="2"></p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200218789_3178_1493200218749.jpg" alt="3"></p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200253851_4072_1493200253802.png" alt="4"></p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200262513_4775_1493200262456.jpg" alt="5"></p>
+<p>使用fixed定位<br>可见android中唤起键盘是覆盖在页面上，不会压缩页面<br>在ios上的效果：</p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200279779_2768_1493200279852.png" alt="6"></p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200290064_1181_1493200289998.png" alt="7"></p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200297450_9854_1493200297374.png" alt="8"></p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200304786_3590_1493200304711.png" alt="9"></p>
+<p>那么如果我们需要将<strong>输入框固定在屏幕下方，而当键盘被唤起同时输入框固定在键盘</strong>上方（如下图样式）该如何解决呢？</p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200316198_2673_1493200316136.png" alt="10"></p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200335879_152_1493200335845.png" alt="11"></p>
+<p><img src="https://blog-10039692.file.myqcloud.com/1493200345107_9274_1493200345062.png" alt="12"></p>
+<p>可以看出，键盘会将页面顶上去。那么如果希望可以将输入框和键盘完全贴合，我们可以使用div模拟一个假的输入框，使用定位将真正的输入框隐藏掉，当点击假的输入框的时候，将真正的输入框定位到键盘上方，并且手动获取输入框焦点。</p>
+<p>在实现过程中需要注意下面几个问题：</p>
+<p><strong>1、真正的输入框的位置计算：</strong></p>
+<p>首先记录无键盘时的window.innerHeight，当键盘弹出后再获取当前的window.innerHeight，两者的差值即为键盘的高度，那么定位真输入框自然就很容易了</p>
+<p><strong>2、在ios下手动获取焦点不可以用click事件，需要使用tap事件才可以手动触发</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'#fake-input'</span>).on($.os.ios?<span class="string">'tap'</span> : <span class="string">'click'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        initHeight = <span class="built_in">window</span>.innerHeight;</div><div class="line">        $(<span class="string">'#input'</span>).focus();</div><div class="line">    &#125;);</div></pre></td></tr></table></figure>
+<p><strong>3、当键盘收起的时候我们需要将真输入框再次隐藏掉，除了使用失去焦点（blur）方法，还有什么方法可以判断键盘是否收起呢？</strong></p>
+<p>这里可以使用setInterval监听，当当前window.innerHeight和整屏高度相等的时候判断为键盘收起。<br><strong>注意：</strong>键盘弹起需要一点时间，所以计算当前屏幕高度也需要使用setInterval</p>
+<p><strong>4、因为textarea中的文字不能置底显示，当输入超过一行textarea需要自动调整高度，</strong>因此将scrollHeight赋值给textarea的height。当删除文字的时候需要height也有变化，因此每次input都先将height置0，然后再赋值。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">'#textarea'</span>).css(<span class="string">'height'</span>, <span class="number">0</span>);</div><div class="line">    $(<span class="string">'#textarea'</span>).css(<span class="string">'height'</span>, $(<span class="string">'#textarea'</span>)[<span class="number">0</span>].scrollHeight);</div></pre></td></tr></table></figure>
+<p>未完待续…</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;作者：yana@alloyteam&lt;br&gt;链接：&lt;a href=&quot;https://www.qcloud.com/community/article/584124&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://www
+    
+    </summary>
+    
+      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CSS渐变</title>
+    <link href="http://yoursite.com/2017/05/15/update15/"/>
+    <id>http://yoursite.com/2017/05/15/update15/</id>
+    <published>2017-05-15T07:41:17.000Z</published>
+    <updated>2017-05-16T02:50:07.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>作者：valar_cC<br>链接：<a href="http://www.jianshu.com/p/3b9c19746d6c" target="_blank" rel="external">http://www.jianshu.com/p/3b9c19746d6c</a><br>来源：简书</p>
+</blockquote>
+<h3 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h3><p><code>linear-gradient(90deg,red 20%,blue 50%,yellow 80%);</code></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1880075-8c79e7ec3e7433e4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>很显然通过这张图，你会大概的明白设置这些参数的作用。虽然我并没有用什么文字去解释它。（所以当你看不明白定义的时候，一定要实践。）<br>接下来，我们要搞点事情。我们将颜色的分隔点重叠。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">width</span>: 300<span class="selector-tag">px</span>;</div><div class="line"><span class="selector-tag">height</span>: 200<span class="selector-tag">px</span>;</div><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">linear-gradient</span>(90<span class="selector-tag">deg</span>,<span class="selector-tag">blue</span> 100<span class="selector-tag">px</span>,<span class="selector-id">#fff</span> 100<span class="selector-tag">px</span>,<span class="selector-id">#fff</span> 200<span class="selector-tag">px</span>,<span class="selector-tag">red</span> 200<span class="selector-tag">px</span>);</div></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1880075-16eab0f37a7575be.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="images"></p>
+<p>没错这就是上述渐变代码产生的效果，是不是感觉打破你以前对渐变的印象。<br>下面我们利用linear-gradient实现更酷的效果，比如:</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1880075-14621e5f69dbdece.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image1"></p>
+<p>是不是感觉已经突破自己对渐变的认识。让我来说一下实现这个背景的思路：这是个有规律的图案，我们要找到它的基本图案，我相信你已经找到了。<br>我们需要用到的知识点：</p>
+<ul>
+<li>background支持声明多个linear-gradient，通过逗号分隔；</li>
+<li>当你声明多个linear-gradient，最先声明的，离用户越近。（这里就需要我们考虑遮盖的问题，一般采用transparent）；</li>
+<li>还没掌握background的简写方式，可是不行的哦；</li>
+<li>background-repeat、background-size和background-position的合理结合。</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">width: 410px;</div><div class="line">height: 410px;</div><div class="line">background: linear-gradient(rgb(2,222,222) 10px, transparent 10px) repeat left top / 40px,</div><div class="line">            linear-gradient(90deg,rgb(2,222,222) 10px, transparent 10px) repeat left top / 40px;</div></pre></td></tr></table></figure>
+<p>你看看，以前实现这样的效果，我们只能苦苦哀求美工切图，现在在CSS3的浪潮中，我们可以自给自足（^_^）。<br>而且通过渐变我们可以实现背景颜色的动画，而不需要消耗额外的HTML元素达到我们预期的效果。例子：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1880075-708595a213206216.gif?imageMogr2/auto-orient/strip" alt="image2"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@mixin menuaction($color) &#123;</div><div class="line">        background: linear-gradient($color 100%, transparent 100%) no-repeat center bottom / 100% 10%;</div><div class="line">        &amp;:hover &#123;</div><div class="line">            background-size: 100% 100%;</div><div class="line">            color: #fff;</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+<h3 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h3><p>基本上径向渐变与线性渐变差不多，只不过它是由中心点向外扩散。所以我这里就不再赘述。<br>话不多说，先画个同心圆：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1880075-d518dca3db7dbc35.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image3"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">border-radius</span>: 50%;</div><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">circle</span>,<span class="selector-tag">rgb</span>(22,222,111) 0,<span class="selector-tag">rgb</span>(22,222,111) 50<span class="selector-tag">px</span>,<span class="selector-tag">red</span> 50<span class="selector-tag">px</span>,<span class="selector-tag">red</span> 100<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(222,222,1) 100<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(222,222,1) 150<span class="selector-tag">px</span>,<span class="selector-tag">rgb</span>(222,2,111) 150<span class="selector-tag">px</span>);</div></pre></td></tr></table></figure>
+<p>最后以什么结束呢，哈哈最近各种优惠券，那我们用渐变的知识来搞张优惠券吧：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1880075-23ba21064bfa2145.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image4"></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">width</span>: 300<span class="selector-tag">px</span>;</div><div class="line"><span class="selector-tag">height</span>: 120<span class="selector-tag">px</span>;</div><div class="line"><span class="selector-tag">background</span>: <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">transparent</span> 0, <span class="selector-tag">transparent</span> 5<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(247,245,201) 5<span class="selector-tag">px</span>) <span class="selector-tag">no-repeat</span>,</div><div class="line">            <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">transparent</span> 0, <span class="selector-tag">transparent</span> 5<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(247,245,201) 5<span class="selector-tag">px</span>) <span class="selector-tag">no-repeat</span>,</div><div class="line">            <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">transparent</span> 0, <span class="selector-tag">transparent</span> 5<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(247,245,201) 5<span class="selector-tag">px</span>) <span class="selector-tag">no-repeat</span>,</div><div class="line">            <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">transparent</span> 0, <span class="selector-tag">transparent</span> 5<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(247,245,201) 5<span class="selector-tag">px</span>) <span class="selector-tag">no-repeat</span>,</div><div class="line">            <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">transparent</span> 0, <span class="selector-tag">transparent</span> 5<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(247,245,201) 5<span class="selector-tag">px</span>) <span class="selector-tag">no-repeat</span>,</div><div class="line">            <span class="selector-tag">radial-gradient</span>(<span class="selector-tag">transparent</span> 0, <span class="selector-tag">transparent</span> 5<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(247,245,201) 5<span class="selector-tag">px</span>) <span class="selector-tag">no-repeat</span>,</div><div class="line">            <span class="selector-tag">radial-gradient</span>(<span class="selector-id">#fff</span> 0, <span class="selector-id">#fff</span> 10<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(247,245,201) 10<span class="selector-tag">px</span>) <span class="selector-tag">no-repeat</span>,</div><div class="line">            <span class="selector-tag">radial-gradient</span>(<span class="selector-id">#fff</span> 0, <span class="selector-id">#fff</span> 10<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(247,245,201) 10<span class="selector-tag">px</span>) <span class="selector-tag">no-repeat</span>,</div><div class="line">            <span class="selector-tag">linear-gradient</span>(90<span class="selector-tag">deg</span>,<span class="selector-tag">transparent</span> 10<span class="selector-tag">px</span>, <span class="selector-tag">rgb</span>(247,245,201) 10<span class="selector-tag">px</span>);</div><div class="line">        <span class="selector-tag">background-size</span>: 20<span class="selector-tag">px</span> 20<span class="selector-tag">px</span>,20<span class="selector-tag">px</span> 20<span class="selector-tag">px</span>,20<span class="selector-tag">px</span> 20<span class="selector-tag">px</span>,20<span class="selector-tag">px</span> 20<span class="selector-tag">px</span>,20<span class="selector-tag">px</span> 20<span class="selector-tag">px</span>,20<span class="selector-tag">px</span> 20<span class="selector-tag">px</span>,60<span class="selector-tag">px</span> 60<span class="selector-tag">px</span>,60<span class="selector-tag">px</span> 60<span class="selector-tag">px</span>,100% 100%;</div><div class="line">        <span class="selector-tag">background-position</span>: <span class="selector-tag">-10px</span> 0,<span class="selector-tag">-10px</span> 20<span class="selector-tag">px</span>,<span class="selector-tag">-10px</span> 40<span class="selector-tag">px</span>,<span class="selector-tag">-10px</span> 60<span class="selector-tag">px</span>,<span class="selector-tag">-10px</span> 80<span class="selector-tag">px</span>,<span class="selector-tag">-10px</span> 100<span class="selector-tag">px</span>,60<span class="selector-tag">px</span> <span class="selector-tag">-30px</span>,60<span class="selector-tag">px</span> 90<span class="selector-tag">px</span>,<span class="selector-tag">left</span> <span class="selector-tag">center</span>;</div></pre></td></tr></table></figure>
+<p>上面代码应该把size和position放在简写属性里（我就不改了。。。），到此大家应该会对渐变有个新的理解吧。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;作者：valar_cC&lt;br&gt;链接：&lt;a href=&quot;http://www.jianshu.com/p/3b9c19746d6c&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.jianshu.com/p/3b
+    
+    </summary>
+    
+      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>是少了点什么吧</title>
+    <link href="http://yoursite.com/2017/05/15/update14/"/>
+    <id>http://yoursite.com/2017/05/15/update14/</id>
+    <published>2017-05-15T07:19:02.000Z</published>
+    <updated>2017-05-15T07:40:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>本文为作者原创，转载请注明出处！</p>
+</blockquote>
+<p>月光会溜走，云彩会消失，时光会逝去，而你会离开我。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文为作者原创，转载请注明出处！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;月光会溜走，云彩会消失，时光会逝去，而你会离开我。&lt;/p&gt;
+
+    
+    </summary>
+    
+      <category term="琐碎" scheme="http://yoursite.com/categories/%E7%90%90%E7%A2%8E/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>大公司怎么部署前端代码</title>
+    <link href="http://yoursite.com/2017/05/12/update13/"/>
+    <id>http://yoursite.com/2017/05/12/update13/</id>
+    <published>2017-05-12T01:33:51.000Z</published>
+    <updated>2017-05-12T07:32:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>来源：GitHub<br>作者：fouber<br>链接：<a href="https://github.com/fouber/blog/issues/6" target="_blank" rel="external">https://github.com/fouber/blog/issues/6</a></p>
+</blockquote>
+<p>这是一个非常有趣的 <strong>非主流前端领域</strong>，这个领域要探索的是如何用工程手段解决前端开发和部署优化的综合问题，入行到现在一直在学习和实践中。</p>
+<p>在我的印象中，facebook是这个领域的鼻祖，有兴趣、有梯子的同学可以去看看facebook的页面源代码，体会一下什么叫工程化。</p>
+<p>接下来，我想从原理展开讲述，多图，较长，希望能有耐心看完。</p>
+<hr>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/01.png" alt="1"></p>
+<p>让我们返璞归真，从原始的前端开发讲起。上图是一个“可爱”的index.html页面和它的样式文件a.css，用文本编辑器写代码，无需编译，本地预览，确认OK，丢到服务器，等待用户访问。前端就是这么简单，好好玩啊，门槛好低啊，分分钟学会有木有！</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/02.png" alt="2"></p>
+<p>然后我们访问页面，看到效果，再查看一下网络请求，200！不错，太™完美了！那么，研发完成。。。。了么？</p>
+<p>等等，这还没完呢！对于大公司来说，那些变态的访问量和性能指标，将会让前端一点也不“好玩”。</p>
+<p>看看那个a.css的请求吧，如果每次用户访问页面都要加载，是不是很影响性能，很浪费带宽啊，我们希望最好这样：</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/03.png" alt="3"></p>
+<p>利用304，让浏览器使用本地缓存。但，这样也就够了吗？不成！304叫协商缓存，这玩意还是要和服务器通信一次，我们的优化级别是变态级，所以必须彻底灭掉这个请求，变成这样：</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/04.png" alt="4"></p>
+<p>强制浏览器使用本地缓存（cache-control/expires），不要和服务器通信。好了，请求方面的优化已经达到变态级别，那问题来了：你都不让浏览器发资源请求了，这缓存咋更新？</p>
+<p>很好，相信有人想到了办法：<strong>通过更新页面中引用的资源路径，让浏览器主动放弃缓存，加载新资源。</strong>好像这样：</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/05.png" alt="5"></p>
+<p>下次上线，把链接地址改成新的版本，就更新资源了不是。OK，问题解决了么？！当然没有！大公司的变态又来了，思考这种情况：</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/07.png" alt="6"></p>
+<p>页面引用了3个css，而某次上线只改了其中的a.css，如果所有链接都更新版本，就会导致b.css，c.css的缓存也失效，那岂不是又有浪费了？！</p>
+<p>重新开启变态模式，我们不难发现，要解决这种问题，必须让url的修改与文件内容关联，也就是说，只有文件内容变化，才会导致相应url的变更，从而实现文件级别的精确缓存控制。</p>
+<p>什么东西与文件内容相关呢？我们会很自然的联想到利用 <a href="http://baike.baidu.com/view/10961371.htm" target="_blank" rel="external">数据摘要要算法</a> 对文件求摘要信息，摘要信息与文件内容一一对应，就有了一种可以精确到单个文件粒度的缓存控制依据了。好了，我们把url改成带摘要信息的：</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/08.png" alt="7"></p>
+<p>这回再有文件修改，就只更新那个文件对应的url了，想到这里貌似很完美了。你觉得这就够了么？大公司告诉你：图样图森破！</p>
+<p>唉~~~~，让我喘口气</p>
+<p>现代互联网企业，为了进一步提升网站性能，会把静态资源和动态网页分集群部署，静态资源会被部署到CDN节点上，网页中引用的资源也会变成对应的部署路径：</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/09.png" alt="8"></p>
+<p>好了，当我要更新静态资源的时候，同时也会更新html中的引用吧，就好像这样：</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/10.png" alt="9"></p>
+<p>这次发布，同时改了页面结构和样式，也更新了静态资源对应的url地址，现在要发布代码上线，亲爱的前端研发同学，你来告诉我，咱们是先上线页面，还是先上线静态资源？</p>
+<ol>
+<li><strong>先部署页面，再部署资源：</strong>在二者部署的时间间隔内，如果有用户访问页面，就会在新的页面结构中加载旧的资源，并且把这个旧版本的资源当做新版本缓存起来，其结果就是：用户访问到了一个样式错乱的页面，除非手动刷新，否则在资源缓存过期之前，页面会一直执行错误。</li>
+<li><strong>先部署资源，再部署页面：</strong>在部署时间间隔之内，有旧版本资源本地缓存的用户访问网站，由于请求的页面是旧版本的，资源引用没有改变，浏览器将直接使用本地缓存，这种情况下页面展现正常；但没有本地缓存或者缓存过期的用户访问网站，就会出现旧版本页面加载新版本资源的情况，导致页面执行错误，但当页面完成部署，这部分用户再次访问页面又会恢复正常了。</li>
+</ol>
+<p>好的，上面一坨分析想说的就是：先部署谁都不成！都会导致部署过程中发生页面错乱的问题。所以，访问量不大的项目，可以让研发同学苦逼一把，等到半夜偷偷上线，先上静态资源，再部署页面，看起来问题少一些。</p>
+<p>但是，大公司超变态，没有这样的“绝对低峰期”，只有“相对低峰期”。So，为了稳定的服务，还得继续追求极致啊！</p>
+<p>这个奇葩问题，起源于资源的 覆盖式发布，用 待发布资源 覆盖 已发布资源，就有这种问题。解决它也好办，就是实现 非覆盖式发布。</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/11.png" alt="10"></p>
+<p>看上图，用文件的摘要信息来对资源文件进行重命名，把摘要信息放到资源文件发布路径中，这样，内容有修改的资源就变成了一个新的文件发布到线上，不会覆盖已有的资源文件。上线过程中，先全量部署静态资源，再灰度部署页面，整个问题就比较完美的解决了。</p>
+<p>所以，大公司的静态资源优化方案，基本上要实现这么几个东西：</p>
+<blockquote>
+<blockquote>
+<ol>
+<li>配置超长时间的本地缓存 —— 节省带宽，提高性能</li>
+<li>采用内容摘要作为缓存更新依据 —— 精确的缓存控制</li>
+<li>静态资源CDN部署 —— 优化网络请求</li>
+<li>更资源发布路径实现非覆盖式发布 —— 平滑升级</li>
+</ol>
+</blockquote>
+</blockquote>
+<p>全套做下来，就是相对比较完整的静态资源缓存控制方案了，而且，还要注意的是，静态资源的缓存控制要求在 前端所有静态资源加载的位置都要做这样的处理 。是的，所有！什么js、css自不必说，还要包括js、css文件中引用的资源路径，由于涉及到摘要信息，引用资源的摘要信息也会引起引用文件本身的内容改变，从而形成级联的摘要变化，大概示意图就是：</p>
+<p><img src="https://raw.githubusercontent.com/fouber/blog/master/assets/resource/14.png" alt="11"></p>
+<p>好了，目前我们快速的学习了一下前端工程中关于静态资源缓存要面临的优化和部署问题，新的问题又来了：这™让工程师怎么写码啊！！！</p>
+<p>要解释优化与工程的结合处理思路，又会扯出一堆有关模块化开发、资源加载、请求合并、前端框架等等的工程问题，以上只是开了个头，解决方案才是精髓，但要说的太多太多，有空再慢慢展开吧。</p>
+<blockquote>
+<p>总之，前端性能优化绝逼是一个工程问题！</p>
+</blockquote>
+<p>以上不是我YY的，可以观察 百度 或者 facebook 的页面以及静态资源源代码，查看它们的资源引用路径处理，以及网络请中静态资源的缓存控制部分。再次赞叹facebook的前端工程建设水平，跪舔了。</p>
+<p>建议前端工程师多多关注前端工程领域，也许有人会觉得自己的产品很小，不用这么变态，但很有可能说不定某天你就需要做出这样的改变了。而且，如果我们能把事情做得更极致，为什么不去做呢？</p>
+<p>另外，也不要觉得这些是运维或者后端工程师要解决的问题。如果由其他角色来解决，大家总是把自己不关心的问题丢给别人，那么前端工程师的开发过程将受到极大的限制，这种情况甚至在某些大公司都不少见！</p>
+<p>妈妈，我再也不玩前端了。。。。5555</p>
+<h2 id="业界实践"><a href="#业界实践" class="headerlink" title="业界实践"></a>业界实践</h2><h5 id="Assets-Pipeline"><a href="#Assets-Pipeline" class="headerlink" title="Assets Pipeline"></a>Assets Pipeline</h5><p>Rails中的Assets Pipeline完成了以上所说的优化细节，对整个静态资源的管理上的设计思考也是如此，了解rails的人也可以把此答案当做是对rails中assets pipeline设计原理的分析。</p>
+<p>rails通过把静态资源变成erb模板文件，然后加入&lt;%= asset_path ‘image.png’ %&gt;，上线前预编译完成处理，fis的实现思路跟这个几乎完全一样，但我们当初确实不知道有rails的这套方案存在。</p>
+<p>相关资料：</p>
+<ul>
+<li>英文版：<a href="http://guides.rubyonrails.org/asset_pipeline.html" target="_blank" rel="external">http://guides.rubyonrails.org/asset_pipeline.html</a></li>
+<li>中文版：<a href="http://guides.ruby-china.org/asset_pipeline.html" target="_blank" rel="external">http://guides.ruby-china.org/asset_pipeline.html</a></li>
+</ul>
+<h5 id="FIS的解决方案"><a href="#FIS的解决方案" class="headerlink" title="FIS的解决方案"></a>FIS的解决方案</h5><p>用 F.I.S 包装了一个小工具，完整实现整个回答所说的最佳部署方案，并提供了源码对照，可以感受一下项目源码和部署代码的对照。</p>
+<ul>
+<li>源码项目：<a href="https://github.com/fouber/static-resource-digest-project" target="_blank" rel="external">https://github.com/fouber/static-resource-digest-project</a></li>
+<li>部署项目：<a href="https://github.com/fouber/static-resource-digest-project-release" target="_blank" rel="external">https://github.com/fouber/static-resource-digest-project-release</a></li>
+</ul>
+<p>部署项目可以理解为线上发布后的结果，可以在部署项目里查看所有资源引用的md5化处理。</p>
+<p>这个示例也可以用于和assets pipeline做比较。fis没有assets的目录规范约束，而且可以以独立工具的方式组合各种前端开发语言（coffee、less、sass/scss、stylus、markdown、jade、ejs、handlebars等等你能想到的），并与其他后端开发语言结合。</p>
+<p>assets pipeline的设计思想值得独立成工具用于前端工程，fis就当做这样的一个选择吧。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;来源：GitHub&lt;br&gt;作者：fouber&lt;br&gt;链接：&lt;a href=&quot;https://github.com/fouber/blog/issues/6&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github
+    
+    </summary>
+    
+      <category term="转载" scheme="http://yoursite.com/categories/%E8%BD%AC%E8%BD%BD/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>开发者装逼手册</title>
     <link href="http://yoursite.com/2017/05/10/update12/"/>
     <id>http://yoursite.com/2017/05/10/update12/</id>
     <published>2017-05-10T06:35:10.000Z</published>
-    <updated>2017-05-11T02:10:47.000Z</updated>
+    <updated>2017-05-12T06:59:31.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>来源：GitHub<br>链接：<a href="https://github.com/kenberkeley/bigger-jser" target="_blank" rel="external">https://github.com/kenberkeley/bigger-jser</a><br>作者：天涯孤雁</p>
@@ -62,7 +332,7 @@
 <p>有些新手会写出这种代码：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">/* Low */</div><div class="line">// 找出与用户1同市的所有用户</div><div class="line">User.findById(1).then((user) =&gt; &#123;</div><div class="line">  User.find(&#123; city: user.city &#125;).then((users) =&gt; &#123;</div><div class="line">    res.json(users.toJSON())</div><div class="line">  &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 <p>这属于 Promise<a href="http://bluebirdjs.com/docs/anti-patterns.html" target="_blank" rel="external">反模式</a>，与回调函数无异</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">/* Bigger */</div><div class="line">User.findById(1).then((user) =&gt; &#123;</div><div class="line">  return User.find(&#123; city: user.city &#125;) // 返回Promise</div><div class="line">&#125;).then((users) =&gt; &#123;</div><div class="line">  res.json(users.toJSON())</div><div class="line">&#125;).catch(next)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">User.findById(1).then((user) =&gt; &#123;</div><div class="line">  return User.find(&#123; city: user.city &#125;) // 返回Promise</div><div class="line">&#125;).then((users) =&gt; &#123;</div><div class="line">  res.json(users.toJSON())</div><div class="line">&#125;).catch(next)</div></pre></td></tr></table></figure>
 <h3 id="包管理工具"><a href="#包管理工具" class="headerlink" title="包管理工具"></a>包管理工具</h3><p>如果你被<br>Bower/spm/Component/Duo…<br>坑过<br>请回到npm的怀抱<br>什么jspm有完没完…</p>
 <h3 id="构建工具"><a href="#构建工具" class="headerlink" title="构建工具"></a>构建工具</h3><p>想当年我不懂什么是自动构建工具<br>他们说：生命苦短,我们用Grunt</p>
 <p>好不容易用上Grunt的时候<br>他们又说：Gulp基于流,符合Unix哲学</p>
@@ -111,7 +381,7 @@
     <link href="http://yoursite.com/2017/05/09/update11/"/>
     <id>http://yoursite.com/2017/05/09/update11/</id>
     <published>2017-05-09T07:07:35.000Z</published>
-    <updated>2017-05-10T05:39:31.000Z</updated>
+    <updated>2017-05-12T06:53:12.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>本文为作者原创，转载请注明出处！</p>
@@ -137,13 +407,13 @@
 <li><code>sudo a2enmod dav_svn</code></li>
 </ul>
 <p>开启模块之后，则对以下文件做修改。贴一份配置：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;Location /svn&gt;  #/svn表示http://hostname/svn/myproject</div><div class="line">  DAV svn</div><div class="line">  SVNParentPath /home/svn #配置仓库父目录</div><div class="line">  AuthType Basic</div><div class="line">  AuthName &quot;SC Project Svn&quot;</div><div class="line">  AuthUserFile &quot;/etc/subversion/passwd&quot;  #svn用户文件</div><div class="line">  AuthzSVNAccessFile &quot;/etc/subversion/authz&quot; #授权访问文件</div><div class="line">  Require valid-user</div><div class="line">&lt;/Location&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="section">&lt;Location /svn&gt;</span>  <span class="comment">#/svn表示http://hostname/svn/myproject</span></div><div class="line">  <span class="attribute">DAV</span> svn</div><div class="line">  <span class="attribute">SVNParentPath</span> /home/svn #配置仓库父目录</div><div class="line">  <span class="attribute">AuthType</span> Basic</div><div class="line">  <span class="attribute">AuthName</span> <span class="string">"SC Project Svn"</span></div><div class="line">  <span class="attribute">AuthUserFile</span> <span class="string">"/etc/subversion/passwd"</span>  #svn用户文件</div><div class="line">  <span class="attribute">AuthzSVNAccessFile</span> <span class="string">"/etc/subversion/authz"</span> #授权访问文件</div><div class="line">  <span class="attribute">Require</span> valid-user</div><div class="line"><span class="section">&lt;/Location&gt;</span></div></pre></td></tr></table></figure>
 <p>如需要配置虚拟主机：</p>
 <ul>
 <li><code>cp 000-default.conf svn.test.com.conf</code></li>
 <li><code>vi svn.test.com.conf</code></li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">&lt;VirtualHost *:80&gt;</div><div class="line">        ServerName svn.test.com</div><div class="line">        &lt;Location /svn&gt;  </div><div class="line">            DAV svn</div><div class="line">            SVNParentPath /home/svn </div><div class="line">            AuthType Basic</div><div class="line">            AuthName &quot;SC Project Svn&quot;</div><div class="line">            AuthUserFile &quot;/etc/subversion/passwd&quot;  </div><div class="line">            AuthzSVNAccessFile &quot;/etc/subversion/authz&quot; </div><div class="line">            Require valid-user</div><div class="line">        &lt;/Location&gt;</div><div class="line"></div><div class="line">ErrorLog &quot;/var/log/apache2/error-svntest.log&quot;</div><div class="line">CustomLog &quot;/var/log/apache2/access-svntest.log&quot; combined</div><div class="line">&lt;/VirtualHost&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="section">&lt;VirtualHost *:80&gt;</span></div><div class="line">        <span class="attribute"><span class="nomarkup">ServerName</span></span> svn.test.com</div><div class="line">        <span class="section">&lt;Location /svn&gt;</span>  </div><div class="line">            <span class="attribute">DAV</span> svn</div><div class="line">            <span class="attribute">SVNParentPath</span> /home/svn </div><div class="line">            <span class="attribute">AuthType</span> Basic</div><div class="line">            <span class="attribute">AuthName</span> <span class="string">"SC Project Svn"</span></div><div class="line">            <span class="attribute">AuthUserFile</span> <span class="string">"/etc/subversion/passwd"</span>  </div><div class="line">            <span class="attribute">AuthzSVNAccessFile</span> <span class="string">"/etc/subversion/authz"</span> </div><div class="line">            <span class="attribute">Require</span> valid-user</div><div class="line">        <span class="section">&lt;/Location&gt;</span></div><div class="line"></div><div class="line"><span class="attribute">ErrorLog</span> <span class="string">"/var/log/apache2/error-svntest.log"</span></div><div class="line"><span class="attribute">CustomLog</span> <span class="string">"/var/log/apache2/access-svntest.log"</span> combined</div><div class="line"><span class="section">&lt;/VirtualHost&gt;</span></div></pre></td></tr></table></figure>
 <ul>
 <li><code>a2ensite svn.test.com.conf</code></li>
 <li><code>apachectl restart</code></li>
@@ -174,7 +444,7 @@
     <link href="http://yoursite.com/2017/05/09/update10/"/>
     <id>http://yoursite.com/2017/05/09/update10/</id>
     <published>2017-05-09T06:44:07.000Z</published>
-    <updated>2017-05-09T06:53:06.000Z</updated>
+    <updated>2017-05-11T07:37:24.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>来源：大牛笔记<br>链接：<a href="http://www.daniubiji.cn/archives/25" target="_blank" rel="external">http://www.daniubiji.cn/archives/25</a></p>
@@ -218,15 +488,15 @@
     <link href="http://yoursite.com/2017/05/08/update09/"/>
     <id>http://yoursite.com/2017/05/08/update09/</id>
     <published>2017-05-08T01:19:40.000Z</published>
-    <updated>2017-05-09T06:38:34.000Z</updated>
+    <updated>2017-05-11T07:25:11.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>作者：熊汉彪<br>链接：<a href="https://zhuanlan.zhihu.com/p/26141351" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/26141351</a><br>来源：知乎</p>
 </blockquote>
 <h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><p>众所周知的移动端，一般来说可以分为上中下三个部分，分别为 header、main、footer，其中header、footer 是固定高度，分别固定在页面顶部和页面底部，而 main 是占据页面其余位置，并且可以滚动。基本是以下形式：<br><img src="http://upload-images.jianshu.io/upload_images/2741993-6761d169556abcc9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/360" alt="layout"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line"></div><div class="line">  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">  &lt;div class=&quot;main&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;</div><div class="line"></div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>根据页面滚动的位置分为两种布局，一种是滚动 body，另一种是固定 body 的高度为100%，在 main 中滚动。第一种布局有个优点，就是页面的地址栏会随着 body 的滚动隐藏起来，并且 Android 设备中，滚动 body 会更加的流畅，如果项目中有类似需求可以考虑。实现布局的方式如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  overflow: auto;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.header,</div><div class="line">.footer &#123;</div><div class="line">  position: fixed;</div><div class="line">  left: 0;</div><div class="line">  right: 0;</div><div class="line">  height: 44px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.header &#123;</div><div class="line">  top: 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.footer &#123;</div><div class="line">  bottom: 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line">.main &#123;</div><div class="line">  height: 100%;</div><div class="line">  padding: 44px 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">overflow</span>: auto;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.header</span>,</div><div class="line"><span class="selector-class">.footer</span> &#123;</div><div class="line">  <span class="attribute">position</span>: fixed;</div><div class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">right</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">44px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.header</span> &#123;</div><div class="line">  <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.footer</span> &#123;</div><div class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.main</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">44px</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>第一种情况比较适合长列表页面，整个页面除了 header 和 footer 之外都需要滚动，但很多时候，我们只希望页面的某个元素滚动，这个时候，就采取第二种布局方式。<br>这种页面布局有三种相对简单的实现方式：</p>
 <ol>
 <li>fixed 定位</li>
@@ -234,7 +504,7 @@
 <li>flex 定位</li>
 </ol>
 <p>最容易想到的实现方式是 fixed 定位，实现方式如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">html, body &#123;</div><div class="line">  height: 100%;</div><div class="line">  overflow: hidden;</div><div class="line">&#125;</div><div class="line">.header,</div><div class="line">.footer &#123;</div><div class="line">  position: fixed;</div><div class="line">  left: 0;</div><div class="line">  right: 0;</div><div class="line">  height: 44px;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">.header &#123;</div><div class="line">  top: 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">.footer &#123;</div><div class="line">  bottom: 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">.main &#123;</div><div class="line">  height: 100%;</div><div class="line">  padding: 44px 0;</div><div class="line">  box-sizing: border-box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span>, <span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">  <span class="attribute">overflow</span>: hidden;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.header</span>,</div><div class="line"><span class="selector-class">.footer</span> &#123;</div><div class="line">  <span class="attribute">position</span>: fixed;</div><div class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">right</span>: <span class="number">0</span>;</div><div class="line">  <span class="attribute">height</span>: <span class="number">44px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="selector-class">.header</span> &#123;</div><div class="line">  <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="selector-class">.footer</span> &#123;</div><div class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="selector-class">.main</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">44px</span> <span class="number">0</span>;</div><div class="line">  <span class="attribute">box-sizing</span>: border-box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>fixed 定位实现起来简单，在大多数浏览器中也能正常显示，但是 fixed 定位在移动端会有兼容性问题，后面会提到，所以不建议这种实现方式。absolute 定位和 fixed 定位类似，只要把 header 的 footer 的 position 改为 absolute 就可以了。细心的小伙伴可能发现了，这里的 main 没有设置 overflow ，因为这里有一个坑，不管是absolute 定位还是 fixed 定位都一样，为了方便描述，以下只说 fixed 定位(在 absolute 定位也一样成立)。在PC端没有问题，但是在移动端，如果 main 设置了 overflow 为 true，header 会被 main 遮住，对，没有错，虽然是 fixed 定位，但是在移动端，如果 fixed 定位节点后面紧接跟着的兄弟节点是可滚动的(也就是设置了 overflow 为 true )，那么 fixed 节点会被其后的兄弟节点遮住。这个问题解决方式有很多，既然是 fixed 定位后面紧接着可滚动的兄弟节点才会有这个坑，只要让他的条件有一个不成立就好了，有以下解决方案：</p>
 <ol>
 <li>让 fixed 定位节点后面不紧接着可滚动的节点</li>
@@ -244,37 +514,37 @@
 <ol>
 <li>把所有 fixed 节点放在 scroll 元素后面，即把 header 节点放在 main 节点后面</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">  &lt;div class=&quot;main&quot;&gt;&lt;/div&gt;</div><div class="line">  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;</div><div class="line">  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div></pre></td></tr></table></figure>
 <p>但这样显然不太符合一般人的思维习惯，代码可读性降低。</p>
 <ol>
 <li>使 main 不可滚动，给 main 嵌套一层可滚动的子节点</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">  &lt;div class=&quot;header&quot;&gt;&lt;/div&gt;</div><div class="line">  &lt;div class=&quot;main&quot;&gt;</div><div class="line">    &lt;div class=&quot;scroll-container&quot;&gt;&lt;/div&gt;</div><div class="line">  &lt;/div&gt;</div><div class="line">  &lt;div class=&quot;footer&quot;&gt;&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line"></div><div class="line"></div><div class="line">&lt;style&gt;</div><div class="line">  .main &#123;</div><div class="line">    overflow: hidden;</div><div class="line">  &#125;</div><div class="line">  .scroll-container &#123;</div><div class="line">    height: 100%;</div><div class="line">    overflow: auto;</div><div class="line">  &#125;</div><div class="line">&lt;/style&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"scroll-container"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"footer"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="css"></span></div><div class="line">  <span class="selector-class">.main</span> &#123;</div><div class="line">    <span class="attribute">overflow</span>: hidden;</div><div class="line">  &#125;</div><div class="line">  <span class="selector-class">.scroll-container</span> &#123;</div><div class="line">    <span class="attribute">height</span>: <span class="number">100%</span>;</div><div class="line">    <span class="attribute">overflow</span>: auto;</div><div class="line">  &#125;</div><div class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div></pre></td></tr></table></figure>
 <p><strong>第二种方案有以下可选方法:</strong></p>
 <ol>
 <li>让 scroll 节点不与 fixed 节点有重合</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  padding: 44px 0;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">.main &#123;</div><div class="line">  padding: 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">44px</span> <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line"><span class="selector-class">.main</span> &#123;</div><div class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ol>
 <li>给 fixed 节点设置 z-index</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">.header,</div><div class="line">.footer &#123;</div><div class="line">    z-index: 8888;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.header</span>,</div><div class="line"><span class="selector-class">.footer</span> &#123;</div><div class="line">    <span class="attribute">z-index</span>: <span class="number">8888</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>看到这里可能会有小伙伴觉得，一个简单的布局，还要绕过这么多坑，难道没有简单的方式吗，答案当然是肯定的，那就是第三种实现方式，flex 布局。flex 定位在移动端兼容到了 iOS 7.1+，Android 4.4+,如果使用 autoprefixer 等工具还可以降级为旧版本的 flexbox ，可以兼容到 iOS 3.2 和 Android 2.1。而且用 flex 实现起来相对简单，在各个浏览器里表现也相对一致。实现如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  display: flex;</div><div class="line">  flex-direction: column;</div><div class="line">&#125;</div><div class="line">.main &#123;</div><div class="line">  flex: 1;</div><div class="line">  overflow: auto;</div><div class="line">  -webkit-overflow-scrolling: touch;</div><div class="line">&#125;</div><div class="line">.header &#123;</div><div class="line">  height: 44px;</div><div class="line">&#125;</div><div class="line">.footer &#123;</div><div class="line">  height: 44px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">body</span> &#123;</div><div class="line">  <span class="attribute">display</span>: flex;</div><div class="line">  <span class="attribute">flex-direction</span>: column;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.main</span> &#123;</div><div class="line">  <span class="attribute">flex</span>: <span class="number">1</span>;</div><div class="line">  <span class="attribute">overflow</span>: auto;</div><div class="line">  <span class="attribute">-webkit-overflow-scrolling</span>: touch;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.header</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">44px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.footer</span> &#123;</div><div class="line">  <span class="attribute">height</span>: <span class="number">44px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="fixed-与-input"><a href="#fixed-与-input" class="headerlink" title="fixed 与 input"></a>fixed 与 input</h3><p>刚接触移动端 Web 开发的小伙伴应该都会听前辈们说过，不要在有 input 标签的页面使用 fixed 定位，因为这两者在一起的时候，总是会有奇奇怪怪的问题。在 iOS 上，当点击 input 标签获取焦点唤起软键盘的时候，fixed 定位会暂时失效，或者可以理解为变成了 absolute 定位，在含有滚动的页面，fixed 定位的节点和其他节点一起滚动。其实这个问题也很好解决，只要保证 fixed 定位的节点的父节点不可滚动，那么即使 fixed 定位失效，也不会和其他滚动节点一起滚动，影响界面。但是除此之外，还有很多坑比较难以解决，例如 Android 软键盘唤起后遮挡住 input 标签，用户没法看到自己输入的字符串，iOS 则需要在输入至少一个字符之后，才能将对应的 input 标签滚动到合适的位置，所以为了避开这些难以解决的坑，在有表单输入的页面，尽量用absolute 或者 flex 替换 fixed。</p>
 <h3 id="样式实现"><a href="#样式实现" class="headerlink" title="样式实现"></a>样式实现</h3><ol>
 <li>iOS 1px实现(Owner）</li>
 </ol>
 <p>参考伪元素做法如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">/*scss style*/</div><div class="line">.tran&#123;</div><div class="line">    position: relative;</div><div class="line">    &amp;::before&#123;</div><div class="line">        content: &apos;&apos;;</div><div class="line">        position: absolute;</div><div class="line">        box-sizing: border-box;</div><div class="line">        height: 1px;</div><div class="line">        left: 0;</div><div class="line">        top: 0;</div><div class="line">        border-bottom: 1px solid #cfcfcf;</div><div class="line">        -webkit-transform-origin: 0 0;</div><div class="line">        transform-origin: 0 0;</div><div class="line">        -webkit-transform: scale(0.5);</div><div class="line">        transform: scale(0.5); </div><div class="line">    &#125;</div><div class="line">    </div><div class="line">/* mixin */</div><div class="line">@mixin bottomLine($c:rgba(207, 207, 207, .95), $t:0, $r:0, $b:0, $l:0) &#123;</div><div class="line">    content: &quot; &quot;;</div><div class="line">    position: absolute;</div><div class="line">    left: $l;</div><div class="line">    bottom: $t;</div><div class="line">    right: $r;</div><div class="line">    height: 1px;</div><div class="line">    border-bottom: 1px solid $c;</div><div class="line">    color: $c;</div><div class="line">    -webkit-transform-origin: 0 100%;</div><div class="line">    transform-origin: 0 100%;</div><div class="line">    -webkit-transform: scaleY(0.501);</div><div class="line">    transform: scaleY(0.501);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* scss style */</span></div><div class="line"><span class="selector-class">.tran</span>&#123;</div><div class="line">    <span class="attribute">position</span>: relative;</div><div class="line">    &amp;::before&#123;</div><div class="line">        <span class="attribute">content</span>: <span class="string">''</span>;</div><div class="line">        <span class="attribute">position</span>: absolute;</div><div class="line">        <span class="attribute">box-sizing</span>: border-box;</div><div class="line">        <span class="attribute">height</span>: <span class="number">1px</span>;</div><div class="line">        <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">        <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">        <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#cfcfcf</span>;</div><div class="line">        -webkit-<span class="attribute">transform-origin</span>: <span class="number">0</span> <span class="number">0</span>;</div><div class="line">        <span class="attribute">transform-origin</span>: <span class="number">0</span> <span class="number">0</span>;</div><div class="line">        -webkit-<span class="attribute">transform</span>: scale(<span class="number">0.5</span>);</div><div class="line">        <span class="attribute">transform</span>: scale(<span class="number">0.5</span>); </div><div class="line">    &#125;</div><div class="line">    </div><div class="line"><span class="comment">/* mixin */</span></div><div class="line">@<span class="keyword">mixin</span> bottomLine(<span class="variable">$c</span>:rgba(<span class="number">207</span>, 207, 207, .95), <span class="variable">$t</span>:<span class="number">0</span>, <span class="variable">$r</span>:<span class="number">0</span>, <span class="variable">$b</span>:<span class="number">0</span>, <span class="variable">$l</span>:<span class="number">0</span>) &#123;</div><div class="line">    <span class="attribute">content</span>: <span class="string">" "</span>;</div><div class="line">    <span class="attribute">position</span>: absolute;</div><div class="line">    <span class="attribute">left</span>: <span class="variable">$l</span>;</div><div class="line">    <span class="attribute">bottom</span>: <span class="variable">$t</span>;</div><div class="line">    <span class="attribute">right</span>: <span class="variable">$r</span>;</div><div class="line">    <span class="attribute">height</span>: <span class="number">1px</span>;</div><div class="line">    <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="variable">$c</span>;</div><div class="line">    <span class="attribute">color</span>: <span class="variable">$c</span>;</div><div class="line">    -webkit-<span class="attribute">transform-origin</span>: <span class="number">0</span> <span class="number">100%</span>;</div><div class="line">    <span class="attribute">transform-origin</span>: <span class="number">0</span> <span class="number">100%</span>;</div><div class="line">    -webkit-<span class="attribute">transform</span>: scaleY(<span class="number">0.501</span>);</div><div class="line">    <span class="attribute">transform</span>: scaleY(<span class="number">0.501</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ol>
 <li>背景渐变</li>
 </ol>
 <p>CSS3 有了渐变背景，可以通过渐变背景实现 1px 的 border，实现原理是设置 1px 的渐变背景，50% 有颜色，50% 是透明的。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">@mixin commonStyle() &#123;</div><div class="line">  background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;</div><div class="line">  background-repeat: no-repeat;</div><div class="line">  background-position: top, right top,  bottom, left top;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">@mixin border($border-color) &#123;</div><div class="line">  @include commonStyle();</div><div class="line">  background-image:linear-gradient(180deg, $border-color, $border-color 50%, transparent 50%),</div><div class="line">  linear-gradient(270deg, $border-color, $border-color 50%, transparent 50%),</div><div class="line">  linear-gradient(0deg, $border-color, $border-color 50%, transparent 50%),</div><div class="line">  linear-gradient(90deg, $border-color, $border-color 50%, transparent 50%);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">mixin</span> commonStyle() &#123;</div><div class="line">  <span class="attribute">background-size</span>: <span class="number">100%</span> <span class="number">1px</span>,<span class="number">1px</span> <span class="number">100%</span> ,<span class="number">100%</span> <span class="number">1px</span>, <span class="number">1px</span> <span class="number">100%</span>;</div><div class="line">  <span class="attribute">background-repeat</span>: no-repeat;</div><div class="line">  <span class="attribute">background-position</span>: top, right top,  bottom, left top;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">@<span class="keyword">mixin</span> border(<span class="variable">$border-color</span>) &#123;</div><div class="line">  @<span class="keyword">include</span> commonStyle();</div><div class="line">  <span class="attribute">background-image</span>:linear-gradient(<span class="number">180deg</span>, <span class="variable">$border-color</span>, <span class="variable">$border-color</span> <span class="number">50%</span>, transparent <span class="number">50%</span>),</div><div class="line">  linear-gradient(<span class="number">270deg</span>, <span class="variable">$border-color</span>, <span class="variable">$border-color</span> <span class="number">50%</span>, transparent <span class="number">50%</span>),</div><div class="line">  linear-gradient(<span class="number">0deg</span>, <span class="variable">$border-color</span>, <span class="variable">$border-color</span> <span class="number">50%</span>, transparent <span class="number">50%</span>),</div><div class="line">  linear-gradient(<span class="number">90deg</span>, <span class="variable">$border-color</span>, <span class="variable">$border-color</span> <span class="number">50%</span>, transparent <span class="number">50%</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p><strong>伪类+transform：</strong></p>
 <p>这类方法的实现原理是用伪元素的 box-shadow 或 border 实现 border，然后用 transform缩小到原来的一半。即使有圆角的需求也能很好的实现。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">@mixin hairline-common($border-radius) &#123;</div><div class="line">  position: relative;</div><div class="line">  z-index: 0;</div><div class="line">  &amp;:before &#123;</div><div class="line">    position: absolute;</div><div class="line">    content: &apos;&apos;;</div><div class="line">    border-radius: $border-radius;</div><div class="line">    box-sizing: border-box;</div><div class="line">    transform-origin: 0 0;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@mixin hairline($direct: &apos;all&apos;, $border-color: #ccc, $border-radius: 0) &#123;</div><div class="line">  @include hairline-common($border-radius);</div><div class="line">  &amp;:before &#123;</div><div class="line">    transform: scale(.5);</div><div class="line">    @if $direct == &apos;all&apos; &#123;</div><div class="line">      top: 0;</div><div class="line">      left: 0;</div><div class="line">      width: 200%;</div><div class="line">      height: 200%;</div><div class="line">      box-shadow: 0 0 0 1px $border-color;</div><div class="line">      z-index: -1;</div><div class="line">    &#125; @else if $direct == &apos;left&apos; or $direct == &apos;right&apos; &#123;</div><div class="line">      #&#123;$direct&#125;: 0;</div><div class="line">      top: 0;</div><div class="line">      width: 0;</div><div class="line">      height: 200%;</div><div class="line">      border-#&#123;$direct&#125;: 1px solid $border-color;</div><div class="line">    &#125; @else &#123;</div><div class="line">      #&#123;$direct&#125;: 0;</div><div class="line">      left: 0;</div><div class="line">      width: 200%;</div><div class="line">      height: 0;</div><div class="line">      border-#&#123;$direct&#125;: 1px solid $border-color;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">mixin</span> hairline-common(<span class="variable">$border-radius</span>) &#123;</div><div class="line">  <span class="attribute">position</span>: relative;</div><div class="line">  <span class="attribute">z-index</span>: <span class="number">0</span>;</div><div class="line">  &amp;:before &#123;</div><div class="line">    <span class="attribute">position</span>: absolute;</div><div class="line">    <span class="attribute">content</span>: <span class="string">''</span>;</div><div class="line">    <span class="attribute">border-radius</span>: <span class="variable">$border-radius</span>;</div><div class="line">    <span class="attribute">box-sizing</span>: border-box;</div><div class="line">    <span class="attribute">transform-origin</span>: <span class="number">0</span> <span class="number">0</span>;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">mixin</span> hairline(<span class="variable">$direct</span>: <span class="string">'all'</span>, <span class="variable">$border-color</span>: <span class="number">#ccc</span>, <span class="variable">$border-radius</span>: 0) &#123;</div><div class="line">  @<span class="keyword">include</span> hairline-common(<span class="variable">$border-radius</span>);</div><div class="line">  &amp;:before &#123;</div><div class="line">    <span class="attribute">transform</span>: scale(.<span class="number">5</span>);</div><div class="line">    @<span class="keyword">if</span> <span class="variable">$direct</span> == <span class="string">'all'</span> &#123;</div><div class="line">      <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">      <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">      <span class="attribute">width</span>: <span class="number">200%</span>;</div><div class="line">      <span class="attribute">height</span>: <span class="number">200%</span>;</div><div class="line">      <span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1px</span> <span class="variable">$border-color</span>;</div><div class="line">      <span class="attribute">z-index</span>: -<span class="number">1</span>;</div><div class="line">    &#125; @<span class="keyword">else</span> if <span class="variable">$direct</span> == <span class="string">'left'</span> or <span class="variable">$direct</span> == <span class="string">'right'</span> &#123;</div><div class="line">      #&#123;<span class="variable">$direct</span>&#125;: <span class="number">0</span>;</div><div class="line">      <span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">      <span class="attribute">width</span>: <span class="number">0</span>;</div><div class="line">      <span class="attribute">height</span>: <span class="number">200%</span>;</div><div class="line">      <span class="attribute">border</span>-#&#123;<span class="variable">$direct</span>&#125;: <span class="number">1px</span> solid <span class="variable">$border-color</span>;</div><div class="line">    &#125; @<span class="keyword">else</span> &#123;</div><div class="line">      #&#123;<span class="variable">$direct</span>&#125;: <span class="number">0</span>;</div><div class="line">      <span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">      <span class="attribute">width</span>: <span class="number">200%</span>;</div><div class="line">      <span class="attribute">height</span>: <span class="number">0</span>;</div><div class="line">      <span class="attribute">border</span>-#&#123;<span class="variable">$direct</span>&#125;: <span class="number">1px</span> solid <span class="variable">$border-color</span>;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
@@ -727,234 +997,6 @@
 &lt;h4 id=&quot;Apache2&quot;&gt;&lt;a href=&quot;#Apache2&quot; class=&quot;headerlink&quot; title=&quot;Apache2&quot;&gt;&lt;/a&gt;Apache2&lt;/h4&gt;&lt;p&gt;基本mac都会自带Apache、Php等，具体查看命令 &lt;code&gt;apachectl -v&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/2741993-0383ef72d51e694f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;Version&quot;&gt;&lt;/p&gt;
 &lt;p&gt;不同版本之间会有些许区别。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://yoursite.com/categories/Coding/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>二三事难述</title>
-    <link href="http://yoursite.com/2017/03/06/follow/"/>
-    <id>http://yoursite.com/2017/03/06/follow/</id>
-    <published>2017-03-06T02:44:25.000Z</published>
-    <updated>2017-03-08T09:52:58.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>本文为作者原创，转载请注明出处！</p>
-</blockquote>
-<p>天也不一定好看，心情不一定差。</p>
-<p>只是觉得有些话想自言自语一下，权当无聊或是自我消遣。</p>
-<p>突然想到了很多不一样的事情，很多年前，我做了一些很无聊的决定，但似乎在今天我突然看到了这个决定对于我现在生活的影响，虽然我有时候有点自欺欺人。但我明白我仍在潜意识里认为自己是一个有主见的人，但其实原因我在上一句话里说过了。似乎一直以来我都在刻意的追求一种生活的状态，一种好像让自己心安理得放纵的理由，我明白自己在生活的过程中已经开始向我的父辈们看齐，也许那样的生活曾在我的理想中被我哂笑过。通过当代的一些工具，我浏览到了一些我原本或许经历不到的信息，所以有时候我会告诫自己，是时候和过去的一些事情说再见，但目标同起点之间这段过程，通常会让我滞留或者干脆返回起点。这样的事情一旦经历过第一次，自然就会有第二次了，自然也就会有习惯的那天。<br><a id="more"></a></p>
-<p>人性里总会有很多的弱点，但很多人就很不容易承认自己的弱点，我就是这类人中的一员。我曾经在别人的文章底下留下：生活不是简单的对错，而是拥有在对错中不断前行的力量。当我们习惯了老师给试卷判分来决定你个人的能力大小的时候，你总会错觉，生活原来的样子应该就是原本对的事情就是对的，错误的事情就会是错误的。虽然我记得不是很清楚，在《逻辑思维》关于讲《巨婴国》的这一期里，我当时有点觉得自己很像这样的巨婴，可我还会在心理为自己辩解那些我还侥幸保留下来的不像巨婴的那些片段来麻痹自我。尽管我思考得很少了，可我有时候还是会想克服下自己的弱点，想想生活对我的意义在哪里，哪怕我始终都找不到答案。</p>
-<p>一个猎人的儿子，最有可能成为一个猎人，而一个农民的儿子也是最有可能成为一个农民。我知道在我们身边不乏有猎人的儿子成了艺术家或者别的什么的异类，农民的儿子也许会成为领导人。但这些都是个例，但很多人都会因为这样的事情而恐惧。因为猎人的儿子变成了艺术家，很可能其余的猎人集体会集体嘲讽你这个想要成为农民的猎人的儿子。所以你觉得你做什么都是兢兢业业，不敢犯下一点错。你可能会在这个群体里挣扎，有人成功了，自然皆大欢喜，但想来过程也并不一定会美好。最可怕的事情是你还没开始，你就已经完全看到了你失败的样子以及你会遭受的苦难。我不是不知道那些拥有大毅力的人总会力挽狂澜改变命运，但大部分人都是做不到的。说到这里，我想解释一下：为什么农民的儿子很容易变成农民？因为农民教你的一大堆道理总是最适合如何像一个农民生存于世，就算他不断提供给你吸收新知识，不断输送你深造，他总会告诉你：不要逾越，要安分守己；不要投机，要脚踏实地以及等等诸如此类的理论，试问成为一个领导有时候就是需要你另辟蹊径，而你又有多少次天赋异凛来接受这些未知的挑战呢？我知道这样的理论说起来，永远只不过是自圆其说，还好这只是我权当无聊~</p>
-<p>写到这里的时候，我觉得思路似乎被什么打断了，所以我决定草草结束这些无聊的对话。生活对于每个人的意义都不一样，愿你能很快找到自己想要的一切。而我，也只能自求多福了~</p>
-<p>【To Be Continue!】</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;本文为作者原创，转载请注明出处！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;天也不一定好看，心情不一定差。&lt;/p&gt;
-&lt;p&gt;只是觉得有些话想自言自语一下，权当无聊或是自我消遣。&lt;/p&gt;
-&lt;p&gt;突然想到了很多不一样的事情，很多年前，我做了一些很无聊的决定，但似乎在今天我突然看到了这个决定对于我现在生活的影响，虽然我有时候有点自欺欺人。但我明白我仍在潜意识里认为自己是一个有主见的人，但其实原因我在上一句话里说过了。似乎一直以来我都在刻意的追求一种生活的状态，一种好像让自己心安理得放纵的理由，我明白自己在生活的过程中已经开始向我的父辈们看齐，也许那样的生活曾在我的理想中被我哂笑过。通过当代的一些工具，我浏览到了一些我原本或许经历不到的信息，所以有时候我会告诫自己，是时候和过去的一些事情说再见，但目标同起点之间这段过程，通常会让我滞留或者干脆返回起点。这样的事情一旦经历过第一次，自然就会有第二次了，自然也就会有习惯的那天。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>你最近还好吗？</title>
-    <link href="http://yoursite.com/2017/01/05/before/"/>
-    <id>http://yoursite.com/2017/01/05/before/</id>
-    <published>2017-01-05T06:42:48.000Z</published>
-    <updated>2017-01-05T08:55:49.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>本文为作者原创，转载请注明出处！</p>
-</blockquote>
-<h4 id="好久不见"><a href="#好久不见" class="headerlink" title="好久不见"></a>好久不见</h4><p>美梦之后便是无尽的空虚。</p>
-<p>我也不知道为什么会突然想你，在离开你的大半年的时间里，我以为所有的一切都会随着时间淡去，我一直小心翼翼地避免让自己去触碰过去，但还是在不经意间就回了头。</p>
-<p>也许记忆就是这般来折磨人的，我知道你温柔善良，不会来同我歇斯底里的辩论是非。但这样的结果只是我心里的负罪更重，我曾经蔑视的爱情同面包，现在就摆在我的眼前，我除了逃跑似的离开你，甚至连承诺我都给不起。很久以前我就在害怕这一天的到来，所以我没有过多地描述过以后的模样。只是你的样子终究还是在脑海里刻下了印记，看似浅显，却又难以磨灭。</p>
-<p>我很想知道最近的你过得如何，在朋友圈看，在别人的口中听。从外在看来，我几乎没有认真去了解过你的一切，但内心却不断呼喊叫我去靠近你。可惜的是我这种心情还只能自我去享受，我想你也应该也会这样。所以我们大家一起在沉默中承受这接下来发生的一切，并在潜意识中默许了它就这样轻易的发生。虽然没有为难，但确实很难受。</p>
-<a id="more"></a>
-<h4 id="你最近好吗"><a href="#你最近好吗" class="headerlink" title="你最近好吗"></a>你最近好吗</h4><p>其实我最害怕的事情，还是有天突然听到你的身边多出一个身影。虽然你不再属于我，然而关于你的一切，我还想无耻的占据。理智总会扇我这种懦夫一大嘴巴子，然后再唾上几口。可即便如此，我还是会想回到你身边去，可能是因为我累了，可能是因为我又需要你了。这种混蛋的理由，让自己都觉得很可怕，所以我一直在努力克制自己的情绪，尽量把自己的视线从你的身边挪开。我不想把你平静的生活扰乱，而我也有许多自己需要去做的事情，比如：功成名就！</p>
-<p>然而跌打滚爬的时候，总归是落下了一身伤痛，伤病也总会削弱人的意志以及一些别的东西。所以落在我的身上，也许需要的是一个疗伤的港湾，让我有段时间来喘息。可我知道这对你是不公平的，所以我还在忍，我希望自己能够挺过这段时间，把该想的问题都想明白。疼痛会将神经敏感降低，这样的话，也许会让我的想法有些改变。</p>
-<p>但我其实最想问的还是：你最近好吗？我一直在努力说服自己，不要那么畏惧那些还没有到来的后果。我把我能够做到的最好给你不就可以了吗？道理我跟自己说过很多遍，但最后选择却是背道相驰。我也说不清楚为什么自己最后选了这样一条没有退路悬崖，然后还纵身一跃。</p>
-<h4 id="太过畏惧"><a href="#太过畏惧" class="headerlink" title="太过畏惧"></a>太过畏惧</h4><p>从小我就身子骨弱，所以面对所有的一切我都不得不谨小慎微。这个习惯直到现在还是这样，轻易跨过的界限对我而言，只会让我觉得不真实。有人说：人内心里都有一个强大的反面，越正派的人，可能他做坏人的心比平常人大出不少。而对于我而言，我一直都在寻找放浪形骸的机会，但现阶段我是不敢的。因为我微薄的力量在现行的世界里获取一口口粮已是不易，我岂敢轻易放弃。说到底，只不过是卑微的在世间活惯了，也就养出一身卑微的姿态。</p>
-<p>这是生活留给我的东西，即使我在这上面做了很多努力，但是起色并不大。我已经慢慢学会，很多事情不是一蹴而就的。很多人都说我不是很乐观的人，这我确实承认，但我心中总归认为自己不是一个悲观的人物。我只是对许多事情的期望都放得比较低罢了。</p>
-<p>而现在，我只想自己能够拥有的不再是更多可以让自己在生活上满足的东西，而是另外一种精神世界里的东西。</p>
-<p>让我再回到你身边。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;本文为作者原创，转载请注明出处！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;好久不见&quot;&gt;&lt;a href=&quot;#好久不见&quot; class=&quot;headerlink&quot; title=&quot;好久不见&quot;&gt;&lt;/a&gt;好久不见&lt;/h4&gt;&lt;p&gt;美梦之后便是无尽的空虚。&lt;/p&gt;
-&lt;p&gt;我也不知道为什么会突然想你，在离开你的大半年的时间里，我以为所有的一切都会随着时间淡去，我一直小心翼翼地避免让自己去触碰过去，但还是在不经意间就回了头。&lt;/p&gt;
-&lt;p&gt;也许记忆就是这般来折磨人的，我知道你温柔善良，不会来同我歇斯底里的辩论是非。但这样的结果只是我心里的负罪更重，我曾经蔑视的爱情同面包，现在就摆在我的眼前，我除了逃跑似的离开你，甚至连承诺我都给不起。很久以前我就在害怕这一天的到来，所以我没有过多地描述过以后的模样。只是你的样子终究还是在脑海里刻下了印记，看似浅显，却又难以磨灭。&lt;/p&gt;
-&lt;p&gt;我很想知道最近的你过得如何，在朋友圈看，在别人的口中听。从外在看来，我几乎没有认真去了解过你的一切，但内心却不断呼喊叫我去靠近你。可惜的是我这种心情还只能自我去享受，我想你也应该也会这样。所以我们大家一起在沉默中承受这接下来发生的一切，并在潜意识中默许了它就这样轻易的发生。虽然没有为难，但确实很难受。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>熬过的青春</title>
-    <link href="http://yoursite.com/2016/12/28/distance/"/>
-    <id>http://yoursite.com/2016/12/28/distance/</id>
-    <published>2016-12-28T07:46:45.000Z</published>
-    <updated>2017-01-05T08:39:01.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>本文为作者原创，转载请注明出处！</p>
-</blockquote>
-<p>话更少了，不是想法少了。<br>生活总是越变越匆忙，似乎身边的朋友都是这样，一打电话，回答总是很忙。而总在空间里看到他们说他们的无聊。我也觉得生活的脚步总是变得越来越快，有的人忙着学习，有的人忙着赚钱，有的人忙着结婚，然而对于我而言，似乎却只有忙着失去青春。我明明都还没怎么体会到青春的味道，它便要结束了。我总感觉大家都在催促我赶紧向前走，我不知道前方是什么，也不知道他们是否是知道。但似乎只要你不努力向前，你就不能进入他们的生活圈子，然后没有话题。</p>
-<a id="more"></a>
-<p>总在急着赶路，这身边的风景，却怎么也看不出个味道来。就像每次到一个地方，大家不断地拿着自己的相机照来照去，然后又匆匆地赶赴下一个战场。也许这些东西在你年老的时候是你生命的一种记忆。这种味道现在恐怕是没几个人知道，然而大家却都愿意这么做。这种时刻体会这生命苍老的感触不断地刺激你的生活。大多数人都在为了自己的生活而四处奔波，忙着在这个社会占据自己的一席之地，考取各种证明，获得各种成就，然后最后老了，功成名就的荣归故里，这是我所能想到的最好的结局了。 老妈总是说我是个没有上进心的人，曾经也有老师说我是一个悲观者。也许这些都是一些比较中肯的评价，我也没有那种想要奋起反驳的念头。自己活得越久就连那种激烈为自己辩驳的力气都失去了。</p>
-<p>我想我总是年轻过的，至少在我的生理年龄上，我必须要越过那段经历，然后去体会我所该有的生活。我总在想自己走过的痕迹都在哪里。实实在在的要我说出我在这个阶段收获了什么，我却是哑口无言。从小学一路走到大学来，最明显的感觉就是自己越来越像个平凡人。不会像曾经的偶像悟空那样，会七十二变，也不可能突然在某一天拥有超能力去改变世界。 面对这个世界的不忿渐渐的保持沉默，回头想想自己真是可耻，小时候还说要把这世界的坏蛋都抓起来呢？然而我不敢告诉任何人。偶尔看电影的时候，总能看到很多热血的年轻人，在宣泄青春的能量。自己也在羡慕，但却只能羡慕罢了。然而说白了，大家都是地球人，为何别人做得到的事，我却连尝试的勇气都没有。</p>
-<p>曾经的我也做过很多的“坏事”，现如今那些东西，也就只能偶尔和人家聊天的时候谈起。然后说完之后，看着别人若有所思回味你的故事的表情。便觉得生活的色彩也就不过如此，只是年岁越大，这些故事也越来越没有味道了。青春即将离去，身体里的激情已经不足以重新焕发一种新的色彩了。也便只能来感叹时间都到哪去了。稍微一回忆，就感觉这些事就好像多在昨天，小学的时候欺负过的人，因为没有及时回家被老妈骂，还欠了几个女孩子的零食，这些东西想着想着就失神了。看来我确实离失去青春已经不远了。我也得跟着大部队去自己的人生里追逐，莫名其妙的学了一些知识，交了一群朋友，现在想想，也不知道到底什么有用，什么没用。真的是麻烦，只不过面对这种麻烦却也只能无可奈何了。</p>
-<p>假期在家也见了些许久不见的朋友，年轻人的面庞总是没有那么多的变化，但谁又能想到几分稚气脸的同学早已结婚生子，然后一番寒暄之后也便谈起了各自的最近。然而我总感觉难以寻找话题，大家的生活总没有那么多的交集，找不到话题也很正常。上大学之后我基本忘了自己的女人缘了，可他们几个非要和我提起，我也只能黯然伤神的回忆着自己单身已久，然后一通酒灌下之后，也不知道自己究竟说了些什么。也许有几句慷慨激昂的对白：找个女朋友不简单吗？</p>
-<p>青春是自私的，总不能容忍别人太多的指责！<br>别人都是对的，那是不可能的，青春总有自己的理由去面对世界！<br>青春总有热血的，没有犯错的过去，那是缺憾！<br>只有怪青春过分热血，来不及挽留！ </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;本文为作者原创，转载请注明出处！&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;话更少了，不是想法少了。&lt;br&gt;生活总是越变越匆忙，似乎身边的朋友都是这样，一打电话，回答总是很忙。而总在空间里看到他们说他们的无聊。我也觉得生活的脚步总是变得越来越快，有的人忙着学习，有的人忙着赚钱，有的人忙着结婚，然而对于我而言，似乎却只有忙着失去青春。我明明都还没怎么体会到青春的味道，它便要结束了。我总感觉大家都在催促我赶紧向前走，我不知道前方是什么，也不知道他们是否是知道。但似乎只要你不努力向前，你就不能进入他们的生活圈子，然后没有话题。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://yoursite.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>你不知道的HEXO deploy</title>
-    <link href="http://yoursite.com/2016/12/26/hah/"/>
-    <id>http://yoursite.com/2016/12/26/hah/</id>
-    <published>2016-12-26T07:31:23.000Z</published>
-    <updated>2017-01-05T08:45:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>本博文为本人原创，转载需注明出处：</p>
-</blockquote>
-<p>因hexo搭建也有一段时间了，刚开始部署的时候，直接部署在了服务器上，还是有些不方便，每次写完都要vi。后来查查文档，发现了几种部署到服务器端的方法，自己特意找了一种试试，记录一下，方便自己，尽量方便大家。</p>
-<p> <strong>注：</strong></p>
-<p>本教程指next主题部署文件至服务器，不是Git。</p>
-<p>官方提供了几种部署方案，我这里选择了ftpsync,至于为什么，只是因为我在用rsync遇到了一个比较严重的问题没有解决。等我研究明白了，再来补充。</p>
- <a id="more"></a>
- <!--toc-->
-<p> <img src="http://upload-images.jianshu.io/upload_images/2741993-7338e2cfc5f7bddf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ftpsync"></p>
-<p>以上是文档里提到的ftpsync的配置项，我看到有Blog上说这个插件会将本地目录里的所有文件同步成服务器一样的，但经过我测试，上传的时候只会上传public文件夹。所以ingore配置项你可以默认，由于我是将文件上传到服务器，为了方便所以我专门在我的服务器上创建了新用户专用作ftp上传：</p>
-<p> <code>adduser ***//自己设置名称</code></p>
-<p> 然后会提示你设置密码，然后一直默认设置就行了。这个命令比</p>
-<p> <code>useradd ***</code><br> <code>useradd *** pass</code></p>
-<p>方便多了</p>
-<p>我服务器是ubuntu,其余操作系统请自行搜索。</p>
-<h1 id="error1"><a href="#error1" class="headerlink" title="error1"></a>error1</h1><p>将配置文件_confiig.yml配置完成后，然后想着开心的</p>
-<p><code>hexo g -d</code></p>
-<p>然后报错 530 incorrect login</p>
-<p>无论是在ftp里登录还是别的地方都报这个错误，没办好，只好先找度娘，最后不知道在哪位大哥的博客下找到了解决方案，只不过写的时候已经找不到那个链接了。报这个错误的主要原因是因为服务器端的vsftpd文件报错了：</p>
-<p><strong>解决方法</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ sudo -s</div><div class="line">$ vi /etc/vsftpd.conf</div><div class="line">$ //找到 #write_enable=YES 将前面的#去掉</div></pre></td></tr></table></figure>
-<h1 id="error2"><a href="#error2" class="headerlink" title="error2"></a>error2</h1><p>登录的问题解决了，其实心里还在打鼓，果不其然：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g -d</div></pre></td></tr></table></figure>
-<p>还是报错，当时的错误代码没有截图，以致于现在不能给大家上原图了。但大致源码我还是可以写下来，大家自己对照吧。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Colletting:</div><div class="line">Errors events.js:160</div><div class="line">        throw: ***</div><div class="line">        </div><div class="line">        TCP: ***</div><div class="line">        onread: ***</div></pre></td></tr></table></figure>
-<p> 出现这个问题，建议大家还是找一下node的问题吧，我找了许久的答案最后也没能够说个所以然来,我当时的Node6.9.1。后来我是将自己的node重装了一遍，而且装的是Node4.7.0版本。这个问题就自动解决好了，如果有人知道，希望能不吝赐教。</p>
-<h1 id="error3"><a href="#error3" class="headerlink" title="error3"></a>error3</h1><p>经历了前两个错误，我知道第三个错误也是避免不了的。再次部署<code>hexo g -d</code>遇到:<br><strong>premission denied 550</strong></p>
-<p>一般操作过Linux系统的人都会知道这是因为缺少了权限，所以我先将服务器上的接收目录的权限放到了最大<br><code>$ chmod -R 777 ***//目录名</code><br>可依然还是报错550 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">MKDIR fail</div><div class="line">      ***</div><div class="line">550 : Cannot create a file when that file already exists</div></pre></td></tr></table></figure>
-<p>找来找去最后找到了这个大哥的Blog下：从他的Git下拉了一个src/parse.js文件修复了这问题。</p>
-<p><a href="http://k99k.com/2015/hexo-ftpsync-bug/" target="_blank" rel="external">踩坑道人Blog</a> </p>
-<p>然后一路开心的<code>hexo g -d</code><br>没报错，然后打开自己的的博客，哈哈显示正常，然后再点文章：</p>
-<p>然后</p>
-<h1 id="error4"><a href="#error4" class="headerlink" title="error4"></a>error4</h1><p>nginx 403 Forbidden<br>心里当真是问候了很多句苍天。没办法，继续折腾呗。我没有上面这位大哥厉害，console了三个小时，耐心地找了会百度就找到了一个解决方案：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ vi /etc/nginx.conf</div><div class="line">//在第一行的位置有个user 将其修改为你的ftp账号如下：</div><div class="line">//修改 ftp账号</div><div class="line">$ user ftpuser</div><div class="line">$ worker_processes</div><div class="line">//重启Nginx:</div><div class="line">$ service nginx restart</div></pre></td></tr></table></figure>
-<p>问题大概就这么多，欢迎交流指正。</p>
-<h4 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h4><p><a href="https://hexo.io/zh-cn/docs/index.html" target="_blank" rel="external">hexo文档</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;本博文为本人原创，转载需注明出处：&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;因hexo搭建也有一段时间了，刚开始部署的时候，直接部署在了服务器上，还是有些不方便，每次写完都要vi。后来查查文档，发现了几种部署到服务器端的方法，自己特意找了一种试试，记录一下，方便自己，尽量方便大家。&lt;/p&gt;
-&lt;p&gt; &lt;strong&gt;注：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;本教程指next主题部署文件至服务器，不是Git。&lt;/p&gt;
-&lt;p&gt;官方提供了几种部署方案，我这里选择了ftpsync,至于为什么，只是因为我在用rsync遇到了一个比较严重的问题没有解决。等我研究明白了，再来补充。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Coding" scheme="http://yoursite.com/categories/Coding/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>服务器搭建：（三）AWS搭建Shadowsocks</title>
-    <link href="http://yoursite.com/2016/12/07/ftp3/"/>
-    <id>http://yoursite.com/2016/12/07/ftp3/</id>
-    <published>2016-12-07T15:23:09.000Z</published>
-    <updated>2017-01-05T08:44:42.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文主要讲解AWS搭建shadowsock VPN</p>
-<h2 id="为什么选择AWS"><a href="#为什么选择AWS" class="headerlink" title="为什么选择AWS"></a>为什么选择AWS</h2><p>作为一名程序员，因为经常需要查找各类文档以及框架的用法，所以很多时候都需要去看看外面的世界，当然你可以购买一些VPN账号来直接访问外网，我自己这么弄只不过是为了折腾而已。</p>
-<p>我也是网上找教程的时候，无意中看到了这么个服务器搭建VPS的，因为具有<strong>一年的免费期</strong>当时就想拿来折腾用，至于好坏我们暂且不论。</p>
-<h4 id="条件："><a href="#条件：" class="headerlink" title="条件："></a>条件：</h4><ul>
-<li>需要一张支持双币支付的信用卡</li>
-<li>某宝购买的虚拟信用卡也可以激活，我没试过（道听途说）</li>
-<li>一个AWS的账号<a id="more"></a>
-<!--toc-->
-<strong>注意：</strong></li>
-</ul>
-<p>a. AWS激活的时候，采用的是电话激活（speaking English）,当时懵圈了我三遍才激活，账号注册请自行百度。<br>b. AWS并不是真正的For Free,这里需要先提醒一下大家，而且AWS扣费的时候，甚至不用通过短信验证，如介意，请出门左转。</p>
-<h2 id="创建实例："><a href="#创建实例：" class="headerlink" title="创建实例："></a>创建实例：</h2><p>参考文章：<br><a href="https://segmentfault.com/a/1190000003101075" target="_blank" rel="external">科学上网之搭建shadowsock</a></p>
-<p>以下命令摘自以上文章：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">sudo -s //获取root权限</div><div class="line">apt-get install update //更新apt</div><div class="line">apt-get install python-pip //安装py管理包pip</div><div class="line">pip install shadowsocks //安装shadowsock</div></pre></td></tr></table></figure>
-<p><strong>注意：</strong><br>很多人都会在这一步产生错误，如遇错误请先更新你的python</p>
-<p><code>python update</code></p>
-<p>按照原文教程，直接叫你启动 <code>ssserver -c /etc/shadowsock.json -d start</code>这里也会报错，因为安装完shadowsocks后服务器并不会自动生成shadowsocks.json的文件。</p>
-<p>正确的做法是你应该先建立：<br><code>vi /etc/shadowsocks.json</code></p>
-<h4 id="单一端口配置："><a href="#单一端口配置：" class="headerlink" title="单一端口配置："></a>单一端口配置：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;server&quot;:&quot;0.0.0.0&quot;, //这里不需要修改为你的服务器IP</div><div class="line">    &quot;server_port&quot;:   //端口自定义，例如8338</div><div class="line">    &quot;local_address&quot;:&quot;127.0.0.1&quot;,  //默认不用修改</div><div class="line">    &quot;local_port&quot;:1080, &quot;password&quot;:   //密码自己设定</div><div class="line">    &quot;timeout&quot;:300,  //可以默认</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,  //默认</div><div class="line">    &quot;fast_open&quot;:false // 默认</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h4 id="多端口配置"><a href="#多端口配置" class="headerlink" title="多端口配置"></a>多端口配置</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">&quot;server&quot;:&quot;0.0.0.0&quot;,</div><div class="line">&quot;port_password&quot;:</div><div class="line">         &#123;</div><div class="line">        &quot;端口1&quot;: &quot;连接密码1&quot;,</div><div class="line">        &quot;端口2&quot; : &quot;连接密码2&quot;</div><div class="line">         &#125;,</div><div class="line">&quot;timeout&quot;:300,</div><div class="line">&quot;method&quot;:&quot;aes-256-cfb&quot;,</div><div class="line">&quot;fast_open&quot;: false</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>配置完成后，别着急，很多时候，你的VPN并不一定可以运行，在文章开始之前，因为我建VPN已经有一段时间了，所以有些东西一下没有总结到位，在你配置完你的AWS后，（我的服务器选择放在了日本Tokyo），在你获得你的公网IP后，应该先到你的控制台ping一下你的IP是否可以 ping通。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2741993-156044dd14627044.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ping失败"></p>
-<p>无法ping通的Ip是无法用来架设的，你必须更换你的IP，所以你只打算拿AWS做VPN的话，没有必要申请弹性IP，国内过段时间久可能把你可以ping通的Ip封掉，所以你又得换。AWS更换IP的方法就是关闭你的VPS，再重新开机就会给你重新分配IP</p>
-<p>完成后，检测一下配置是否成功</p>
-<p><code>netstat -tunlp</code><br><code>ssserver -c /etc/shadowsock.json -d start</code></p>
-<p><strong>注：</strong></p>
-<p>有些文章里写道    <code>ssserver -c /etc/shadowsocks/config.json -d start</code></p>
-<p>是因为他将配置文件布置在了相应的目录下。</p>
-<p>详细参考：<br><a href="http://ilanni.blog.51cto.com/526870/1682881" target="_blank" rel="external">http://ilanni.blog.51cto.com/526870/1682881</a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文主要讲解AWS搭建shadowsock VPN&lt;/p&gt;
-&lt;h2 id=&quot;为什么选择AWS&quot;&gt;&lt;a href=&quot;#为什么选择AWS&quot; class=&quot;headerlink&quot; title=&quot;为什么选择AWS&quot;&gt;&lt;/a&gt;为什么选择AWS&lt;/h2&gt;&lt;p&gt;作为一名程序员，因为经常需要查找各类文档以及框架的用法，所以很多时候都需要去看看外面的世界，当然你可以购买一些VPN账号来直接访问外网，我自己这么弄只不过是为了折腾而已。&lt;/p&gt;
-&lt;p&gt;我也是网上找教程的时候，无意中看到了这么个服务器搭建VPS的，因为具有&lt;strong&gt;一年的免费期&lt;/strong&gt;当时就想拿来折腾用，至于好坏我们暂且不论。&lt;/p&gt;
-&lt;h4 id=&quot;条件：&quot;&gt;&lt;a href=&quot;#条件：&quot; class=&quot;headerlink&quot; title=&quot;条件：&quot;&gt;&lt;/a&gt;条件：&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;需要一张支持双币支付的信用卡&lt;/li&gt;
-&lt;li&gt;某宝购买的虚拟信用卡也可以激活，我没试过（道听途说）&lt;/li&gt;
-&lt;li&gt;一个AWS的账号
     
     </summary>
     

@@ -190,7 +190,7 @@ import isEmpty from 'lodash/isEmpty' // 仅把个别函数打包
 有些新手会写出这种代码：
 
 
-```es2015
+```auto
 /* Low */
 // 找出与用户1同市的所有用户
 User.findById(1).then((user) => {
@@ -203,8 +203,8 @@ User.findById(1).then((user) => {
 这属于 Promise[反模式](http://bluebirdjs.com/docs/anti-patterns.html)，与回调函数无异
 
 
-```es2015
-/* Bigger */
+```auto
+
 User.findById(1).then((user) => {
   return User.find({ city: user.city }) // 返回Promise
 }).then((users) => {
