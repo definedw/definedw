@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/05/21/update21/</loc>
+    
+    <lastmod>2017-05-21T06:49:20.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/05/20/update20/</loc>
+    
+    <lastmod>2017-05-21T06:47:50.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/05/18/update19/</loc>
+    
+    <lastmod>2017-05-20T13:37:51.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/05/17/update18/</loc>
+    
+    <lastmod>2017-05-17T07:06:26.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2017/05/16/update17/</loc>
     
     <lastmod>2017-05-16T15:08:08.000Z</lastmod>
